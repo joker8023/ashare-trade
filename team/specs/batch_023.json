@@ -1,0 +1,269 @@
+[
+ {
+  "id": "b023_K1_N2_dd12",
+  "group": "K_tail",
+  "selector": {
+   "type": "amihud_60",
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {},
+   "n": 2
+  },
+  "rebalance_days": 7,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.45,
+   "trailing_take": null,
+   "max_hold_days": null,
+   "stop_exec": "next"
+  },
+  "timing": {
+   "type": "dd_breaker",
+   "dd_trigger": -0.12,
+   "dd_recover": -0.02,
+   "dd_action": "clear",
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "mode": "realistic",
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2025-01-01",
+   "eval_end": "2025-12-31"
+  },
+  "phase": 0,
+  "notes": "N2集中+熔断尾部保险：2025牛市预期不触发保收益、只砍尾部回撤。候选线total_2025超121.07%且mdd不差于-13.07%。"
+ },
+ {
+  "id": "b023_K2_N2_indexMA60",
+  "group": "K_tail",
+  "selector": {
+   "type": "amihud_60",
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {},
+   "n": 2
+  },
+  "rebalance_days": 7,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.45,
+   "trailing_take": null,
+   "max_hold_days": null,
+   "stop_exec": "next"
+  },
+  "timing": {
+   "type": "index_ma",
+   "index": "000905",
+   "ma": 60,
+   "out_asset": "bond"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "mode": "realistic",
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2025-01-01",
+   "eval_end": "2025-12-31"
+  },
+  "phase": 0,
+  "notes": "N2+中证全指60日线择时，同K1逻辑。"
+ },
+ {
+  "id": "b023_K3_N2_TP80",
+  "group": "K_tail",
+  "selector": {
+   "type": "amihud_60",
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {},
+   "n": 2
+  },
+  "rebalance_days": 7,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.8,
+   "trailing_take": null,
+   "max_hold_days": null,
+   "stop_exec": "next"
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "mode": "realistic",
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2025-01-01",
+   "eval_end": "2025-12-31"
+  },
+  "phase": 0,
+  "notes": "N2+TP80：集中收益配宽止盈。"
+ },
+ {
+  "id": "b023_K4_N2_staged",
+  "group": "K_tail",
+  "selector": {
+   "type": "amihud_60",
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {},
+   "n": 2
+  },
+  "rebalance_days": 7,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null,
+   "stop_exec": "next",
+   "staged_take": [
+    {
+     "trigger": 0.3,
+     "fraction": 0.5
+    }
+   ]
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "mode": "realistic",
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2025-01-01",
+   "eval_end": "2025-12-31"
+  },
+  "phase": 0,
+  "notes": "N2+分批止盈锁赢：预期保收益、降回撤。若staged格式normalize不过，按017-B6已验证格式改写。"
+ },
+ {
+  "id": "b023_K5_V2_indexMA60",
+  "group": "K_tail",
+  "selector": {
+   "type": "amihud_60",
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {},
+   "n": 4
+  },
+  "rebalance_days": 7,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.8,
+   "trailing_take": null,
+   "max_hold_days": null,
+   "stop_exec": "next"
+  },
+  "timing": {
+   "type": "index_ma",
+   "index": "000905",
+   "ma": 60,
+   "out_asset": "bond"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "mode": "realistic",
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2025-01-01",
+   "eval_end": "2025-12-31"
+  },
+  "phase": 0,
+  "notes": "V2底盘+指数尾部保险。"
+ }
+]

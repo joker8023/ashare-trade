@@ -1,0 +1,410 @@
+[
+  {
+    "id": "ind_N4_R30_TP45_neu60",
+    "group": "IND_NEUTRAL_phase0",
+    "selector": {
+      "type": "amihud60_neutral",
+      "n": 4,
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {}
+    },
+    "rebalance_days": 30,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.45,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next"
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "exposure": 1,
+      "cash_asset": "cash"
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "行业中性腿phase0: amihud60_neutral N4/R30/TP45/主板池(剔688/689/北交所/创业板), fresh现实费率5万整手t+1收盘stop_next; 对打基线amihud_60 N4/R30/TP45 e1.0 fresh+102.1%/-11.4%/5/6"
+  },
+  {
+    "id": "ind_N4_R30_TP50_neu60",
+    "group": "IND_NEUTRAL_phase0",
+    "selector": {
+      "type": "amihud60_neutral",
+      "n": 4,
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {}
+    },
+    "rebalance_days": 30,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.5,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next"
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "exposure": 1,
+      "cash_asset": "cash"
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "行业中性腿phase0: amihud60_neutral N4/R30/TP50/主板池(剔688/689/北交所/创业板), fresh现实费率5万整手t+1收盘stop_next; 对打基线amihud_60 N4/R30/TP45 e1.0 fresh+102.1%/-11.4%/5/6"
+  },
+  {
+    "id": "ind_N4_R30_none_neu60",
+    "group": "IND_NEUTRAL_phase0",
+    "selector": {
+      "type": "amihud60_neutral",
+      "n": 4,
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {}
+    },
+    "rebalance_days": 30,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": null,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next"
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "exposure": 1,
+      "cash_asset": "cash"
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "行业中性腿phase0: amihud60_neutral N4/R30/none/主板池(剔688/689/北交所/创业板), fresh现实费率5万整手t+1收盘stop_next; 对打基线amihud_60 N4/R30/TP45 e1.0 fresh+102.1%/-11.4%/5/6"
+  },
+  {
+    "id": "ind_N6_R30_TP45_neu60",
+    "group": "IND_NEUTRAL_phase0",
+    "selector": {
+      "type": "amihud60_neutral",
+      "n": 6,
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {}
+    },
+    "rebalance_days": 30,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.45,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next"
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "exposure": 1,
+      "cash_asset": "cash"
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "行业中性腿phase0: amihud60_neutral N6/R30/TP45/主板池(剔688/689/北交所/创业板), fresh现实费率5万整手t+1收盘stop_next; 对打基线amihud_60 N4/R30/TP45 e1.0 fresh+102.1%/-11.4%/5/6"
+  },
+  {
+    "id": "ind_N6_R30_TP50_neu60",
+    "group": "IND_NEUTRAL_phase0",
+    "selector": {
+      "type": "amihud60_neutral",
+      "n": 6,
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {}
+    },
+    "rebalance_days": 30,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.5,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next"
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "exposure": 1,
+      "cash_asset": "cash"
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "行业中性腿phase0: amihud60_neutral N6/R30/TP50/主板池(剔688/689/北交所/创业板), fresh现实费率5万整手t+1收盘stop_next; 对打基线amihud_60 N4/R30/TP45 e1.0 fresh+102.1%/-11.4%/5/6"
+  },
+  {
+    "id": "ind_N6_R30_none_neu60",
+    "group": "IND_NEUTRAL_phase0",
+    "selector": {
+      "type": "amihud60_neutral",
+      "n": 6,
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {}
+    },
+    "rebalance_days": 30,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": null,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next"
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "exposure": 1,
+      "cash_asset": "cash"
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "行业中性腿phase0: amihud60_neutral N6/R30/none/主板池(剔688/689/北交所/创业板), fresh现实费率5万整手t+1收盘stop_next; 对打基线amihud_60 N4/R30/TP45 e1.0 fresh+102.1%/-11.4%/5/6"
+  },
+  {
+    "id": "ind_N4_R30_TP45_neu20",
+    "group": "IND_NEUTRAL_phase0",
+    "selector": {
+      "type": "amihud_industry_neutral",
+      "n": 4,
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {}
+    },
+    "rebalance_days": 30,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.45,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next"
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "exposure": 1,
+      "cash_asset": "cash"
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "行业中性腿phase0: amihud_industry_neutral N4/R30/TP45/主板池(剔688/689/北交所/创业板), fresh现实费率5万整手t+1收盘stop_next; 对打基线amihud_60 N4/R30/TP45 e1.0 fresh+102.1%/-11.4%/5/6"
+  },
+  {
+    "id": "ind_N5_R30_TP50_neu60",
+    "group": "IND_NEUTRAL_phase0",
+    "selector": {
+      "type": "amihud60_neutral",
+      "n": 5,
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {}
+    },
+    "rebalance_days": 30,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.5,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next"
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "exposure": 1,
+      "cash_asset": "cash"
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "行业中性腿phase0: amihud60_neutral N5/R30/TP50/主板池(剔688/689/北交所/创业板), fresh现实费率5万整手t+1收盘stop_next; 对打基线amihud_60 N4/R30/TP45 e1.0 fresh+102.1%/-11.4%/5/6"
+  }
+]

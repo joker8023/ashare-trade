@@ -1,0 +1,65 @@
+"""最优多头(N=25) + 多空对冲 重新组合"""
+import os
+os.environ.setdefault("ASHARE_PIVOTS", "pivots_long_clean.pkl")
+import pandas as pd, numpy as np
+import engine as E, risk_control as R, strategy_lab as S, combo_lab as C
+
+p = E.piv(); c = p["close"]
+adv20 = p["amount"].rolling(20, min_periods=10).mean()
+atr = C.get_atr(14)
+ratio = C.combo_rank("amihud+amount_level")
+liquid = (adv20 > 20000000) & c.notna()
+gate = (ratio >= 0.75) & liquid
+d0 = pd.Timestamp("2015-01-01"); idx = c.index[c.index >= d0]; cols = c.columns
+def cut(x): return x.reindex(index=idx, columns=cols).where(gate.reindex(index=idx, columns=cols))
+mkt = C._market_scale(p, 15, "000852")
+
+# 最优多头: N=25 R=40 + MA15
+print("构建最优多头 N=25/R=40 ...")
+eqL, _ = S.backtest(p, cut(c*0+ (c-0.3*atr).shift(1)), cut(c*0+(c-0.3*atr).shift(1)+0.8*atr.shift(1)), cut(c*0+1e9),
+    max_pos=25, max_exposure=1.0, cost=0.0015, market_scale=mkt, liquidate_on_off=True)
+# 注: max_pos 在 S.backtest 里是每仓资金=1/max_pos, N由gate后实际触发数决定
+# 这里用全池, 由回测自然选出; 为近似N=25, 我们接受全部触发(门控已限池)
+rL = eqL.pct_change(fill_method=None).dropna()
+print(f"多头: {len(rL)}天 {rL.index[0].date()}~{rL.index[-1].date()}")
+rL.to_pickle("results/pool/long_N25.pkl")
+
+# 多空腿N=30 (复用已有逻辑快速构建)
+seasoned = c.shift(250).notna(); fac = E.FACTORS["amihud"](p)
+rets=[]; prev_l=set(); prev_s=set()
+for i in range(300, len(c.index)-60-2, 60):
+    t=c.index[i]; t1=c.index[i+1]; t2=c.index[min(i+61,len(c.index)-1)]
+    valid=seasoned.loc[t]&(adv20.loc[t]>5e6)&c.loc[t].notna()&fac.loc[t].notna()
+    cap=c.loc[t]*p["shares"]; lo,hi=cap.quantile(0.05),cap.quantile(0.30)
+    valid &= ((cap>=lo)&(cap<=hi)).fillna(False)
+    pool=valid[valid].index
+    if len(pool)<60: continue
+    fv=fac.loc[t,pool]
+    longs=list(fv.nlargest(30).index); shorts=list(fv.nsmallest(30).index)
+    seg=c.loc[t1:t2,longs+shorts].ffill()
+    if len(seg)<2: continue
+    rel=seg.div(seg.iloc[0])
+    pr=0.5*rel[longs].mean(axis=1).pct_change(fill_method=None)-0.5*rel[shorts].mean(axis=1).pct_change(fill_method=None)
+    pr=pr.dropna()
+    to=1.0 if not prev_l else (len(set(longs)-prev_l)/30+len(set(shorts)-prev_s)/30)/2
+    if len(pr): pr.iloc[0]-=to*2*0.0015
+    prev_l,prev_s=set(longs),set(shorts)
+    rets.append(pr)
+rS=pd.concat(rets).sort_index(); rS=rS[~rS.index.duplicated(keep=False)]
+print(f"多空: {len(rS)}天")
+rS.to_pickle("results/pool/ls_N30.pkl")
+
+# 组合扫描
+ix=rL.index.intersection(rS.index); a=rL.loc[ix]; b=rS.loc[ix]
+print(f"\n相关系数: {a.corr(b):.3f}")
+print(f"{'w多头':>8}{'年化':>8}{'回撤':>8}{'夏普':>7}{'Calmar':>8}")
+best=None
+for w in [0.2,0.25,0.3,0.35,0.4,0.45,0.5,0.55,0.6]:
+    r=w*a+(1-w)*b
+    eq=(1+r).cumprod(); yrs=len(r)/252
+    ann=eq.iloc[-1]**(1/yrs)-1; mdd=(eq/eq.cummax()-1).min()
+    vol=r.std()*np.sqrt(252); sh=r.mean()*252/vol if vol>0 else 0
+    cal=ann/abs(mdd) if mdd<0 else 0
+    print(f"{w:>8.2f}{ann:>8.1%}{mdd:>8.1%}{sh:>7.2f}{cal:>8.2f}")
+    if best is None or cal>best[0]: best=(cal,w,ann,mdd,sh)
+print(f"\n最优: w={best[1]:.2f} Calmar{best[0]:.2f} 年化{best[2]:.1%} 回撤{best[3]:.1%} 夏普{best[4]:.2f}")

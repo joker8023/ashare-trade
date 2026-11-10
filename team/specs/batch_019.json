@@ -1,0 +1,839 @@
+[
+ {
+  "id": "b019_P1_phase0",
+  "group": "P_phase",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 7,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.45,
+   "trailing_take": null,
+   "max_hold_days": null,
+   "stop_exec": "next"
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "mode": "realistic",
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "phase": 0,
+  "notes": "R7相位扫描：amihud/N4/TP45/exp90相位0。诚实用途：相位方差诊断；若某相位超基线，需2025 OOS复核+审计phase-mining警示，不可直接采用。"
+ },
+ {
+  "id": "b019_P2_phase1",
+  "group": "P_phase",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 7,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.45,
+   "trailing_take": null,
+   "max_hold_days": null,
+   "stop_exec": "next"
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "mode": "realistic",
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "phase": 1,
+  "notes": "R7相位扫描：amihud/N4/TP45/exp90相位1。诚实用途：相位方差诊断；若某相位超基线，需2025 OOS复核+审计phase-mining警示，不可直接采用。"
+ },
+ {
+  "id": "b019_P3_phase2",
+  "group": "P_phase",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 7,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.45,
+   "trailing_take": null,
+   "max_hold_days": null,
+   "stop_exec": "next"
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "mode": "realistic",
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "phase": 2,
+  "notes": "R7相位扫描：amihud/N4/TP45/exp90相位2。诚实用途：相位方差诊断；若某相位超基线，需2025 OOS复核+审计phase-mining警示，不可直接采用。"
+ },
+ {
+  "id": "b019_P4_phase3",
+  "group": "P_phase",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 7,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.45,
+   "trailing_take": null,
+   "max_hold_days": null,
+   "stop_exec": "next"
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "mode": "realistic",
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "phase": 3,
+  "notes": "R7相位扫描：amihud/N4/TP45/exp90相位3。诚实用途：相位方差诊断；若某相位超基线，需2025 OOS复核+审计phase-mining警示，不可直接采用。"
+ },
+ {
+  "id": "b019_P5_phase4",
+  "group": "P_phase",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 7,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.45,
+   "trailing_take": null,
+   "max_hold_days": null,
+   "stop_exec": "next"
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "mode": "realistic",
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "phase": 4,
+  "notes": "R7相位扫描：amihud/N4/TP45/exp90相位4。诚实用途：相位方差诊断；若某相位超基线，需2025 OOS复核+审计phase-mining警示，不可直接采用。"
+ },
+ {
+  "id": "b019_P6_phase5",
+  "group": "P_phase",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 7,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.45,
+   "trailing_take": null,
+   "max_hold_days": null,
+   "stop_exec": "next"
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "mode": "realistic",
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "phase": 5,
+  "notes": "R7相位扫描：amihud/N4/TP45/exp90相位5。诚实用途：相位方差诊断；若某相位超基线，需2025 OOS复核+审计phase-mining警示，不可直接采用。"
+ },
+ {
+  "id": "b019_P7_phase6",
+  "group": "P_phase",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 7,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.45,
+   "trailing_take": null,
+   "max_hold_days": null,
+   "stop_exec": "next"
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "mode": "realistic",
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "phase": 6,
+  "notes": "R7相位扫描：amihud/N4/TP45/exp90相位6。诚实用途：相位方差诊断；若某相位超基线，需2025 OOS复核+审计phase-mining警示，不可直接采用。"
+ },
+ {
+  "id": "b019_C1_N1",
+  "group": "C_conc",
+  "selector": {
+   "type": "amihud_60",
+   "n": 1,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 7,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.45,
+   "trailing_take": null,
+   "max_hold_days": null,
+   "stop_exec": "next"
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "mode": "realistic",
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "phase": 0,
+  "notes": "R7集中N1彩票检验：预期高方差，若超基线须过2025OOS+审计显著性，否则判运气。"
+ },
+ {
+  "id": "b019_C2_N2",
+  "group": "C_conc",
+  "selector": {
+   "type": "amihud_60",
+   "n": 2,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 7,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.45,
+   "trailing_take": null,
+   "max_hold_days": null,
+   "stop_exec": "next"
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "mode": "realistic",
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "phase": 0,
+  "notes": "R7集中N2，同C1。"
+ },
+ {
+  "id": "b019_C3_liqrev_N2",
+  "group": "C_conc",
+  "selector": {
+   "type": "liq_rev",
+   "n": 2,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 7,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.45,
+   "trailing_take": null,
+   "max_hold_days": null,
+   "stop_exec": "next"
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "mode": "realistic",
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "phase": 0,
+  "notes": "R7最优选择器liq_rev×N2集中：S05-net+23%基础上加集中，看绝对值能否接近基线。"
+ },
+ {
+  "id": "b019_C4_N2_TP60",
+  "group": "C_conc",
+  "selector": {
+   "type": "amihud_60",
+   "n": 2,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 7,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.6,
+   "trailing_take": null,
+   "max_hold_days": null,
+   "stop_exec": "next"
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "mode": "realistic",
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "phase": 0,
+  "notes": "R7/N2/TP60：集中+放宽止盈。"
+ },
+ {
+  "id": "b019_T1_liqrev_N6",
+  "group": "T_tune",
+  "selector": {
+   "type": "liq_rev",
+   "n": 6,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 7,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.45,
+   "trailing_take": null,
+   "max_hold_days": null,
+   "stop_exec": "next"
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "mode": "realistic",
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "phase": 0,
+  "notes": "liq_rev调优N6分散。"
+ },
+ {
+  "id": "b019_T2_liqrev_TP60",
+  "group": "T_tune",
+  "selector": {
+   "type": "liq_rev",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 7,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.6,
+   "trailing_take": null,
+   "max_hold_days": null,
+   "stop_exec": "next"
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "mode": "realistic",
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "phase": 0,
+  "notes": "liq_rev调优TP60。"
+ },
+ {
+  "id": "b019_T3_liqrev_exp100_exempt",
+  "group": "T_tune",
+  "selector": {
+   "type": "liq_rev",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {},
+   "hold_exempt": {
+    "ma": 20,
+    "tol": 0.98,
+    "rank_band": 0.4
+   }
+  },
+  "rebalance_days": 7,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.45,
+   "trailing_take": null,
+   "max_hold_days": null,
+   "stop_exec": "next"
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 1.0,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "mode": "realistic",
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "phase": 0,
+  "notes": "liq_rev×exp1.0×赢家豁免三叠。候选仍需mdd>=-12%。"
+ },
+ {
+  "id": "b019_X1_gross_TP80",
+  "group": "X_exit",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 7,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.8,
+   "trailing_take": null,
+   "max_hold_days": null,
+   "stop_exec": "next"
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "mode": "fixed",
+   "one_way": 0.0,
+   "capital": 50000,
+   "lot_size": 1
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "phase": 0,
+  "notes": "零成本R7出口上限测试TP80：看毛天花板能否超R30净+91.23%。"
+ },
+ {
+  "id": "b019_X2_gross_TS15",
+  "group": "X_exit",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 7,
+  "exit": {
+   "trailing_stop": 0.15,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null,
+   "stop_exec": "next"
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "mode": "fixed",
+   "one_way": 0.0,
+   "capital": 50000,
+   "lot_size": 1
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "phase": 0,
+  "notes": "零成本R7出口上限测试TPnull+trailing_stop0.15：纯移动止损毛天花板。"
+ }
+]

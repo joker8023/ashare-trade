@@ -1,0 +1,1314 @@
+[
+  {
+    "id": "b016_A1_905MA20cash",
+    "group": "A_timing",
+    "selector": {
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {},
+      "type": "amihud_60",
+      "n": 4
+    },
+    "rebalance_days": 7,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.45,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next",
+      "staged_take": null
+    },
+    "timing": {
+      "type": "index_ma",
+      "index": "000905",
+      "ma": 20,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "cash_asset": "cash",
+      "fresh_start": true,
+      "exposure": 0.9
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "A熊市空仓: N4/R7/TP45/exp0.9 + 中证500(000905)/MA20/空仓停cash。快线灵敏, 预期2026牛市里多为在场、仅在4月/10月塌陷段空仓避坑; 若total≈基线且mdd明显更优则采用。判定线: fresh_total超+91.23%且fresh_mdd不差于-12%则列采用候选, 否则如实判 rejected。"
+  },
+  {
+    "id": "b016_A2_905MA60bond",
+    "group": "A_timing",
+    "selector": {
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {},
+      "type": "amihud_60",
+      "n": 4
+    },
+    "rebalance_days": 7,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.45,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next",
+      "staged_take": null
+    },
+    "timing": {
+      "type": "index_ma",
+      "index": "000905",
+      "ma": 60,
+      "out_asset": "bond"
+    },
+    "portfolio": {
+      "cash_asset": "cash",
+      "fresh_start": true,
+      "exposure": 0.9
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "A熊市空仓: N4/R7/TP45/exp0.9 + 000905/MA60/空仓停bond511880。慢线+债息兜底(3%/252), 换手少信号稳, 本组\"最稳\"候选之一(C组备选)。判定线: fresh_total超+91.23%且fresh_mdd不差于-12%则列采用候选, 否则如实判 rejected。"
+  },
+  {
+    "id": "b016_A3_300MA120cash",
+    "group": "A_timing",
+    "selector": {
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {},
+      "type": "amihud_60",
+      "n": 4
+    },
+    "rebalance_days": 7,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.45,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next",
+      "staged_take": null
+    },
+    "timing": {
+      "type": "index_ma",
+      "index": "000300",
+      "ma": 120,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "cash_asset": "cash",
+      "fresh_start": true,
+      "exposure": 0.9
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "A熊市空仓: N4/R7/TP45/exp0.9 + 沪深300/MA120/cash。超慢线只抓大熊(2026大概率全程在场≈基线); 若与基线几乎无差则证明2026无熊可空、择时无用。判定线: fresh_total超+91.23%且fresh_mdd不差于-12%则列采用候选, 否则如实判 rejected。"
+  },
+  {
+    "id": "b016_A4_ddclear8",
+    "group": "A_timing",
+    "selector": {
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {},
+      "type": "amihud_60",
+      "n": 4
+    },
+    "rebalance_days": 7,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.45,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next",
+      "staged_take": null
+    },
+    "timing": {
+      "type": "dd_breaker",
+      "index": "000905",
+      "ma": 20,
+      "out_asset": "cash",
+      "dd_trigger": -0.08,
+      "dd_recover": -0.02,
+      "dd_action": "clear",
+      "dd_cut": 1
+    },
+    "portfolio": {
+      "cash_asset": "cash",
+      "fresh_start": true,
+      "exposure": 0.9
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "A熊市空仓: N4/R7/TP45/exp0.9 + 自身回撤熔断clear档(巅峰回撤≤-8%触发全清、回到-2%恢复)。假设R7自身dd信号比指数更贴合持仓, 无指数错配。判定线: fresh_total超+91.23%且fresh_mdd不差于-12%则列采用候选, 否则如实判 rejected。"
+  },
+  {
+    "id": "b016_A5_ddclear12",
+    "group": "A_timing",
+    "selector": {
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {},
+      "type": "amihud_60",
+      "n": 4
+    },
+    "rebalance_days": 7,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.45,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next",
+      "staged_take": null
+    },
+    "timing": {
+      "type": "dd_breaker",
+      "index": "000905",
+      "ma": 20,
+      "out_asset": "cash",
+      "dd_trigger": -0.12,
+      "dd_recover": -0.02,
+      "dd_action": "clear",
+      "dd_cut": 1
+    },
+    "portfolio": {
+      "cash_asset": "cash",
+      "fresh_start": true,
+      "exposure": 0.9
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "A熊市空仓: N4/R7/TP45/exp0.9 + 自身回撤熔断clear档(巅峰回撤≤-12%触发全清、回到-2%恢复)。中档, 本组最稳候选之一(C组备选);假设R7自身dd信号比指数更贴合持仓, 无指数错配。判定线: fresh_total超+91.23%且fresh_mdd不差于-12%则列采用候选, 否则如实判 rejected。"
+  },
+  {
+    "id": "b016_A6_ddclear15",
+    "group": "A_timing",
+    "selector": {
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {},
+      "type": "amihud_60",
+      "n": 4
+    },
+    "rebalance_days": 7,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.45,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next",
+      "staged_take": null
+    },
+    "timing": {
+      "type": "dd_breaker",
+      "index": "000905",
+      "ma": 20,
+      "out_asset": "cash",
+      "dd_trigger": -0.15,
+      "dd_recover": -0.02,
+      "dd_action": "clear",
+      "dd_cut": 1
+    },
+    "portfolio": {
+      "cash_asset": "cash",
+      "fresh_start": true,
+      "exposure": 0.9
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "A熊市空仓: N4/R7/TP45/exp0.9 + 自身回撤熔断clear档(巅峰回撤≤-15%触发全清、回到-2%恢复)。假设R7自身dd信号比指数更贴合持仓, 无指数错配。判定线: fresh_total超+91.23%且fresh_mdd不差于-12%则列采用候选, 否则如实判 rejected。"
+  },
+  {
+    "id": "b016_B1_TP80_tt30",
+    "group": "B_winner",
+    "selector": {
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {},
+      "type": "amihud_60",
+      "n": 4
+    },
+    "rebalance_days": 7,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.8,
+      "trailing_take": 0.3,
+      "max_hold_days": null,
+      "stop_exec": "next",
+      "staged_take": null
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "cash_asset": "cash",
+      "fresh_start": true,
+      "exposure": 0.9
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "B赢家续抱: TP0.8+trailing_take0.3。让利润奔跑到+80%, 高点回吐30%才下车; 假设2026大赢家(603580类)一次到位, 日线TP45卖飞太多。判定线: fresh_total超+91.23%且fresh_mdd不差于-12%则列采用候选, 否则如实判 rejected。"
+  },
+  {
+    "id": "b016_B2_TP60_tt30",
+    "group": "B_winner",
+    "selector": {
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {},
+      "type": "amihud_60",
+      "n": 4
+    },
+    "rebalance_days": 7,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.6,
+      "trailing_take": 0.3,
+      "max_hold_days": null,
+      "stop_exec": "next",
+      "staged_take": null
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "cash_asset": "cash",
+      "fresh_start": true,
+      "exposure": 0.9
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "B赢家续抱: TP0.6+tt0.3。B1的保守版, +60%封顶+回吐阀; 看续抱上限敏感性(TP0.6/0.8差多少)。判定线: fresh_total超+91.23%且fresh_mdd不差于-12%则列采用候选, 否则如实判 rejected。"
+  },
+  {
+    "id": "b016_B3_TP80_tt50",
+    "group": "B_winner",
+    "selector": {
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {},
+      "type": "amihud_60",
+      "n": 4
+    },
+    "rebalance_days": 7,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.8,
+      "trailing_take": 0.5,
+      "max_hold_days": null,
+      "stop_exec": "next",
+      "staged_take": null
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "cash_asset": "cash",
+      "fresh_start": true,
+      "exposure": 0.9
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "B赢家续抱: TP0.8+tt0.5。回吐阀放宽到50%(更能拿), 与B1对照看阀松紧: 阀太紧会被洗下车、太松白坐过山车。判定线: fresh_total超+91.23%且fresh_mdd不差于-12%则列采用候选, 否则如实判 rejected。"
+  },
+  {
+    "id": "b016_B4_TPnull_tt30_ts12",
+    "group": "B_winner",
+    "selector": {
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {},
+      "type": "amihud_60",
+      "n": 4
+    },
+    "rebalance_days": 7,
+    "exit": {
+      "trailing_stop": 0.12,
+      "fixed_stop": null,
+      "take_profit": null,
+      "trailing_take": 0.3,
+      "max_hold_days": null,
+      "stop_exec": "next",
+      "staged_take": null
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "cash_asset": "cash",
+      "fresh_start": true,
+      "exposure": 0.9
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "B赢家续抱: TPnull+tt0.3+ts0.12。不设硬顶、无限续抱, 只靠回吐30%和高点回撤12%双阀下车; 假设真赢家值得无限拿。判定线: fresh_total超+91.23%且fresh_mdd不差于-12%则列采用候选, 否则如实判 rejected。"
+  },
+  {
+    "id": "b016_B5_TPnull_tt50_ts20",
+    "group": "B_winner",
+    "selector": {
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {},
+      "type": "amihud_60",
+      "n": 4
+    },
+    "rebalance_days": 7,
+    "exit": {
+      "trailing_stop": 0.2,
+      "fixed_stop": null,
+      "take_profit": null,
+      "trailing_take": 0.5,
+      "max_hold_days": null,
+      "stop_exec": "next",
+      "staged_take": null
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "cash_asset": "cash",
+      "fresh_start": true,
+      "exposure": 0.9
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "B赢家续抱: TPnull+tt0.5+ts0.2。双阀全放宽的极限续抱版; 若mdd崩则证明无顶续抱在R7里留太大敞口。判定线: fresh_total超+91.23%且fresh_mdd不差于-12%则列采用候选, 否则如实判 rejected。"
+  },
+  {
+    "id": "b016_B6_stg30half_ts15",
+    "group": "B_winner",
+    "selector": {
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {},
+      "type": "amihud_60",
+      "n": 4
+    },
+    "rebalance_days": 7,
+    "exit": {
+      "trailing_stop": 0.15,
+      "fixed_stop": null,
+      "take_profit": null,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next",
+      "staged_take": [
+        {
+          "trigger": 0.3,
+          "fraction": 0.5
+        }
+      ]
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "cash_asset": "cash",
+      "fresh_start": true,
+      "exposure": 0.9
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "B赢家续抱: staged(+30%卖一半锁定)+ts0.15(剩余让跑、高点回撤15%清)。一半落袋一半追梦; 与TP45单点止盈对照看分批是否更优。判定线: fresh_total超+91.23%且fresh_mdd不差于-12%则列采用候选, 否则如实判 rejected。"
+  },
+  {
+    "id": "b016_B7_mh30_TPnull",
+    "group": "B_winner",
+    "selector": {
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {},
+      "type": "amihud_60",
+      "n": 4
+    },
+    "rebalance_days": 7,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": null,
+      "trailing_take": null,
+      "max_hold_days": 30,
+      "stop_exec": "next",
+      "staged_take": null
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "cash_asset": "cash",
+      "fresh_start": true,
+      "exposure": 0.9
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "B赢家续抱: mh30天+TPnull。R7约4轮才强制轮换一次, 给足赢家时间又防死拿; 假设30天不涨的\"赢家\"是假赢家。判定线: fresh_total超+91.23%且fresh_mdd不差于-12%则列采用候选, 否则如实判 rejected。"
+  },
+  {
+    "id": "b016_B8_mh60_TPnull",
+    "group": "B_winner",
+    "selector": {
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {},
+      "type": "amihud_60",
+      "n": 4
+    },
+    "rebalance_days": 7,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": null,
+      "trailing_take": null,
+      "max_hold_days": 60,
+      "stop_exec": "next",
+      "staged_take": null
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "cash_asset": "cash",
+      "fresh_start": true,
+      "exposure": 0.9
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "B赢家续抱: mh60天+TPnull。B7的更松版; 若B7>B8则30天轮换更优, 反之赢家值得拿满两月。判定线: fresh_total超+91.23%且fresh_mdd不差于-12%则列采用候选, 否则如实判 rejected。"
+  },
+  {
+    "id": "b016_C_905MA60bond_TP80tt30",
+    "group": "C_combo",
+    "selector": {
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {},
+      "type": "amihud_60",
+      "n": 4
+    },
+    "rebalance_days": 7,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.8,
+      "trailing_take": 0.3,
+      "max_hold_days": null,
+      "stop_exec": "next",
+      "staged_take": null
+    },
+    "timing": {
+      "type": "index_ma",
+      "index": "000905",
+      "ma": 60,
+      "out_asset": "bond"
+    },
+    "portfolio": {
+      "cash_asset": "cash",
+      "fresh_start": true,
+      "exposure": 0.9
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "C组合: A最稳timing(905MA60bond) × B最优exit(TP80tt30)。熊市空仓保mdd + 赢家续抱保total, 若双优则这是最终答案; 若total被timing砍掉则timing与续抱互斥(空仓错过赢家)。判定线: fresh_total超+91.23%且fresh_mdd不差于-12%则列采用候选, 否则如实判 rejected。"
+  },
+  {
+    "id": "b016_C_905MA60bond_stghalf_ts15",
+    "group": "C_combo",
+    "selector": {
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {},
+      "type": "amihud_60",
+      "n": 4
+    },
+    "rebalance_days": 7,
+    "exit": {
+      "trailing_stop": 0.15,
+      "fixed_stop": null,
+      "take_profit": null,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next",
+      "staged_take": [
+        {
+          "trigger": 0.3,
+          "fraction": 0.5
+        }
+      ]
+    },
+    "timing": {
+      "type": "index_ma",
+      "index": "000905",
+      "ma": 60,
+      "out_asset": "bond"
+    },
+    "portfolio": {
+      "cash_asset": "cash",
+      "fresh_start": true,
+      "exposure": 0.9
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "C组合: A最稳timing(905MA60bond) × B最优exit(stghalf_ts15)。熊市空仓保mdd + 赢家续抱保total, 若双优则这是最终答案; 若total被timing砍掉则timing与续抱互斥(空仓错过赢家)。判定线: fresh_total超+91.23%且fresh_mdd不差于-12%则列采用候选, 否则如实判 rejected。"
+  },
+  {
+    "id": "b016_C_905MA60bond_mh30",
+    "group": "C_combo",
+    "selector": {
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {},
+      "type": "amihud_60",
+      "n": 4
+    },
+    "rebalance_days": 7,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": null,
+      "trailing_take": null,
+      "max_hold_days": 30,
+      "stop_exec": "next",
+      "staged_take": null
+    },
+    "timing": {
+      "type": "index_ma",
+      "index": "000905",
+      "ma": 60,
+      "out_asset": "bond"
+    },
+    "portfolio": {
+      "cash_asset": "cash",
+      "fresh_start": true,
+      "exposure": 0.9
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "C组合: A最稳timing(905MA60bond) × B最优exit(mh30)。熊市空仓保mdd + 赢家续抱保total, 若双优则这是最终答案; 若total被timing砍掉则timing与续抱互斥(空仓错过赢家)。判定线: fresh_total超+91.23%且fresh_mdd不差于-12%则列采用候选, 否则如实判 rejected。"
+  },
+  {
+    "id": "b016_C_ddclear12_TP80tt30",
+    "group": "C_combo",
+    "selector": {
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {},
+      "type": "amihud_60",
+      "n": 4
+    },
+    "rebalance_days": 7,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.8,
+      "trailing_take": 0.3,
+      "max_hold_days": null,
+      "stop_exec": "next",
+      "staged_take": null
+    },
+    "timing": {
+      "type": "dd_breaker",
+      "index": "000905",
+      "ma": 20,
+      "out_asset": "cash",
+      "dd_trigger": -0.12,
+      "dd_recover": -0.02,
+      "dd_action": "clear",
+      "dd_cut": 1
+    },
+    "portfolio": {
+      "cash_asset": "cash",
+      "fresh_start": true,
+      "exposure": 0.9
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "C组合: A最稳timing(ddclear12) × B最优exit(TP80tt30)。熊市空仓保mdd + 赢家续抱保total, 若双优则这是最终答案; 若total被timing砍掉则timing与续抱互斥(空仓错过赢家)。判定线: fresh_total超+91.23%且fresh_mdd不差于-12%则列采用候选, 否则如实判 rejected。"
+  },
+  {
+    "id": "b016_C_ddclear12_stghalf_ts15",
+    "group": "C_combo",
+    "selector": {
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {},
+      "type": "amihud_60",
+      "n": 4
+    },
+    "rebalance_days": 7,
+    "exit": {
+      "trailing_stop": 0.15,
+      "fixed_stop": null,
+      "take_profit": null,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next",
+      "staged_take": [
+        {
+          "trigger": 0.3,
+          "fraction": 0.5
+        }
+      ]
+    },
+    "timing": {
+      "type": "dd_breaker",
+      "index": "000905",
+      "ma": 20,
+      "out_asset": "cash",
+      "dd_trigger": -0.12,
+      "dd_recover": -0.02,
+      "dd_action": "clear",
+      "dd_cut": 1
+    },
+    "portfolio": {
+      "cash_asset": "cash",
+      "fresh_start": true,
+      "exposure": 0.9
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "C组合: A最稳timing(ddclear12) × B最优exit(stghalf_ts15)。熊市空仓保mdd + 赢家续抱保total, 若双优则这是最终答案; 若total被timing砍掉则timing与续抱互斥(空仓错过赢家)。判定线: fresh_total超+91.23%且fresh_mdd不差于-12%则列采用候选, 否则如实判 rejected。"
+  },
+  {
+    "id": "b016_C_ddclear12_mh30",
+    "group": "C_combo",
+    "selector": {
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {},
+      "type": "amihud_60",
+      "n": 4
+    },
+    "rebalance_days": 7,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": null,
+      "trailing_take": null,
+      "max_hold_days": 30,
+      "stop_exec": "next",
+      "staged_take": null
+    },
+    "timing": {
+      "type": "dd_breaker",
+      "index": "000905",
+      "ma": 20,
+      "out_asset": "cash",
+      "dd_trigger": -0.12,
+      "dd_recover": -0.02,
+      "dd_action": "clear",
+      "dd_cut": 1
+    },
+    "portfolio": {
+      "cash_asset": "cash",
+      "fresh_start": true,
+      "exposure": 0.9
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "C组合: A最稳timing(ddclear12) × B最优exit(mh30)。熊市空仓保mdd + 赢家续抱保total, 若双优则这是最终答案; 若total被timing砍掉则timing与续抱互斥(空仓错过赢家)。判定线: fresh_total超+91.23%且fresh_mdd不差于-12%则列采用候选, 否则如实判 rejected。"
+  },
+  {
+    "id": "b016_D1_pricemax50",
+    "group": "D_graft",
+    "selector": {
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": 50,
+      "params": {},
+      "type": "amihud_60",
+      "n": 4
+    },
+    "rebalance_days": 7,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.45,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next",
+      "staged_take": null
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "cash_asset": "cash",
+      "fresh_start": true,
+      "exposure": 0.9
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "D嫁接: N4/R7/TP45/exp0.9 + price_max=50剔除高价股。R7整手摩擦下高价股一手贵、利用率低; 假设剔除后资金利用率↑、total不降。判定线: fresh_total超+91.23%且fresh_mdd不差于-12%则列采用候选, 否则如实判 rejected。"
+  },
+  {
+    "id": "b016_D2_minadv1e7",
+    "group": "D_graft",
+    "selector": {
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 10000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {},
+      "type": "amihud_60",
+      "n": 4
+    },
+    "rebalance_days": 7,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.45,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next",
+      "staged_take": null
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "cash_asset": "cash",
+      "fresh_start": true,
+      "exposure": 0.9
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "D嫁接: N4/R7/TP45/exp0.9 + min_adv提到1e7。过滤极小流动性票防R7高频下买不进/卖不出; 若total≈基线则流动性约束无代价、可直接采用。判定线: fresh_total超+91.23%且fresh_mdd不差于-12%则列采用候选, 否则如实判 rejected。"
+  },
+  {
+    "id": "b016_D3_cap03",
+    "group": "D_graft",
+    "selector": {
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {},
+      "type": "amihud_60",
+      "n": 4,
+      "max_weight": 0.3
+    },
+    "rebalance_days": 7,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.45,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next",
+      "staged_take": null
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "cash_asset": "cash",
+      "fresh_start": true,
+      "exposure": 0.9
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "D嫁接: N4/R7/TP45/exp0.9 + max_weight=0.3。N4等权25%, cap0.3轻约束(只压超配票); 假设降Top3集中(61%→更低)且total不塌。判定线: fresh_total超+91.23%且fresh_mdd不差于-12%则列采用候选, 否则如实判 rejected。"
+  },
+  {
+    "id": "b016_D4_ts08",
+    "group": "D_graft",
+    "selector": {
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {},
+      "type": "amihud_60",
+      "n": 4
+    },
+    "rebalance_days": 7,
+    "exit": {
+      "trailing_stop": 0.08,
+      "fixed_stop": null,
+      "take_profit": 0.45,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next",
+      "staged_take": null
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "cash_asset": "cash",
+      "fresh_start": true,
+      "exposure": 0.9
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "D嫁接: N4/R7/TP45/exp0.9 + trailing_stop0.08紧止损。8%就掐, 假设R7里小亏快跑抬wp; 若total崩则紧止损在牛市里专杀正常回调。判定线: fresh_total超+91.23%且fresh_mdd不差于-12%则列采用候选, 否则如实判 rejected。"
+  }
+]

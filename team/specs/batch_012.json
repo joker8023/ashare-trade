@@ -1,0 +1,850 @@
+[
+  {
+    "id": "b012_G1_N4_R10_TP45_exp90",
+    "group": "G1_R10_15",
+    "selector": {
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {},
+      "type": "amihud_60",
+      "n": 4
+    },
+    "rebalance_days": 10,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.45,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next",
+      "staged_take": null
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "cash_asset": "cash",
+      "fresh_start": true,
+      "exposure": 0.9
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "G1-R邻域: N4/R10/TP45/exp0.9。R7已证伪、R20待验、R30基线+91.23%: R10/R15是R轴最后缺口, 若N4/R15多档≈R30则R维度是平台(选R只看费用与段数), 若R10/R15显著更优则R轴真有峰。"
+  },
+  {
+    "id": "b012_G1_N4_R15_TP45_exp90",
+    "group": "G1_R10_15",
+    "selector": {
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {},
+      "type": "amihud_60",
+      "n": 4
+    },
+    "rebalance_days": 15,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.45,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next",
+      "staged_take": null
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "cash_asset": "cash",
+      "fresh_start": true,
+      "exposure": 0.9
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "G1-R邻域: N4/R15/TP45/exp0.9。R7已证伪、R20待验、R30基线+91.23%: R10/R15是R轴最后缺口, 若N4/R15多档≈R30则R维度是平台(选R只看费用与段数), 若R10/R15显著更优则R轴真有峰。"
+  },
+  {
+    "id": "b012_G1_N5_R10_TP45_exp90",
+    "group": "G1_R10_15",
+    "selector": {
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {},
+      "type": "amihud_60",
+      "n": 5
+    },
+    "rebalance_days": 10,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.45,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next",
+      "staged_take": null
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "cash_asset": "cash",
+      "fresh_start": true,
+      "exposure": 0.9
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "G1-R邻域: N5/R10/TP45/exp0.9。R7已证伪、R20待验、R30基线+91.23%: R10/R15是R轴最后缺口, 若N4/R15多档≈R30则R维度是平台(选R只看费用与段数), 若R10/R15显著更优则R轴真有峰。"
+  },
+  {
+    "id": "b012_G1_N5_R15_TP45_exp90",
+    "group": "G1_R10_15",
+    "selector": {
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {},
+      "type": "amihud_60",
+      "n": 5
+    },
+    "rebalance_days": 15,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.45,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next",
+      "staged_take": null
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "cash_asset": "cash",
+      "fresh_start": true,
+      "exposure": 0.9
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "G1-R邻域: N5/R15/TP45/exp0.9。R7已证伪、R20待验、R30基线+91.23%: R10/R15是R轴最后缺口, 若N4/R15多档≈R30则R维度是平台(选R只看费用与段数), 若R10/R15显著更优则R轴真有峰。"
+  },
+  {
+    "id": "b012_G1_N6_R10_TP45_exp90",
+    "group": "G1_R10_15",
+    "selector": {
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {},
+      "type": "amihud_60",
+      "n": 6
+    },
+    "rebalance_days": 10,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.45,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next",
+      "staged_take": null
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "cash_asset": "cash",
+      "fresh_start": true,
+      "exposure": 0.9
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "G1-R邻域: N6/R10/TP45/exp0.9。R7已证伪、R20待验、R30基线+91.23%: R10/R15是R轴最后缺口, 若N4/R15多档≈R30则R维度是平台(选R只看费用与段数), 若R10/R15显著更优则R轴真有峰。"
+  },
+  {
+    "id": "b012_G1_N6_R15_TP45_exp90",
+    "group": "G1_R10_15",
+    "selector": {
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {},
+      "type": "amihud_60",
+      "n": 6
+    },
+    "rebalance_days": 15,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.45,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next",
+      "staged_take": null
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "cash_asset": "cash",
+      "fresh_start": true,
+      "exposure": 0.9
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "G1-R邻域: N6/R15/TP45/exp0.9。R7已证伪、R20待验、R30基线+91.23%: R10/R15是R轴最后缺口, 若N4/R15多档≈R30则R维度是平台(选R只看费用与段数), 若R10/R15显著更优则R轴真有峰。"
+  },
+  {
+    "id": "b012_G1_N4_R10_TP45_exp100",
+    "group": "G1_R10_15",
+    "selector": {
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {},
+      "type": "amihud_60",
+      "n": 4
+    },
+    "rebalance_days": 10,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.45,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next",
+      "staged_take": null
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "cash_asset": "cash",
+      "fresh_start": true,
+      "exposure": 1
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "G1-R邻域满仓: N4/R10/TP45/exp1.0, 给R10/R15收益上限探测。"
+  },
+  {
+    "id": "b012_G1_N4_R15_TP45_exp100",
+    "group": "G1_R10_15",
+    "selector": {
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {},
+      "type": "amihud_60",
+      "n": 4
+    },
+    "rebalance_days": 15,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.45,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next",
+      "staged_take": null
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "cash_asset": "cash",
+      "fresh_start": true,
+      "exposure": 1
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "G1-R邻域满仓: N4/R15/TP45/exp1.0, 给R10/R15收益上限探测。"
+  },
+  {
+    "id": "b012_G2_N3_R30_TP45_exp90",
+    "group": "G2_N",
+    "selector": {
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {},
+      "type": "amihud_60",
+      "n": 3
+    },
+    "rebalance_days": 30,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.45,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next",
+      "staged_take": null
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "cash_asset": "cash",
+      "fresh_start": true,
+      "exposure": 0.9
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "G2-N邻域: N3/R30/TP45/exp0.9。N轴已验{2,4,5,6,8,12}(008/010), 缺{3,7,10}: N3看更集中是否更优(对照N2高mdd覆辙), N7/N10补N6→N12之间曲线的左段, 检验N=4是否为真峰。"
+  },
+  {
+    "id": "b012_G2_N7_R30_TP45_exp90",
+    "group": "G2_N",
+    "selector": {
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {},
+      "type": "amihud_60",
+      "n": 7
+    },
+    "rebalance_days": 30,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.45,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next",
+      "staged_take": null
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "cash_asset": "cash",
+      "fresh_start": true,
+      "exposure": 0.9
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "G2-N邻域: N7/R30/TP45/exp0.9。N轴已验{2,4,5,6,8,12}(008/010), 缺{3,7,10}: N3看更集中是否更优(对照N2高mdd覆辙), N7/N10补N6→N12之间曲线的中段, 检验N=4是否为真峰。"
+  },
+  {
+    "id": "b012_G2_N8_R30_TP45_exp90",
+    "group": "G2_N",
+    "selector": {
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {},
+      "type": "amihud_60",
+      "n": 8
+    },
+    "rebalance_days": 30,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.45,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next",
+      "staged_take": null
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "cash_asset": "cash",
+      "fresh_start": true,
+      "exposure": 0.9
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "G2-N邻域: N8/R30/TP45/exp0.9。N轴已验{2,4,5,6,8,12}(008/010), 缺{3,7,10}: N3看更集中是否更优(对照N2高mdd覆辙), N7/N10补N6→N12之间曲线的中段, 检验N=4是否为真峰。"
+  },
+  {
+    "id": "b012_G2_N10_R30_TP45_exp90",
+    "group": "G2_N",
+    "selector": {
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {},
+      "type": "amihud_60",
+      "n": 10
+    },
+    "rebalance_days": 30,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.45,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next",
+      "staged_take": null
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "cash_asset": "cash",
+      "fresh_start": true,
+      "exposure": 0.9
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "G2-N邻域: N10/R30/TP45/exp0.9。N轴已验{2,4,5,6,8,12}(008/010), 缺{3,7,10}: N3看更集中是否更优(对照N2高mdd覆辙), N7/N10补N6→N12之间曲线的中段, 检验N=4是否为真峰。"
+  },
+  {
+    "id": "b012_G3_N4_R30_TP45_000300_MA15_cash_exp90",
+    "group": "G3_timing",
+    "selector": {
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {},
+      "type": "amihud_60",
+      "n": 4
+    },
+    "rebalance_days": 30,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.45,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next",
+      "staged_take": null
+    },
+    "timing": {
+      "type": "index_ma",
+      "index": "000300",
+      "ma": 15,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "cash_asset": "cash",
+      "fresh_start": true,
+      "exposure": 0.9
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "G3-择时补齐: N4/R30/TP45/exp0.9 + 000300/MA15/cash。009已验000905/000852, 补沪深300(000300)与中证全指(000985)凑齐PROTOCOL§1四指数; 若四指数择时一致差/一致好则结论与指数选择无关, 须单看敞口列(§7空仓风险)。"
+  },
+  {
+    "id": "b012_G3_N4_R30_TP45_000985_MA15_cash_exp90",
+    "group": "G3_timing",
+    "selector": {
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {},
+      "type": "amihud_60",
+      "n": 4
+    },
+    "rebalance_days": 30,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.45,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next",
+      "staged_take": null
+    },
+    "timing": {
+      "type": "index_ma",
+      "index": "000985",
+      "ma": 15,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "cash_asset": "cash",
+      "fresh_start": true,
+      "exposure": 0.9
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "G3-择时补齐: N4/R30/TP45/exp0.9 + 000985/MA15/cash。009已验000905/000852, 补沪深300(000300)与中证全指(000985)凑齐PROTOCOL§1四指数; 若四指数择时一致差/一致好则结论与指数选择无关, 须单看敞口列(§7空仓风险)。"
+  },
+  {
+    "id": "b012_G4_BASELINE_N4R30TP45e09",
+    "group": "G4_baseline",
+    "selector": {
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {},
+      "type": "amihud_60",
+      "n": 4
+    },
+    "rebalance_days": 30,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.45,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next",
+      "staged_take": null
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "cash_asset": "cash",
+      "fresh_start": true,
+      "exposure": 0.9
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "基线复现(必过): 与b006_G1_N4_TP45_exp90同参, fresh_total须复现+91.23%±0.5pp, 否则先停查口径。"
+  },
+  {
+    "id": "b012_G4_N4R30TP45e100",
+    "group": "G4_baseline",
+    "selector": {
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {},
+      "type": "amihud_60",
+      "n": 4
+    },
+    "rebalance_days": 30,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.45,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next",
+      "staged_take": null
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "cash_asset": "cash",
+      "fresh_start": true,
+      "exposure": 1
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "基线满仓版: N4/R30/TP45/exp1.0, 给满仓项当上限参照。"
+  }
+]

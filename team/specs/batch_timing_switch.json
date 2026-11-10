@@ -1,0 +1,801 @@
+[
+ {
+  "id": "tw_BASELINE_N4R30TP45e100",
+  "group": "G0_baseline",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.45,
+   "trailing_take": null,
+   "max_hold_days": null,
+   "stop_exec": "next",
+   "staged_take": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 1,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "mode": "realistic",
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "phase": 0,
+  "notes": "无择时基线复现: N4/R30/TP45/e1.0主板池, fresh须复现+102.07%±0.5pp否则停查口径。"
+ },
+ {
+  "id": "tw_852_MA10_cash",
+  "group": "G1_index_ma",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.45,
+   "trailing_take": null,
+   "max_hold_days": null,
+   "stop_exec": "next",
+   "staged_take": null
+  },
+  "timing": {
+   "type": "index_ma",
+   "index": "000852",
+   "ma": 10,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 1,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "mode": "realistic",
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "phase": 0,
+  "notes": "000852 10日线择时, 空仓停现金, 调仓日决策t+1生效。"
+ },
+ {
+  "id": "tw_852_MA10_bond",
+  "group": "G1_index_ma",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.45,
+   "trailing_take": null,
+   "max_hold_days": null,
+   "stop_exec": "next",
+   "staged_take": null
+  },
+  "timing": {
+   "type": "index_ma",
+   "index": "000852",
+   "ma": 10,
+   "out_asset": "bond"
+  },
+  "portfolio": {
+   "exposure": 1,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "mode": "realistic",
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "phase": 0,
+  "notes": "000852 10日线择时, 空仓停泊511880, 调仓日决策t+1生效。"
+ },
+ {
+  "id": "tw_852_MA15_cash",
+  "group": "G1_index_ma",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.45,
+   "trailing_take": null,
+   "max_hold_days": null,
+   "stop_exec": "next",
+   "staged_take": null
+  },
+  "timing": {
+   "type": "index_ma",
+   "index": "000852",
+   "ma": 15,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 1,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "mode": "realistic",
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "phase": 0,
+  "notes": "000852 15日线择时, 空仓停现金, 调仓日决策t+1生效。"
+ },
+ {
+  "id": "tw_852_MA15_bond",
+  "group": "G1_index_ma",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.45,
+   "trailing_take": null,
+   "max_hold_days": null,
+   "stop_exec": "next",
+   "staged_take": null
+  },
+  "timing": {
+   "type": "index_ma",
+   "index": "000852",
+   "ma": 15,
+   "out_asset": "bond"
+  },
+  "portfolio": {
+   "exposure": 1,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "mode": "realistic",
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "phase": 0,
+  "notes": "000852 15日线择时, 空仓停泊511880, 调仓日决策t+1生效。"
+ },
+ {
+  "id": "tw_852_MA20_cash",
+  "group": "G1_index_ma",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.45,
+   "trailing_take": null,
+   "max_hold_days": null,
+   "stop_exec": "next",
+   "staged_take": null
+  },
+  "timing": {
+   "type": "index_ma",
+   "index": "000852",
+   "ma": 20,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 1,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "mode": "realistic",
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "phase": 0,
+  "notes": "000852 20日线择时, 空仓停现金, 调仓日决策t+1生效。"
+ },
+ {
+  "id": "tw_852_MA20_bond",
+  "group": "G1_index_ma",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.45,
+   "trailing_take": null,
+   "max_hold_days": null,
+   "stop_exec": "next",
+   "staged_take": null
+  },
+  "timing": {
+   "type": "index_ma",
+   "index": "000852",
+   "ma": 20,
+   "out_asset": "bond"
+  },
+  "portfolio": {
+   "exposure": 1,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "mode": "realistic",
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "phase": 0,
+  "notes": "000852 20日线择时, 空仓停泊511880, 调仓日决策t+1生效。"
+ },
+ {
+  "id": "tw_905_MA10_cash",
+  "group": "G1_index_ma",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.45,
+   "trailing_take": null,
+   "max_hold_days": null,
+   "stop_exec": "next",
+   "staged_take": null
+  },
+  "timing": {
+   "type": "index_ma",
+   "index": "000905",
+   "ma": 10,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 1,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "mode": "realistic",
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "phase": 0,
+  "notes": "000905 10日线择时, 空仓停现金, 调仓日决策t+1生效。"
+ },
+ {
+  "id": "tw_905_MA10_bond",
+  "group": "G1_index_ma",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.45,
+   "trailing_take": null,
+   "max_hold_days": null,
+   "stop_exec": "next",
+   "staged_take": null
+  },
+  "timing": {
+   "type": "index_ma",
+   "index": "000905",
+   "ma": 10,
+   "out_asset": "bond"
+  },
+  "portfolio": {
+   "exposure": 1,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "mode": "realistic",
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "phase": 0,
+  "notes": "000905 10日线择时, 空仓停泊511880, 调仓日决策t+1生效。"
+ },
+ {
+  "id": "tw_905_MA15_cash",
+  "group": "G1_index_ma",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.45,
+   "trailing_take": null,
+   "max_hold_days": null,
+   "stop_exec": "next",
+   "staged_take": null
+  },
+  "timing": {
+   "type": "index_ma",
+   "index": "000905",
+   "ma": 15,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 1,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "mode": "realistic",
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "phase": 0,
+  "notes": "000905 15日线择时, 空仓停现金, 调仓日决策t+1生效。"
+ },
+ {
+  "id": "tw_905_MA15_bond",
+  "group": "G1_index_ma",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.45,
+   "trailing_take": null,
+   "max_hold_days": null,
+   "stop_exec": "next",
+   "staged_take": null
+  },
+  "timing": {
+   "type": "index_ma",
+   "index": "000905",
+   "ma": 15,
+   "out_asset": "bond"
+  },
+  "portfolio": {
+   "exposure": 1,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "mode": "realistic",
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "phase": 0,
+  "notes": "000905 15日线择时, 空仓停泊511880, 调仓日决策t+1生效。"
+ },
+ {
+  "id": "tw_905_MA20_cash",
+  "group": "G1_index_ma",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.45,
+   "trailing_take": null,
+   "max_hold_days": null,
+   "stop_exec": "next",
+   "staged_take": null
+  },
+  "timing": {
+   "type": "index_ma",
+   "index": "000905",
+   "ma": 20,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 1,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "mode": "realistic",
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "phase": 0,
+  "notes": "000905 20日线择时, 空仓停现金, 调仓日决策t+1生效。"
+ },
+ {
+  "id": "tw_905_MA20_bond",
+  "group": "G1_index_ma",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.45,
+   "trailing_take": null,
+   "max_hold_days": null,
+   "stop_exec": "next",
+   "staged_take": null
+  },
+  "timing": {
+   "type": "index_ma",
+   "index": "000905",
+   "ma": 20,
+   "out_asset": "bond"
+  },
+  "portfolio": {
+   "exposure": 1,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "mode": "realistic",
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "phase": 0,
+  "notes": "000905 20日线择时, 空仓停泊511880, 调仓日决策t+1生效。"
+ },
+ {
+  "id": "tw_DD10_bond60",
+  "group": "G2_breaker",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.45,
+   "trailing_take": null,
+   "max_hold_days": null,
+   "stop_exec": "next",
+   "staged_take": null
+  },
+  "timing": {
+   "type": "dd_breaker",
+   "dd_trigger": -0.1,
+   "dd_recover": -0.03,
+   "dd_action": "clear",
+   "out_asset": "bond",
+   "dd_max_off_days": 60
+  },
+  "portfolio": {
+   "exposure": 1,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "mode": "realistic",
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "phase": 0,
+  "notes": "拐点变体1: 组合回撤-10%熔断清仓停泊债券, 回到-3%恢复, 最多离场60天强制回场(防永久锁仓)。"
+ },
+ {
+  "id": "tw_DD15_cash60",
+  "group": "G2_breaker",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.45,
+   "trailing_take": null,
+   "max_hold_days": null,
+   "stop_exec": "next",
+   "staged_take": null
+  },
+  "timing": {
+   "type": "dd_breaker",
+   "dd_trigger": -0.15,
+   "dd_recover": -0.05,
+   "dd_action": "clear",
+   "out_asset": "cash",
+   "dd_max_off_days": 60
+  },
+  "portfolio": {
+   "exposure": 1,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "mode": "realistic",
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "phase": 0,
+  "notes": "拐点变体2: 组合回撤-15%熔断清仓留现金, 回到-5%恢复, 最多离场60天强制回场。"
+ }
+]

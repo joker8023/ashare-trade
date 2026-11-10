@@ -1,0 +1,3950 @@
+[
+ {
+  "id": "b007_G1_N4_R40_TP50_exp60",
+  "group": "G1_R_axis",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 40,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.6,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N4 / **R40** / TP50 / 敞口 60%。Lead 快扫：R60 = +61.0/−11.8/**wp 100%**/**wt 83.3%**、R40 = +70.8/−13.8/wp 100%/wt 78%。**R 越长，段数越少（R60 只有 3~4 段）→ 段胜率天然容易 100%，但统计功效更差**。本格假设：R40/R60 的「高胜率」是真实的（每次持仓期都赚钱），但它可能只是「把 2026 的上涨平均摊到更少的段里」，必须用月胜率与按笔胜率交叉验证。"
+ },
+ {
+  "id": "b007_G1_N4_R40_TP50_exp80",
+  "group": "G1_R_axis",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 40,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.8,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N4 / **R40** / TP50 / 敞口 80%。Lead 快扫：R60 = +61.0/−11.8/**wp 100%**/**wt 83.3%**、R40 = +70.8/−13.8/wp 100%/wt 78%。**R 越长，段数越少（R60 只有 3~4 段）→ 段胜率天然容易 100%，但统计功效更差**。本格假设：R40/R60 的「高胜率」是真实的（每次持仓期都赚钱），但它可能只是「把 2026 的上涨平均摊到更少的段里」，必须用月胜率与按笔胜率交叉验证。"
+ },
+ {
+  "id": "b007_G1_N4_R40_TP50_exp90",
+  "group": "G1_R_axis",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 40,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N4 / **R40** / TP50 / 敞口 90%。Lead 快扫：R60 = +61.0/−11.8/**wp 100%**/**wt 83.3%**、R40 = +70.8/−13.8/wp 100%/wt 78%。**R 越长，段数越少（R60 只有 3~4 段）→ 段胜率天然容易 100%，但统计功效更差**。本格假设：R40/R60 的「高胜率」是真实的（每次持仓期都赚钱），但它可能只是「把 2026 的上涨平均摊到更少的段里」，必须用月胜率与按笔胜率交叉验证。"
+ },
+ {
+  "id": "b007_G1_N4_R40_TP50_exp100",
+  "group": "G1_R_axis",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 40,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 1.0,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N4 / **R40** / TP50 / 敞口 100%。Lead 快扫：R60 = +61.0/−11.8/**wp 100%**/**wt 83.3%**、R40 = +70.8/−13.8/wp 100%/wt 78%。**R 越长，段数越少（R60 只有 3~4 段）→ 段胜率天然容易 100%，但统计功效更差**。本格假设：R40/R60 的「高胜率」是真实的（每次持仓期都赚钱），但它可能只是「把 2026 的上涨平均摊到更少的段里」，必须用月胜率与按笔胜率交叉验证。"
+ },
+ {
+  "id": "b007_G1_N5_R40_TP50_exp60",
+  "group": "G1_R_axis",
+  "selector": {
+   "type": "amihud_60",
+   "n": 5,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 40,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.6,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N5 / **R40** / TP50 / 敞口 60%。Lead 快扫：R60 = +61.0/−11.8/**wp 100%**/**wt 83.3%**、R40 = +70.8/−13.8/wp 100%/wt 78%。**R 越长，段数越少（R60 只有 3~4 段）→ 段胜率天然容易 100%，但统计功效更差**。本格假设：R40/R60 的「高胜率」是真实的（每次持仓期都赚钱），但它可能只是「把 2026 的上涨平均摊到更少的段里」，必须用月胜率与按笔胜率交叉验证。"
+ },
+ {
+  "id": "b007_G1_N5_R40_TP50_exp80",
+  "group": "G1_R_axis",
+  "selector": {
+   "type": "amihud_60",
+   "n": 5,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 40,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.8,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N5 / **R40** / TP50 / 敞口 80%。Lead 快扫：R60 = +61.0/−11.8/**wp 100%**/**wt 83.3%**、R40 = +70.8/−13.8/wp 100%/wt 78%。**R 越长，段数越少（R60 只有 3~4 段）→ 段胜率天然容易 100%，但统计功效更差**。本格假设：R40/R60 的「高胜率」是真实的（每次持仓期都赚钱），但它可能只是「把 2026 的上涨平均摊到更少的段里」，必须用月胜率与按笔胜率交叉验证。"
+ },
+ {
+  "id": "b007_G1_N5_R40_TP50_exp90",
+  "group": "G1_R_axis",
+  "selector": {
+   "type": "amihud_60",
+   "n": 5,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 40,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N5 / **R40** / TP50 / 敞口 90%。Lead 快扫：R60 = +61.0/−11.8/**wp 100%**/**wt 83.3%**、R40 = +70.8/−13.8/wp 100%/wt 78%。**R 越长，段数越少（R60 只有 3~4 段）→ 段胜率天然容易 100%，但统计功效更差**。本格假设：R40/R60 的「高胜率」是真实的（每次持仓期都赚钱），但它可能只是「把 2026 的上涨平均摊到更少的段里」，必须用月胜率与按笔胜率交叉验证。"
+ },
+ {
+  "id": "b007_G1_N5_R40_TP50_exp100",
+  "group": "G1_R_axis",
+  "selector": {
+   "type": "amihud_60",
+   "n": 5,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 40,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 1.0,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N5 / **R40** / TP50 / 敞口 100%。Lead 快扫：R60 = +61.0/−11.8/**wp 100%**/**wt 83.3%**、R40 = +70.8/−13.8/wp 100%/wt 78%。**R 越长，段数越少（R60 只有 3~4 段）→ 段胜率天然容易 100%，但统计功效更差**。本格假设：R40/R60 的「高胜率」是真实的（每次持仓期都赚钱），但它可能只是「把 2026 的上涨平均摊到更少的段里」，必须用月胜率与按笔胜率交叉验证。"
+ },
+ {
+  "id": "b007_G1_N4_R60_TP50_exp60",
+  "group": "G1_R_axis",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 60,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.6,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N4 / **R60** / TP50 / 敞口 60%。Lead 快扫：R60 = +61.0/−11.8/**wp 100%**/**wt 83.3%**、R40 = +70.8/−13.8/wp 100%/wt 78%。**R 越长，段数越少（R60 只有 3~4 段）→ 段胜率天然容易 100%，但统计功效更差**。本格假设：R40/R60 的「高胜率」是真实的（每次持仓期都赚钱），但它可能只是「把 2026 的上涨平均摊到更少的段里」，必须用月胜率与按笔胜率交叉验证。"
+ },
+ {
+  "id": "b007_G1_N4_R60_TP50_exp80",
+  "group": "G1_R_axis",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 60,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.8,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N4 / **R60** / TP50 / 敞口 80%。Lead 快扫：R60 = +61.0/−11.8/**wp 100%**/**wt 83.3%**、R40 = +70.8/−13.8/wp 100%/wt 78%。**R 越长，段数越少（R60 只有 3~4 段）→ 段胜率天然容易 100%，但统计功效更差**。本格假设：R40/R60 的「高胜率」是真实的（每次持仓期都赚钱），但它可能只是「把 2026 的上涨平均摊到更少的段里」，必须用月胜率与按笔胜率交叉验证。"
+ },
+ {
+  "id": "b007_G1_N4_R60_TP50_exp90",
+  "group": "G1_R_axis",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 60,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N4 / **R60** / TP50 / 敞口 90%。Lead 快扫：R60 = +61.0/−11.8/**wp 100%**/**wt 83.3%**、R40 = +70.8/−13.8/wp 100%/wt 78%。**R 越长，段数越少（R60 只有 3~4 段）→ 段胜率天然容易 100%，但统计功效更差**。本格假设：R40/R60 的「高胜率」是真实的（每次持仓期都赚钱），但它可能只是「把 2026 的上涨平均摊到更少的段里」，必须用月胜率与按笔胜率交叉验证。"
+ },
+ {
+  "id": "b007_G1_N4_R60_TP50_exp100",
+  "group": "G1_R_axis",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 60,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 1.0,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N4 / **R60** / TP50 / 敞口 100%。Lead 快扫：R60 = +61.0/−11.8/**wp 100%**/**wt 83.3%**、R40 = +70.8/−13.8/wp 100%/wt 78%。**R 越长，段数越少（R60 只有 3~4 段）→ 段胜率天然容易 100%，但统计功效更差**。本格假设：R40/R60 的「高胜率」是真实的（每次持仓期都赚钱），但它可能只是「把 2026 的上涨平均摊到更少的段里」，必须用月胜率与按笔胜率交叉验证。"
+ },
+ {
+  "id": "b007_G1_N5_R60_TP50_exp60",
+  "group": "G1_R_axis",
+  "selector": {
+   "type": "amihud_60",
+   "n": 5,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 60,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.6,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N5 / **R60** / TP50 / 敞口 60%。Lead 快扫：R60 = +61.0/−11.8/**wp 100%**/**wt 83.3%**、R40 = +70.8/−13.8/wp 100%/wt 78%。**R 越长，段数越少（R60 只有 3~4 段）→ 段胜率天然容易 100%，但统计功效更差**。本格假设：R40/R60 的「高胜率」是真实的（每次持仓期都赚钱），但它可能只是「把 2026 的上涨平均摊到更少的段里」，必须用月胜率与按笔胜率交叉验证。"
+ },
+ {
+  "id": "b007_G1_N5_R60_TP50_exp80",
+  "group": "G1_R_axis",
+  "selector": {
+   "type": "amihud_60",
+   "n": 5,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 60,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.8,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N5 / **R60** / TP50 / 敞口 80%。Lead 快扫：R60 = +61.0/−11.8/**wp 100%**/**wt 83.3%**、R40 = +70.8/−13.8/wp 100%/wt 78%。**R 越长，段数越少（R60 只有 3~4 段）→ 段胜率天然容易 100%，但统计功效更差**。本格假设：R40/R60 的「高胜率」是真实的（每次持仓期都赚钱），但它可能只是「把 2026 的上涨平均摊到更少的段里」，必须用月胜率与按笔胜率交叉验证。"
+ },
+ {
+  "id": "b007_G1_N5_R60_TP50_exp90",
+  "group": "G1_R_axis",
+  "selector": {
+   "type": "amihud_60",
+   "n": 5,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 60,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N5 / **R60** / TP50 / 敞口 90%。Lead 快扫：R60 = +61.0/−11.8/**wp 100%**/**wt 83.3%**、R40 = +70.8/−13.8/wp 100%/wt 78%。**R 越长，段数越少（R60 只有 3~4 段）→ 段胜率天然容易 100%，但统计功效更差**。本格假设：R40/R60 的「高胜率」是真实的（每次持仓期都赚钱），但它可能只是「把 2026 的上涨平均摊到更少的段里」，必须用月胜率与按笔胜率交叉验证。"
+ },
+ {
+  "id": "b007_G1_N5_R60_TP50_exp100",
+  "group": "G1_R_axis",
+  "selector": {
+   "type": "amihud_60",
+   "n": 5,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 60,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 1.0,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N5 / **R60** / TP50 / 敞口 100%。Lead 快扫：R60 = +61.0/−11.8/**wp 100%**/**wt 83.3%**、R40 = +70.8/−13.8/wp 100%/wt 78%。**R 越长，段数越少（R60 只有 3~4 段）→ 段胜率天然容易 100%，但统计功效更差**。本格假设：R40/R60 的「高胜率」是真实的（每次持仓期都赚钱），但它可能只是「把 2026 的上涨平均摊到更少的段里」，必须用月胜率与按笔胜率交叉验证。"
+ },
+ {
+  "id": "b007_G1_N4_R60_TP40_exp90",
+  "group": "G1_R_axis",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 60,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.4,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N4 / R60 / TP40 / 敞口 90%：R60 下的止盈敏感性。R60 的持仓期长 2 倍，止盈阈值的影响被放大——TP40 更早锁利（按笔胜率↑、收益↓），TP60 接近 no-stop。假设最优 TP 在 R60 上会比 R30 的 TP45 更高。"
+ },
+ {
+  "id": "b007_G1_N4_R60_TP40_exp100",
+  "group": "G1_R_axis",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 60,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.4,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 1.0,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N4 / R60 / TP40 / 敞口 100%：R60 下的止盈敏感性。R60 的持仓期长 2 倍，止盈阈值的影响被放大——TP40 更早锁利（按笔胜率↑、收益↓），TP60 接近 no-stop。假设最优 TP 在 R60 上会比 R30 的 TP45 更高。"
+ },
+ {
+  "id": "b007_G1_N4_R60_TP45_exp90",
+  "group": "G1_R_axis",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 60,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.45,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N4 / R60 / TP45 / 敞口 90%：R60 下的止盈敏感性。R60 的持仓期长 2 倍，止盈阈值的影响被放大——TP40 更早锁利（按笔胜率↑、收益↓），TP60 接近 no-stop。假设最优 TP 在 R60 上会比 R30 的 TP45 更高。"
+ },
+ {
+  "id": "b007_G1_N4_R60_TP45_exp100",
+  "group": "G1_R_axis",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 60,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.45,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 1.0,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N4 / R60 / TP45 / 敞口 100%：R60 下的止盈敏感性。R60 的持仓期长 2 倍，止盈阈值的影响被放大——TP40 更早锁利（按笔胜率↑、收益↓），TP60 接近 no-stop。假设最优 TP 在 R60 上会比 R30 的 TP45 更高。"
+ },
+ {
+  "id": "b007_G1_N4_R60_TP60_exp90",
+  "group": "G1_R_axis",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 60,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.6,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N4 / R60 / TP60 / 敞口 90%：R60 下的止盈敏感性。R60 的持仓期长 2 倍，止盈阈值的影响被放大——TP40 更早锁利（按笔胜率↑、收益↓），TP60 接近 no-stop。假设最优 TP 在 R60 上会比 R30 的 TP45 更高。"
+ },
+ {
+  "id": "b007_G1_N4_R60_TP60_exp100",
+  "group": "G1_R_axis",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 60,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.6,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 1.0,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N4 / R60 / TP60 / 敞口 100%：R60 下的止盈敏感性。R60 的持仓期长 2 倍，止盈阈值的影响被放大——TP40 更早锁利（按笔胜率↑、收益↓），TP60 接近 no-stop。假设最优 TP 在 R60 上会比 R30 的 TP45 更高。"
+ },
+ {
+  "id": "b007_G1_N4_R20_TP50_exp90",
+  "group": "G1_R_axis",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 20,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N4 / R20 / TP50 / 敞口 90%：R 轴的下端。R20 段数 ~9-10，统计功效比 R60 好，但换手费用高。用来确认「R 越长越省费用但段数越少」的权衡。"
+ },
+ {
+  "id": "b007_G1_N4_R20_TP50_exp100",
+  "group": "G1_R_axis",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 20,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 1.0,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N4 / R20 / TP50 / 敞口 100%：R 轴的下端。R20 段数 ~9-10，统计功效比 R60 好，但换手费用高。用来确认「R 越长越省费用但段数越少」的权衡。"
+ },
+ {
+  "id": "b007_G1_N4_R30_TP45_exp90",
+  "group": "G1_R_axis",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.45,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N4 / R30 / TP45 / 敞口 90%：**同批控制组**（batch_006 的冠军组合重跑），用于把 R 轴的每一格与同批次口径对齐。期望 +102.1/−11.4（exp1.0）与 +91.2/−9.6（exp0.9）。"
+ },
+ {
+  "id": "b007_G1_N4_R30_TP45_exp100",
+  "group": "G1_R_axis",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.45,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 1.0,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N4 / R30 / TP45 / 敞口 100%：**同批控制组**（batch_006 的冠军组合重跑），用于把 R 轴的每一格与同批次口径对齐。期望 +102.1/−11.4（exp1.0）与 +91.2/−9.6（exp0.9）。"
+ },
+ {
+  "id": "b007_G2_low_vol_N5_R60_exp90",
+  "group": "G2_other_selectors",
+  "selector": {
+   "type": "low_vol",
+   "n": 5,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 60,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "低波(vol20) / N5 / R60 / TP50 / 敞口 90%。段收益方差小 → 月胜率高、回撤浅；Round 1 实测 2026 收益极低（N5 −19%），但帕累托不卡收益门槛，只看它是否落在低回撤端。**这是本族的「收益端」取样点**（N5 比 N10 更集中）。"
+ },
+ {
+  "id": "b007_G2_low_vol_N10_R60_exp60",
+  "group": "G2_other_selectors",
+  "selector": {
+   "type": "low_vol",
+   "n": 10,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 60,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.6,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "低波(vol20) / N10 / R60 / TP50 / 敞口 60%。段收益方差小 → 月胜率高、回撤浅；Round 1 实测 2026 收益极低（N5 −19%），但帕累托不卡收益门槛，只看它是否落在低回撤端。**这是本族的「稳健端」取样点**（N10 + 低敞口）。两格一起，用来判断该族是落在帕累托的低回撤端（有价值）还是被 N4 全面支配（无价值）。"
+ },
+ {
+  "id": "b007_G2_vol60_N5_R60_exp90",
+  "group": "G2_other_selectors",
+  "selector": {
+   "type": "vol60",
+   "n": 5,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 60,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "低波(vol60) / N5 / R60 / TP50 / 敞口 90%。更平滑的低波定义，换手更低。**这是本族的「收益端」取样点**（N5 比 N10 更集中）。"
+ },
+ {
+  "id": "b007_G2_vol60_N10_R60_exp60",
+  "group": "G2_other_selectors",
+  "selector": {
+   "type": "vol60",
+   "n": 10,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 60,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.6,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "低波(vol60) / N10 / R60 / TP50 / 敞口 60%。更平滑的低波定义，换手更低。**这是本族的「稳健端」取样点**（N10 + 低敞口）。两格一起，用来判断该族是落在帕累托的低回撤端（有价值）还是被 N4 全面支配（无价值）。"
+ },
+ {
+  "id": "b007_G2_rev20_N5_R60_exp90",
+  "group": "G2_other_selectors",
+  "selector": {
+   "type": "rev20",
+   "n": 5,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 60,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "20日反转 / N5 / R60 / TP50 / 敞口 90%。唯一在 2026 仍为正的替代族（预跑 N5 +7%），与 amihud 相关性低。**这是本族的「收益端」取样点**（N5 比 N10 更集中）。"
+ },
+ {
+  "id": "b007_G2_rev20_N10_R60_exp60",
+  "group": "G2_other_selectors",
+  "selector": {
+   "type": "rev20",
+   "n": 10,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 60,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.6,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "20日反转 / N10 / R60 / TP50 / 敞口 60%。唯一在 2026 仍为正的替代族（预跑 N5 +7%），与 amihud 相关性低。**这是本族的「稳健端」取样点**（N10 + 低敞口）。两格一起，用来判断该族是落在帕累托的低回撤端（有价值）还是被 N4 全面支配（无价值）。"
+ },
+ {
+  "id": "b007_G2_rev5_N5_R60_exp90",
+  "group": "G2_other_selectors",
+  "selector": {
+   "type": "rev5",
+   "n": 5,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 60,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "5日反转 / N5 / R60 / TP50 / 敞口 90%。短反转，信号衰减快，适合 R60 这种长持有？未必——假设它更适合短 R。**这是本族的「收益端」取样点**（N5 比 N10 更集中）。"
+ },
+ {
+  "id": "b007_G2_rev5_N10_R60_exp60",
+  "group": "G2_other_selectors",
+  "selector": {
+   "type": "rev5",
+   "n": 10,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 60,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.6,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "5日反转 / N10 / R60 / TP50 / 敞口 60%。短反转，信号衰减快，适合 R60 这种长持有？未必——假设它更适合短 R。**这是本族的「稳健端」取样点**（N10 + 低敞口）。两格一起，用来判断该族是落在帕累托的低回撤端（有价值）还是被 N4 全面支配（无价值）。"
+ },
+ {
+  "id": "b007_G2_turnover_N5_R60_exp90",
+  "group": "G2_other_selectors",
+  "selector": {
+   "type": "turnover",
+   "n": 5,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 60,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "低换手 / N5 / R60 / TP50 / 敞口 90%。与 amihud 同源（冷门股），但构造不同；假设比 amihud 更稳、更慢。**这是本族的「收益端」取样点**（N5 比 N10 更集中）。"
+ },
+ {
+  "id": "b007_G2_turnover_N10_R60_exp60",
+  "group": "G2_other_selectors",
+  "selector": {
+   "type": "turnover",
+   "n": 10,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 60,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.6,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "低换手 / N10 / R60 / TP50 / 敞口 60%。与 amihud 同源（冷门股），但构造不同；假设比 amihud 更稳、更慢。**这是本族的「稳健端」取样点**（N10 + 低敞口）。两格一起，用来判断该族是落在帕累托的低回撤端（有价值）还是被 N4 全面支配（无价值）。"
+ },
+ {
+  "id": "b007_G2_size_N5_R60_exp90",
+  "group": "G2_other_selectors",
+  "selector": {
+   "type": "size",
+   "n": 5,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 60,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "纯小市值 / N5 / R60 / TP50 / 敞口 90%。Amihud 的收益有多少只是小市值？分解实验。**这是本族的「收益端」取样点**（N5 比 N10 更集中）。"
+ },
+ {
+  "id": "b007_G2_size_N10_R60_exp60",
+  "group": "G2_other_selectors",
+  "selector": {
+   "type": "size",
+   "n": 10,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 60,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.6,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "纯小市值 / N10 / R60 / TP50 / 敞口 60%。Amihud 的收益有多少只是小市值？分解实验。**这是本族的「稳健端」取样点**（N10 + 低敞口）。两格一起，用来判断该族是落在帕累托的低回撤端（有价值）还是被 N4 全面支配（无价值）。"
+ },
+ {
+  "id": "b007_G2_amount_level_N5_R60_exp90",
+  "group": "G2_other_selectors",
+  "selector": {
+   "type": "amount_level",
+   "n": 5,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 60,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "低成交额 / N5 / R60 / TP50 / 敞口 90%。与 amihud 同源的另一种构造，稳健性检验。**这是本族的「收益端」取样点**（N5 比 N10 更集中）。"
+ },
+ {
+  "id": "b007_G2_amount_level_N10_R60_exp60",
+  "group": "G2_other_selectors",
+  "selector": {
+   "type": "amount_level",
+   "n": 10,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 60,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.6,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "低成交额 / N10 / R60 / TP50 / 敞口 60%。与 amihud 同源的另一种构造，稳健性检验。**这是本族的「稳健端」取样点**（N10 + 低敞口）。两格一起，用来判断该族是落在帕累托的低回撤端（有价值）还是被 N4 全面支配（无价值）。"
+ },
+ {
+  "id": "b007_G2_liq_rev_N5_R60_exp90",
+  "group": "G2_other_selectors",
+  "selector": {
+   "type": "liq_rev",
+   "n": 5,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 60,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "流动+反转 / N5 / R60 / TP50 / 敞口 90%。复合稀释 alpha，但反转提供独立性。**这是本族的「收益端」取样点**（N5 比 N10 更集中）。"
+ },
+ {
+  "id": "b007_G2_liq_rev_N10_R60_exp60",
+  "group": "G2_other_selectors",
+  "selector": {
+   "type": "liq_rev",
+   "n": 10,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 60,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.6,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "流动+反转 / N10 / R60 / TP50 / 敞口 60%。复合稀释 alpha，但反转提供独立性。**这是本族的「稳健端」取样点**（N10 + 低敞口）。两格一起，用来判断该族是落在帕累托的低回撤端（有价值）还是被 N4 全面支配（无价值）。"
+ },
+ {
+  "id": "b007_G2_liq_size_N5_R60_exp90",
+  "group": "G2_other_selectors",
+  "selector": {
+   "type": "liq_size",
+   "n": 5,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 60,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "流动+小市值 / N5 / R60 / TP50 / 敞口 90%。与 amihud 相关性最高，换构造不换逻辑。**这是本族的「收益端」取样点**（N5 比 N10 更集中）。"
+ },
+ {
+  "id": "b007_G2_liq_size_N10_R60_exp60",
+  "group": "G2_other_selectors",
+  "selector": {
+   "type": "liq_size",
+   "n": 10,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 60,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.6,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "流动+小市值 / N10 / R60 / TP50 / 敞口 60%。与 amihud 相关性最高，换构造不换逻辑。**这是本族的「稳健端」取样点**（N10 + 低敞口）。两格一起，用来判断该族是落在帕累托的低回撤端（有价值）还是被 N4 全面支配（无价值）。"
+ },
+ {
+  "id": "b007_G2_quad_N5_R60_exp90",
+  "group": "G2_other_selectors",
+  "selector": {
+   "type": "quad",
+   "n": 5,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 60,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "四因子 / N5 / R60 / TP50 / 敞口 90%。最分散的复合，假设胜率高但收益低。**这是本族的「收益端」取样点**（N5 比 N10 更集中）。"
+ },
+ {
+  "id": "b007_G2_quad_N10_R60_exp60",
+  "group": "G2_other_selectors",
+  "selector": {
+   "type": "quad",
+   "n": 10,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 60,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.6,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "四因子 / N10 / R60 / TP50 / 敞口 60%。最分散的复合，假设胜率高但收益低。**这是本族的「稳健端」取样点**（N10 + 低敞口）。两格一起，用来判断该族是落在帕累托的低回撤端（有价值）还是被 N4 全面支配（无价值）。"
+ },
+ {
+  "id": "b007_G2_triple_N5_R60_exp90",
+  "group": "G2_other_selectors",
+  "selector": {
+   "type": "triple",
+   "n": 5,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 60,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "三因子 / N5 / R60 / TP50 / 敞口 90%。流动+60日反转+低波。**这是本族的「收益端」取样点**（N5 比 N10 更集中）。"
+ },
+ {
+  "id": "b007_G2_triple_N10_R60_exp60",
+  "group": "G2_other_selectors",
+  "selector": {
+   "type": "triple",
+   "n": 10,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 60,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.6,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "三因子 / N10 / R60 / TP50 / 敞口 60%。流动+60日反转+低波。**这是本族的「稳健端」取样点**（N10 + 低敞口）。两格一起，用来判断该族是落在帕累托的低回撤端（有价值）还是被 N4 全面支配（无价值）。"
+ },
+ {
+  "id": "b007_G2_amihud60_neutral_N5_R60_exp90",
+  "group": "G2_other_selectors",
+  "selector": {
+   "type": "amihud60_neutral",
+   "n": 5,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 60,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "行业中性 amihud_60 / N5 / R60 / TP50 / 敞口 90%。切掉板块尾部，用收益换回撤。**这是本族的「收益端」取样点**（N5 比 N10 更集中）。"
+ },
+ {
+  "id": "b007_G2_amihud60_neutral_N10_R60_exp60",
+  "group": "G2_other_selectors",
+  "selector": {
+   "type": "amihud60_neutral",
+   "n": 10,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 60,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.6,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "行业中性 amihud_60 / N10 / R60 / TP50 / 敞口 60%。切掉板块尾部，用收益换回撤。**这是本族的「稳健端」取样点**（N10 + 低敞口）。两格一起，用来判断该族是落在帕累托的低回撤端（有价值）还是被 N4 全面支配（无价值）。"
+ },
+ {
+  "id": "b007_G3_value_ep_N10_R60_exp90",
+  "group": "G3_value",
+  "selector": {
+   "type": "value_ep",
+   "n": 10,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {
+    "data": "value_em",
+    "winsor": "cross_section_p1_p99"
+   }
+  },
+  "rebalance_days": 60,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "EP（盈利收益率 = 1/PE） / N10 / R60 / TP50 / 敞口 90%（**需 harness 接 `data/value_em.pkl`**）。我已实测：价值组合与 amihud 名单重叠仅 0.07/6（Jaccard 0.01），但**低 PB 组合 2026 亏 −6.8%**，且「剔最贵 1/3」会让 amihud 从 +93.5% 掉到 +35.3% → **2026 价值方向与 alpha 相反**。本组只作「低相关/低回撤对照」，**不指望它赚钱**；若它的 mdd 明显更低，可作为防守 sleeve 的候选。"
+ },
+ {
+  "id": "b007_G3_value_ep_N20_R60_exp60",
+  "group": "G3_value",
+  "selector": {
+   "type": "value_ep",
+   "n": 20,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {
+    "data": "value_em",
+    "winsor": "cross_section_p1_p99"
+   }
+  },
+  "rebalance_days": 60,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.6,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "EP（盈利收益率 = 1/PE） / N20 / R60 / TP50 / 敞口 60%（**需 harness 接 `data/value_em.pkl`**）。我已实测：价值组合与 amihud 名单重叠仅 0.07/6（Jaccard 0.01），但**低 PB 组合 2026 亏 −6.8%**，且「剔最贵 1/3」会让 amihud 从 +93.5% 掉到 +35.3% → **2026 价值方向与 alpha 相反**。本组只作「低相关/低回撤对照」，**不指望它赚钱**；若它的 mdd 明显更低，可作为防守 sleeve 的候选。"
+ },
+ {
+  "id": "b007_G3_value_bp_N10_R60_exp90",
+  "group": "G3_value",
+  "selector": {
+   "type": "value_bp",
+   "n": 10,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {
+    "data": "value_em",
+    "winsor": "cross_section_p1_p99"
+   }
+  },
+  "rebalance_days": 60,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "BP（账面市值比 = 1/PB） / N10 / R60 / TP50 / 敞口 90%（**需 harness 接 `data/value_em.pkl`**）。我已实测：价值组合与 amihud 名单重叠仅 0.07/6（Jaccard 0.01），但**低 PB 组合 2026 亏 −6.8%**，且「剔最贵 1/3」会让 amihud 从 +93.5% 掉到 +35.3% → **2026 价值方向与 alpha 相反**。本组只作「低相关/低回撤对照」，**不指望它赚钱**；若它的 mdd 明显更低，可作为防守 sleeve 的候选。"
+ },
+ {
+  "id": "b007_G3_value_bp_N20_R60_exp60",
+  "group": "G3_value",
+  "selector": {
+   "type": "value_bp",
+   "n": 20,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {
+    "data": "value_em",
+    "winsor": "cross_section_p1_p99"
+   }
+  },
+  "rebalance_days": 60,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.6,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "BP（账面市值比 = 1/PB） / N20 / R60 / TP50 / 敞口 60%（**需 harness 接 `data/value_em.pkl`**）。我已实测：价值组合与 amihud 名单重叠仅 0.07/6（Jaccard 0.01），但**低 PB 组合 2026 亏 −6.8%**，且「剔最贵 1/3」会让 amihud 从 +93.5% 掉到 +35.3% → **2026 价值方向与 alpha 相反**。本组只作「低相关/低回撤对照」，**不指望它赚钱**；若它的 mdd 明显更低，可作为防守 sleeve 的候选。"
+ },
+ {
+  "id": "b007_G3_value_sp_N10_R60_exp90",
+  "group": "G3_value",
+  "selector": {
+   "type": "value_sp",
+   "n": 10,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {
+    "data": "value_em",
+    "winsor": "cross_section_p1_p99"
+   }
+  },
+  "rebalance_days": 60,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "SP（营收市值比 = 1/PS） / N10 / R60 / TP50 / 敞口 90%（**需 harness 接 `data/value_em.pkl`**）。我已实测：价值组合与 amihud 名单重叠仅 0.07/6（Jaccard 0.01），但**低 PB 组合 2026 亏 −6.8%**，且「剔最贵 1/3」会让 amihud 从 +93.5% 掉到 +35.3% → **2026 价值方向与 alpha 相反**。本组只作「低相关/低回撤对照」，**不指望它赚钱**；若它的 mdd 明显更低，可作为防守 sleeve 的候选。"
+ },
+ {
+  "id": "b007_G3_value_sp_N20_R60_exp60",
+  "group": "G3_value",
+  "selector": {
+   "type": "value_sp",
+   "n": 20,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {
+    "data": "value_em",
+    "winsor": "cross_section_p1_p99"
+   }
+  },
+  "rebalance_days": 60,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.6,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "SP（营收市值比 = 1/PS） / N20 / R60 / TP50 / 敞口 60%（**需 harness 接 `data/value_em.pkl`**）。我已实测：价值组合与 amihud 名单重叠仅 0.07/6（Jaccard 0.01），但**低 PB 组合 2026 亏 −6.8%**，且「剔最贵 1/3」会让 amihud 从 +93.5% 掉到 +35.3% → **2026 价值方向与 alpha 相反**。本组只作「低相关/低回撤对照」，**不指望它赚钱**；若它的 mdd 明显更低，可作为防守 sleeve 的候选。"
+ },
+ {
+  "id": "b007_G4_etf_510300_MA20",
+  "group": "G4_etf_rotation",
+  "selector": {
+   "type": "etf_ma",
+   "n": 1,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {
+    "code": "510300",
+    "ma": 20,
+    "asset": "etf"
+   }
+  },
+  "rebalance_days": 5,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 1.0,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "沪深300ETF(510300) / 收盘 > MA20 则持有 ETF，否则空仓停现金；R=5（周频复核）。假设：2026 指数全年下跌（中证1000 −14%），MA 趋势策略应长期空仓 → 收益接近 0、回撤很小。在帕累托图上它会落在「左下角」（低收益低回撤）。**数据限制（必须写进结论）**：`data/minute_etf/` 只有 5 分钟线（159915/510300/510500），日线需从 5 分钟聚合；159915 仅 471 天、510300/510500 更短 → **没有 2024 预热、没有 OOS**，结果只能标「仅探索」。",
+  "universe": "etf"
+ },
+ {
+  "id": "b007_G4_etf_510300_MA60",
+  "group": "G4_etf_rotation",
+  "selector": {
+   "type": "etf_ma",
+   "n": 1,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {
+    "code": "510300",
+    "ma": 60,
+    "asset": "etf"
+   }
+  },
+  "rebalance_days": 5,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 1.0,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "沪深300ETF(510300) / 收盘 > MA60 则持有 ETF，否则空仓停现金；R=5（周频复核）。假设：2026 指数全年下跌（中证1000 −14%），MA 趋势策略应长期空仓 → 收益接近 0、回撤很小。在帕累托图上它会落在「左下角」（低收益低回撤）。**数据限制（必须写进结论）**：`data/minute_etf/` 只有 5 分钟线（159915/510300/510500），日线需从 5 分钟聚合；159915 仅 471 天、510300/510500 更短 → **没有 2024 预热、没有 OOS**，结果只能标「仅探索」。",
+  "universe": "etf"
+ },
+ {
+  "id": "b007_G4_etf_510500_MA20",
+  "group": "G4_etf_rotation",
+  "selector": {
+   "type": "etf_ma",
+   "n": 1,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {
+    "code": "510500",
+    "ma": 20,
+    "asset": "etf"
+   }
+  },
+  "rebalance_days": 5,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 1.0,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "中证500ETF(510500) / 收盘 > MA20 则持有 ETF，否则空仓停现金；R=5（周频复核）。假设：2026 指数全年下跌（中证1000 −14%），MA 趋势策略应长期空仓 → 收益接近 0、回撤很小。在帕累托图上它会落在「左下角」（低收益低回撤）。**数据限制（必须写进结论）**：`data/minute_etf/` 只有 5 分钟线（159915/510300/510500），日线需从 5 分钟聚合；159915 仅 471 天、510300/510500 更短 → **没有 2024 预热、没有 OOS**，结果只能标「仅探索」。",
+  "universe": "etf"
+ },
+ {
+  "id": "b007_G4_etf_510500_MA60",
+  "group": "G4_etf_rotation",
+  "selector": {
+   "type": "etf_ma",
+   "n": 1,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {
+    "code": "510500",
+    "ma": 60,
+    "asset": "etf"
+   }
+  },
+  "rebalance_days": 5,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 1.0,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "中证500ETF(510500) / 收盘 > MA60 则持有 ETF，否则空仓停现金；R=5（周频复核）。假设：2026 指数全年下跌（中证1000 −14%），MA 趋势策略应长期空仓 → 收益接近 0、回撤很小。在帕累托图上它会落在「左下角」（低收益低回撤）。**数据限制（必须写进结论）**：`data/minute_etf/` 只有 5 分钟线（159915/510300/510500），日线需从 5 分钟聚合；159915 仅 471 天、510300/510500 更短 → **没有 2024 预热、没有 OOS**，结果只能标「仅探索」。",
+  "universe": "etf"
+ },
+ {
+  "id": "b007_G4_etf_159915_MA20",
+  "group": "G4_etf_rotation",
+  "selector": {
+   "type": "etf_ma",
+   "n": 1,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {
+    "code": "159915",
+    "ma": 20,
+    "asset": "etf"
+   }
+  },
+  "rebalance_days": 5,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 1.0,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "创业板ETF(159915) / 收盘 > MA20 则持有 ETF，否则空仓停现金；R=5（周频复核）。假设：2026 指数全年下跌（中证1000 −14%），MA 趋势策略应长期空仓 → 收益接近 0、回撤很小。在帕累托图上它会落在「左下角」（低收益低回撤）。**数据限制（必须写进结论）**：`data/minute_etf/` 只有 5 分钟线（159915/510300/510500），日线需从 5 分钟聚合；159915 仅 471 天、510300/510500 更短 → **没有 2024 预热、没有 OOS**，结果只能标「仅探索」。",
+  "universe": "etf"
+ },
+ {
+  "id": "b007_G4_etf_159915_MA60",
+  "group": "G4_etf_rotation",
+  "selector": {
+   "type": "etf_ma",
+   "n": 1,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {
+    "code": "159915",
+    "ma": 60,
+    "asset": "etf"
+   }
+  },
+  "rebalance_days": 5,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 1.0,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "创业板ETF(159915) / 收盘 > MA60 则持有 ETF，否则空仓停现金；R=5（周频复核）。假设：2026 指数全年下跌（中证1000 −14%），MA 趋势策略应长期空仓 → 收益接近 0、回撤很小。在帕累托图上它会落在「左下角」（低收益低回撤）。**数据限制（必须写进结论）**：`data/minute_etf/` 只有 5 分钟线（159915/510300/510500），日线需从 5 分钟聚合；159915 仅 471 天、510300/510500 更短 → **没有 2024 预热、没有 OOS**，结果只能标「仅探索」。",
+  "universe": "etf"
+ },
+ {
+  "id": "b007_G4_etf_510300_mom60",
+  "group": "G4_etf_rotation",
+  "selector": {
+   "type": "etf_mom",
+   "n": 1,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {
+    "code": "510300",
+    "lookback": 60
+   }
+  },
+  "rebalance_days": 20,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 1.0,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "沪深300ETF / 60 日动量 > 0 则持有，否则空仓停现金；R=20（月度复核）。与 MA60 对照，看「动量」与「均线」哪个更抗噪。**数据限制（必须写进结论）**：`data/minute_etf/` 只有 5 分钟线（159915/510300/510500），日线需从 5 分钟聚合；159915 仅 471 天、510300/510500 更短 → **没有 2024 预热、没有 OOS**，结果只能标「仅探索」。",
+  "universe": "etf"
+ },
+ {
+  "id": "b007_G4_etf_510500_mom60",
+  "group": "G4_etf_rotation",
+  "selector": {
+   "type": "etf_mom",
+   "n": 1,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {
+    "code": "510500",
+    "lookback": 60
+   }
+  },
+  "rebalance_days": 20,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 1.0,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "中证500ETF / 60 日动量 > 0 则持有，否则空仓停现金；R=20。中证500 在 2026 −11.3%，动量信号大概率长期空仓。**数据限制（必须写进结论）**：`data/minute_etf/` 只有 5 分钟线（159915/510300/510500），日线需从 5 分钟聚合；159915 仅 471 天、510300/510500 更短 → **没有 2024 预热、没有 OOS**，结果只能标「仅探索」。",
+  "universe": "etf"
+ },
+ {
+  "id": "b007_G4_etf_510300_MA20_bond",
+  "group": "G4_etf_rotation",
+  "selector": {
+   "type": "etf_ma",
+   "n": 1,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {
+    "code": "510300",
+    "ma": 20
+   }
+  },
+  "rebalance_days": 5,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "511880"
+  },
+  "portfolio": {
+   "exposure": 1.0,
+   "cash_asset": "511880",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "沪深300ETF / MA20 + 空仓停 511880：把空仓期收益从 0 换成货基（年化 ~3%），量化「空仓不白躺」的贡献。**数据限制（必须写进结论）**：`data/minute_etf/` 只有 5 分钟线（159915/510300/510500），日线需从 5 分钟聚合；159915 仅 471 天、510300/510500 更短 → **没有 2024 预热、没有 OOS**，结果只能标「仅探索」。",
+  "universe": "etf"
+ },
+ {
+  "id": "b007_G4_etf_159915_MA20_bond",
+  "group": "G4_etf_rotation",
+  "selector": {
+   "type": "etf_ma",
+   "n": 1,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {
+    "code": "159915",
+    "ma": 20
+   }
+  },
+  "rebalance_days": 5,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "511880"
+  },
+  "portfolio": {
+   "exposure": 1.0,
+   "cash_asset": "511880",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "创业板ETF / MA20 + 空仓停 511880：159915 是三个 ETF 里波动最大、数据最长（471 天）的一个。**数据限制（必须写进结论）**：`data/minute_etf/` 只有 5 分钟线（159915/510300/510500），日线需从 5 分钟聚合；159915 仅 471 天、510300/510500 更短 → **没有 2024 预热、没有 OOS**，结果只能标「仅探索」。",
+  "universe": "etf"
+ },
+ {
+  "id": "b007_G5_ind_mom_top3_R20",
+  "group": "G5_industry_event",
+  "selector": {
+   "type": "industry_momentum",
+   "n": 3,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {
+    "top_k": 3,
+    "lookback": 20,
+    "map": "industry_map"
+   }
+  },
+  "rebalance_days": 20,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "行业动量 top3（industry_map 的 120 个 industry_group，20 日涨幅排序，等权持有组内按 amihud_60 前 3 只），R=20。**industry_map 是静态快照（非 PIT）**，行业分类变更会造成前视；且 120 组里只有 ~50 组有足够票。假设：2026 行业轮动剧烈（7 月 −19.7%、10 月 −15.6%），动量大概率在拐点被反复打脸。"
+ },
+ {
+  "id": "b007_G5_ind_mom_top3_R60",
+  "group": "G5_industry_event",
+  "selector": {
+   "type": "industry_momentum",
+   "n": 3,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {
+    "top_k": 3,
+    "lookback": 60,
+    "map": "industry_map"
+   }
+  },
+  "rebalance_days": 60,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "行业动量 top3 / R=60：与 R20 那份成对，把持有期拉长 3 倍以压低换手。**industry_map 是静态快照（非 PIT）**，且 120 个 industry_group 里只有约 50 组有足够票可选；假设：R60 在行业轮动上更可能「买在高点、卖在低点」，预期劣于 R20。"
+ },
+ {
+  "id": "b007_G5_amount_spike_R5",
+  "group": "G5_industry_event",
+  "selector": {
+   "type": "amount_spike",
+   "n": 5,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {
+    "mult": 3.0
+   }
+  },
+  "rebalance_days": 5,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "成交额突增事件（当日 amount > 20 日均量 ×3）后买入，持有 R=5 天：追「资金进场」。假设 2026 小微盘的放量常是短期见顶信号（README：量比因子为负向），故预期为负。"
+ },
+ {
+  "id": "b007_G5_amount_spike_R10",
+  "group": "G5_industry_event",
+  "selector": {
+   "type": "amount_spike",
+   "n": 5,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {
+    "mult": 3.0
+   }
+  },
+  "rebalance_days": 10,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "成交额突增事件（当日 amount > 20日均量×3）后买入 / R=10：与 R5 那份成对，持有期翻倍以观察是否反转。假设：若 R5 为负而 R10 转正，说明放量是「短期噪音」而非「见顶」；若两者都负，则该事件族关闭。"
+ },
+ {
+  "id": "b007_G5_gap_down_R5",
+  "group": "G5_industry_event",
+  "selector": {
+   "type": "gap_event",
+   "n": 5,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {
+    "thresh": -0.03,
+    "direction": "down"
+   }
+  },
+  "rebalance_days": 5,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "向下跳空事件（open/prev_close − 1 < −3%）后买入 R=5：测「恐慌缺口回补」。假设：小微盘缺口回补概率约 50%，扣掉 1% 双边成本后基本无效。"
+ },
+ {
+  "id": "b007_G5_breakout20_R10",
+  "group": "G5_industry_event",
+  "selector": {
+   "type": "breakout_event",
+   "n": 5,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {
+    "lookback": 20
+   }
+  },
+  "rebalance_days": 10,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "20 日新高突破（close >= 20 日最高 ×0.99）后买入 R=10：经典动量。README 已证伪动量（IC 显著为负），此处是用事件式定义再验一次。"
+ },
+ {
+  "id": "b007_G6_ens_N4R30_N4R60_70_30",
+  "group": "G6_ensemble",
+  "selector": {
+   "type": "ensemble",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 1.0,
+   "cash_asset": "cash",
+   "fresh_start": true,
+   "ensemble": [
+    {
+     "leg": {
+      "selector": "amihud_60",
+      "n": 4,
+      "R": 30,
+      "tp": 0.45
+     },
+     "weight": 0.7
+    },
+    {
+     "leg": {
+      "selector": "amihud_60",
+      "n": 4,
+      "R": 60,
+      "tp": 0.5
+     },
+     "weight": 0.3
+    }
+   ]
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N4R30(TP45) + N4R60(TP50) 70/30 合成：两个 R 的相位不同 → 可能同时抬月胜率与降回撤。假设：R60 的 wp 100% 与 R30 的 +102% 收益互补，70/30 后 total ≈ 0.7×102 + 0.3×61 ≈ 90%，mdd 取中间。**合成口径**：各 leg 按权重拆分资本（不是各用全资本！sleeve 的 bug 就是这条），每 leg 独立 100 股整手与现实费率，合成净值 = Σ wᵢ × NAVᵢ / Σ wᵢ，段胜率用合成净值按 R 算。"
+ },
+ {
+  "id": "b007_G6_ens_N4R30_N4R60_50_50",
+  "group": "G6_ensemble",
+  "selector": {
+   "type": "ensemble",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 1.0,
+   "cash_asset": "cash",
+   "fresh_start": true,
+   "ensemble": [
+    {
+     "leg": {
+      "selector": "amihud_60",
+      "n": 4,
+      "R": 30,
+      "tp": 0.45
+     },
+     "weight": 0.5
+    },
+    {
+     "leg": {
+      "selector": "amihud_60",
+      "n": 4,
+      "R": 60,
+      "tp": 0.5
+     },
+     "weight": 0.5
+    }
+   ]
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N4R30(TP45) + N4R60(TP50) 50/50 合成：更均衡的两相位组合。**合成口径**：各 leg 按权重拆分资本（不是各用全资本！sleeve 的 bug 就是这条），每 leg 独立 100 股整手与现实费率，合成净值 = Σ wᵢ × NAVᵢ / Σ wᵢ，段胜率用合成净值按 R 算。"
+ },
+ {
+  "id": "b007_G6_ens_N4R30_bond_70_30",
+  "group": "G6_ensemble",
+  "selector": {
+   "type": "ensemble",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 1.0,
+   "cash_asset": "cash",
+   "fresh_start": true,
+   "ensemble": [
+    {
+     "leg": {
+      "selector": "amihud_60",
+      "n": 4,
+      "R": 30,
+      "tp": 0.45
+     },
+     "weight": 0.7
+    },
+    {
+     "leg": {
+      "selector": "bond_511880",
+      "weight": 0.3
+     }
+    }
+   ]
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N4R30(TP45) 70% + 511880 债券 30%：**纯降杠杆对照**（等价于 exposure 0.7 但现金有 ~3% 年化）。假设：它的 total 应与 N4 TP45 exp0.7 几乎相同（+62.8% 量级），用于验证 ensemble 实现是否正确。**合成口径**：各 leg 按权重拆分资本（不是各用全资本！sleeve 的 bug 就是这条），每 leg 独立 100 股整手与现实费率，合成净值 = Σ wᵢ × NAVᵢ / Σ wᵢ，段胜率用合成净值按 R 算。"
+ },
+ {
+  "id": "b007_G6_ens_N4R30_bond_50_50",
+  "group": "G6_ensemble",
+  "selector": {
+   "type": "ensemble",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 1.0,
+   "cash_asset": "cash",
+   "fresh_start": true,
+   "ensemble": [
+    {
+     "leg": {
+      "selector": "amihud_60",
+      "n": 4,
+      "R": 30,
+      "tp": 0.45
+     },
+     "weight": 0.5
+    },
+    {
+     "leg": {
+      "selector": "bond_511880",
+      "weight": 0.5
+     }
+    }
+   ]
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N4R30(TP45) 50% + 债券 50%：半仓版，对应「稳健型」的低回撤端。**合成口径**：各 leg 按权重拆分资本（不是各用全资本！sleeve 的 bug 就是这条），每 leg 独立 100 股整手与现实费率，合成净值 = Σ wᵢ × NAVᵢ / Σ wᵢ，段胜率用合成净值按 R 算。"
+ },
+ {
+  "id": "b007_G6_ens_N4R30_lowvol_70_30",
+  "group": "G6_ensemble",
+  "selector": {
+   "type": "ensemble",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 1.0,
+   "cash_asset": "cash",
+   "fresh_start": true,
+   "ensemble": [
+    {
+     "leg": {
+      "selector": "amihud_60",
+      "n": 4,
+      "R": 30,
+      "tp": 0.45
+     },
+     "weight": 0.7
+    },
+    {
+     "leg": {
+      "selector": "low_vol",
+      "n": 10,
+      "R": 60,
+      "tp": 0.5
+     },
+     "weight": 0.3
+    }
+   ]
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N4R30(TP45) 70% + 低波 N10 30%：用**低相关腿**降回撤（低波与 amihud 相关性低）。假设：低波腿 2026 收益低（−19%~+7%），但波动小 → 组合 mdd 可能比纯降杠杆更低。**合成口径**：各 leg 按权重拆分资本（不是各用全资本！sleeve 的 bug 就是这条），每 leg 独立 100 股整手与现实费率，合成净值 = Σ wᵢ × NAVᵢ / Σ wᵢ，段胜率用合成净值按 R 算。"
+ }
+]

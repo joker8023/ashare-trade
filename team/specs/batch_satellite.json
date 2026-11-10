@@ -1,0 +1,418 @@
+[
+  {
+    "id": "sat_core_e100",
+    "group": "satellite",
+    "selector": {
+      "type": "amihud_60",
+      "n": 4,
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {}
+    },
+    "rebalance_days": 30,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.45,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next"
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "exposure": 1,
+      "cash_asset": "cash",
+      "fresh_start": true
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "方向二核心腿: amihud_60 N4/R30/TP45 主板池"
+  },
+  {
+    "id": "sat_core_e090",
+    "group": "satellite",
+    "selector": {
+      "type": "amihud_60",
+      "n": 4,
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {}
+    },
+    "rebalance_days": 30,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.45,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next"
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "exposure": 0.9,
+      "cash_asset": "cash",
+      "fresh_start": true
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "方向二核心腿: amihud_60 N4/R30/TP45 主板池"
+  },
+  {
+    "id": "sat_lowvol_N10",
+    "group": "satellite",
+    "selector": {
+      "type": "low_vol",
+      "n": 10,
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {}
+    },
+    "rebalance_days": 30,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": null,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next"
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "exposure": 1,
+      "cash_asset": "cash",
+      "fresh_start": true
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "方向二卫星候选腿 R30/none 主板池 N10"
+  },
+  {
+    "id": "sat_turnover_N10",
+    "group": "satellite",
+    "selector": {
+      "type": "turnover",
+      "n": 10,
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {}
+    },
+    "rebalance_days": 30,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": null,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next"
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "exposure": 1,
+      "cash_asset": "cash",
+      "fresh_start": true
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "方向二卫星候选腿 R30/none 主板池 N10"
+  },
+  {
+    "id": "sat_liqlowvol_N10",
+    "group": "satellite",
+    "selector": {
+      "type": "liq_lowvol",
+      "n": 10,
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {}
+    },
+    "rebalance_days": 30,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": null,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next"
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "exposure": 1,
+      "cash_asset": "cash",
+      "fresh_start": true
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "方向二卫星候选腿 R30/none 主板池 N10"
+  },
+  {
+    "id": "sat_low_vol_N20",
+    "group": "satellite",
+    "selector": {
+      "type": "low_vol",
+      "n": 20,
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {}
+    },
+    "rebalance_days": 30,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": null,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next"
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "exposure": 1,
+      "cash_asset": "cash",
+      "fresh_start": true
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "方向二卫星候选腿 R30/none 主板池 N20 (分散增强)"
+  },
+  {
+    "id": "sat_turnover_N20",
+    "group": "satellite",
+    "selector": {
+      "type": "turnover",
+      "n": 20,
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {}
+    },
+    "rebalance_days": 30,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": null,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next"
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "exposure": 1,
+      "cash_asset": "cash",
+      "fresh_start": true
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "方向二卫星候选腿 R30/none 主板池 N20 (分散增强)"
+  },
+  {
+    "id": "sat_liq_lowvol_N20",
+    "group": "satellite",
+    "selector": {
+      "type": "liq_lowvol",
+      "n": 20,
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {}
+    },
+    "rebalance_days": 30,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": null,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next"
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "exposure": 1,
+      "cash_asset": "cash",
+      "fresh_start": true
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "方向二卫星候选腿 R30/none 主板池 N20 (分散增强)"
+  }
+]

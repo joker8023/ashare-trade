@@ -1,0 +1,76 @@
+"""多策略组合：多头 + 多空"""
+import os
+os.environ.setdefault("ASHARE_PIVOTS", "pivots_long_clean.pkl")
+import pandas as pd, numpy as np
+import engine as E, strategy_lab as S, combo_lab as C
+
+p = E.piv()
+c = p["close"]
+adv20 = p["amount"].rolling(20, min_periods=10).mean()
+atre = C.get_atr(14)
+ratio = C.combo_rank("amihud+amount_level")
+liquid = (adv20 > 20_000_000) & c.notna()
+gate_all = (ratio >= 0.75) & liquid
+d0 = pd.Timestamp("2015-01-01")
+idx = c.index[c.index >= d0]
+cols = c.columns
+
+
+def cut(x):
+    return x.reindex(index=idx, columns=cols).where(gate_all.reindex(index=idx, columns=cols))
+
+
+buy = (c - 0.3 * atre).shift(1)
+sell = buy + 0.8 * atre.shift(1)
+stop = buy - 10 * atre.shift(1)
+
+eqA, trA = S.backtest(p, cut(buy), cut(sell), cut(stop), cost=0.0015,
+                      market_scale=C._market_scale(p, 15, "000905"), liquidate_on_off=True)
+rA = eqA.pct_change(fill_method=None).dropna()
+print("多头序列:", len(rA), "天", rA.index[0].date(), "~", rA.index[-1].date())
+
+seasoned = c.shift(250).notna()
+fac = E.FACTORS["amihud"](p)
+rets = []
+pl, ps = set(), set()
+for i in range(300, len(c.index) - 60 - 2, 60):
+    t = c.index[i]; t1 = c.index[i + 1]; t2 = c.index[min(i + 61, len(c.index) - 1)]
+    valid = seasoned.loc[t] & (adv20.loc[t] > 5e6) & c.loc[t].notna() & fac.loc[t].notna()
+    cap = c.loc[t] * p["shares"]
+    lo, hi = cap.quantile(0.05), cap.quantile(0.30)
+    valid &= ((cap >= lo) & (cap <= hi)).fillna(False)
+    pool = valid[valid].index
+    if len(pool) < 100:
+        continue
+    fv = fac.loc[t, pool]
+    longs = list(fv.nlargest(50).index); shorts = list(fv.nsmallest(50).index)
+    seg = c.loc[t1:t2, longs + shorts].ffill()
+    if len(seg) < 2:
+        continue
+    rel = seg.div(seg.iloc[0])
+    pr = 0.5 * rel[longs].mean(axis=1).pct_change(fill_method=None) - 0.5 * rel[shorts].mean(axis=1).pct_change(fill_method=None)
+    pr = pr.dropna()
+    to = 1.0 if not pl else (len(set(longs) - pl) / 50 + len(set(shorts) - ps) / 50) / 2
+    if len(pr):
+        pr.iloc[0] -= to * 2 * 0.0015
+    pl, ps = set(longs), set(shorts)
+    rets.append(pr)
+rB = pd.concat(rets).sort_index()
+rB = rB[~rB.index.duplicated(keep=False)]
+print("多空序列:", len(rB), "天", rB.index[0].date(), "~", rB.index[-1].date())
+
+ix = rA.index.intersection(rB.index)
+a, b = rA.loc[ix], rB.loc[ix]
+print(f"\n相关系数(多头 vs 多空): {a.corr(b):.3f}")
+print(f"\n{'w多头':>8}{'年化':>8}{'回撤':>8}{'夏普':>7}{'Calmar':>8}")
+best = None
+for w in [0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]:
+    r = w * a + (1 - w) * b
+    eq = (1 + r).cumprod(); yrs = len(r) / 252
+    ann = eq.iloc[-1] ** (1 / yrs) - 1; mdd = (eq / eq.cummax() - 1).min()
+    vol = r.std() * np.sqrt(252); sh = r.mean() * 252 / vol if vol > 0 else 0
+    cal = ann / abs(mdd) if mdd < 0 else 0
+    print(f"{w:>8.1f}{ann:>8.1%}{mdd:>8.1%}{sh:>7.2f}{cal:>8.2f}")
+    if best is None or cal > best[0]:
+        best = (cal, w, ann, mdd, sh)
+print(f"\n最优组合: 多头权重{best[1]:.1f} Calmar{best[0]:.2f} 年化{best[2]:.1%} 回撤{best[3]:.1%} 夏普{best[4]:.2f}")

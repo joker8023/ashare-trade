@@ -1,0 +1,336 @@
+[
+ {
+  "id": "b025_U1_N2_exempt_2025",
+  "group": "U_n2mdd",
+  "selector": {
+   "type": "amihud_60",
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {},
+   "n": 2,
+   "hold_exempt": {
+    "ma": 20,
+    "tol": 0.95,
+    "rank_band": 0.4
+   }
+  },
+  "rebalance_days": 7,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.45,
+   "trailing_take": null,
+   "max_hold_days": null,
+   "stop_exec": "next"
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "mode": "realistic",
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2025-01-01",
+   "eval_end": "2025-12-31"
+  },
+  "phase": 0,
+  "notes": "C2(+183%/-16.2%)+赢家豁免：豁免24年砍mdd12pp，看25年能否把-16.2%压进-13.07%线且保住超121%收益。"
+ },
+ {
+  "id": "b025_U2_N2_staged_2025",
+  "group": "U_n2mdd",
+  "selector": {
+   "type": "amihud_60",
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {},
+   "n": 2
+  },
+  "rebalance_days": 7,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.45,
+   "trailing_take": null,
+   "max_hold_days": null,
+   "stop_exec": "next",
+   "staged_take": [
+    {
+     "trigger": 0.45,
+     "fraction": 0.5
+    }
+   ]
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "mode": "realistic",
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2025-01-01",
+   "eval_end": "2025-12-31"
+  },
+  "phase": 0,
+  "notes": "C2+分批止盈(trigger0.45卖一半)：锁赢降波，看能否进线。"
+ },
+ {
+  "id": "b025_U3_N3_base_2025",
+  "group": "U_n2mdd",
+  "selector": {
+   "type": "amihud_60",
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {},
+   "n": 3
+  },
+  "rebalance_days": 7,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.45,
+   "trailing_take": null,
+   "max_hold_days": null,
+   "stop_exec": "next"
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "mode": "realistic",
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2025-01-01",
+   "eval_end": "2025-12-31"
+  },
+  "phase": 0,
+  "notes": "真N3未探区：N2与N4之间，集中-分散折中。"
+ },
+ {
+  "id": "b025_U4_N2_exempt_2024",
+  "group": "U_n2mdd",
+  "selector": {
+   "type": "amihud_60",
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {},
+   "n": 2,
+   "hold_exempt": {
+    "ma": 20,
+    "tol": 0.95,
+    "rank_band": 0.4
+   }
+  },
+  "rebalance_days": 7,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.45,
+   "trailing_take": null,
+   "max_hold_days": null,
+   "stop_exec": "next"
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "mode": "realistic",
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2022-01-01",
+   "eval_start": "2024-01-01",
+   "eval_end": "2024-12-31"
+  },
+  "phase": 0,
+  "notes": "Y4(+42.7%/-37.6%)+豁免：24年豁免砍mdd12pp(Y3证据)，看能否把-37.6%压进-44.77%线内且保住超11.75%。"
+ },
+ {
+  "id": "b025_U5_N3_base_2024",
+  "group": "U_n2mdd",
+  "selector": {
+   "type": "amihud_60",
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {},
+   "n": 3
+  },
+  "rebalance_days": 7,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.45,
+   "trailing_take": null,
+   "max_hold_days": null,
+   "stop_exec": "next"
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "mode": "realistic",
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2022-01-01",
+   "eval_start": "2024-01-01",
+   "eval_end": "2024-12-31"
+  },
+  "phase": 0,
+  "notes": "真N3-2024。"
+ },
+ {
+  "id": "b025_U6_N2_staged_2024",
+  "group": "U_n2mdd",
+  "selector": {
+   "type": "amihud_60",
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {},
+   "n": 2
+  },
+  "rebalance_days": 7,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.45,
+   "trailing_take": null,
+   "max_hold_days": null,
+   "stop_exec": "next",
+   "staged_take": [
+    {
+     "trigger": 0.45,
+     "fraction": 0.5
+    }
+   ]
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "mode": "realistic",
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2022-01-01",
+   "eval_start": "2024-01-01",
+   "eval_end": "2024-12-31"
+  },
+  "phase": 0,
+  "notes": "Y4+分批止盈-2024。"
+ }
+]

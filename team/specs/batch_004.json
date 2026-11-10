@@ -1,0 +1,1024 @@
+[
+ {
+  "id": "b004_A_N5_TP50_exp90_pm10",
+  "group": "A_phase_complete",
+  "selector": {
+   "type": "amihud_60",
+   "n": 5,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N5/TP50/0.90 相位 -10：补齐 5 相位表（已知 p0 +70.0/-11.8/83%、pm5 +80.6/-13.7/83%）。这是「phase_pass_count ≥3/5」判定所需的最后一格。若 +5 仍 67%、+10 仍 <55%，则该配置的相位通过数定格在 3/5，不能称「稳健 Tier A」。",
+  "rebalance_offset_days": -10
+ },
+ {
+  "id": "b004_A_N5_TP50_exp90_pp5",
+  "group": "A_phase_complete",
+  "selector": {
+   "type": "amihud_60",
+   "n": 5,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N5/TP50/0.90 相位 +5：补齐 5 相位表（已知 p0 +70.0/-11.8/83%、pm5 +80.6/-13.7/83%）。这是「phase_pass_count ≥3/5」判定所需的最后一格。若 +5 仍 67%、+10 仍 <55%，则该配置的相位通过数定格在 3/5，不能称「稳健 Tier A」。",
+  "rebalance_offset_days": 5
+ },
+ {
+  "id": "b004_A_N5_TP50_exp90_pp10",
+  "group": "A_phase_complete",
+  "selector": {
+   "type": "amihud_60",
+   "n": 5,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N5/TP50/0.90 相位 +10：补齐 5 相位表（已知 p0 +70.0/-11.8/83%、pm5 +80.6/-13.7/83%）。这是「phase_pass_count ≥3/5」判定所需的最后一格。若 +5 仍 67%、+10 仍 <55%，则该配置的相位通过数定格在 3/5，不能称「稳健 Tier A」。",
+  "rebalance_offset_days": 10
+ },
+ {
+  "id": "b004_B_N6_TP50_exp90_sleeve3",
+  "group": "B_sleeve_deep",
+  "selector": {
+   "type": "amihud_60",
+   "n": 6,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash",
+   "sleeves": {
+    "count": 3,
+    "offsets": [
+     -8,
+     0,
+     8
+    ],
+    "alloc": "equal"
+   }
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N6/TP50/0.90 3-sleeve（offsets -8/0/+8）口径：资金等分 3 份、offsets -8/0/+8、每份独立 R30、合成净值=各份均值；wp 用合成净值按 R30 算段；win_trade 合并；另报各 sleeve 明细 + dispersion。 假设：N6 比 N5 每 sleeve 多 1 只票（n_hold_avg 5.66 vs 4.74），三个 sleeve 合计最多 18 个不同标的，**top3 占比应从 N5 单相位的 54% 降到 35% 以下**。这是集中度问题的直接解法。"
+ },
+ {
+  "id": "b004_B_N5_TP50_exp95_sleeve3",
+  "group": "B_sleeve_deep",
+  "selector": {
+   "type": "amihud_60",
+   "n": 5,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.95,
+   "cash_asset": "cash",
+   "sleeves": {
+    "count": 3,
+    "offsets": [
+     -8,
+     0,
+     8
+    ],
+    "alloc": "equal"
+   }
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N5/TP50/0.95 3-sleeve：把每份敞口从 0.90 提到 0.95（合计资金使用率 95%），换取收益 +5~6pp，检验「sleeve 的 mdd 余量（-13.6%）能不能换成收益」。若 mdd 仍 ≤ -15% 且 total ≥90%，则这是收益最高的稳健解。"
+ },
+ {
+  "id": "b004_B_N5_TP50_exp90_sleeve5",
+  "group": "B_sleeve_deep",
+  "selector": {
+   "type": "amihud_60",
+   "n": 5,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash",
+   "sleeves": {
+    "count": 5,
+    "offsets": [
+     -12,
+     -6,
+     0,
+     6,
+     12
+    ],
+    "alloc": "equal"
+   }
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N5/TP50/0.90 **5-sleeve**（offsets -12/-6/0/+6/+12）：把相位覆盖从 3 份加到 5 份（≈每 6 天一份）。假设：合成收益 ≈ 5 相位均值、mdd 因 5 条曲线错峰而进一步下降，top3 占比最低。**这是「多 sleeve 错相位」的完整形态**（batch_003 只验了 3 份）。"
+ },
+ {
+  "id": "b004_B_N5_TP50_exp90_sleeve3_alt1",
+  "group": "B_sleeve_deep",
+  "selector": {
+   "type": "amihud_60",
+   "n": 5,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash",
+   "sleeves": {
+    "count": 3,
+    "offsets": [
+     -10,
+     -2,
+     6
+    ],
+    "alloc": "equal"
+   }
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N5/TP50/0.90 3-sleeve，offset 三元组换成 **-10/-2/+6**：与 -8/0/+8 只差 2 天，但若能给出显著不同的 total/mdd，说明「sleeve 结果本身也依赖 offset 选择」→ 那是新的相位运气，不是稳健性。**这是对 sleeve 结构本身的稳健性检验（不是参数搜索）**。"
+ },
+ {
+  "id": "b004_B_N5_TP50_exp90_sleeve3_alt2",
+  "group": "B_sleeve_deep",
+  "selector": {
+   "type": "amihud_60",
+   "n": 5,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash",
+   "sleeves": {
+    "count": 3,
+    "offsets": [
+     -6,
+     2,
+     10
+    ],
+    "alloc": "equal"
+   }
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N5/TP50/0.90 3-sleeve，offset 三元组 **-6/+2/+10**：第二个替代三元组。三条 sleeve spec（-8/0/+8、-10/-2/+6、-6/+2/+10）构成 sleeve 结果的分布；若三者 total 的 max-min > 15pp，则「sleeve 达标」也只是抽到了好签，必须诚实报告。"
+ },
+ {
+  "id": "b004_B_N6_TP50_exp100_sleeve3",
+  "group": "B_sleeve_deep",
+  "selector": {
+   "type": "amihud_60",
+   "n": 6,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 1.0,
+   "cash_asset": "cash",
+   "sleeves": {
+    "count": 3,
+    "offsets": [
+     -8,
+     0,
+     8
+    ],
+    "alloc": "equal"
+   }
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N6/TP50/**满仓 1.00** 3-sleeve：去现金缓冲的 sleeve 版。若它能三线全过，就是**唯一不需要 `EXPOSURE_ADJUSTED` 标注**的稳健解（收益全部来自选股，不是仓位调节）。同时检验「满仓 + sleeve 分散」是否已足够压回撤。"
+ },
+ {
+  "id": "b004_C_N6_TP50_exp100_p0",
+  "group": "C_full_exposure",
+  "selector": {
+   "type": "amihud_60",
+   "n": 6,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 1.0,
+   "cash_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N6/TP50/满仓 phase 0：满仓基准。若 total ≥75% 而 mdd 仍 ≤ -14%，则「不需要现金缓冲」成立，后续对用户就报这一条（无 EXPOSURE_ADJUSTED）。"
+ },
+ {
+  "id": "b004_C_N6_TP50_exp100_pm10",
+  "group": "C_full_exposure",
+  "selector": {
+   "type": "amihud_60",
+   "n": 6,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 1.0,
+   "cash_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N6/TP50/满仓 phase -10：Lead 实测此档 mdd -15.37%（差 0.37pp 破线）。本条用官方口径复核；若仍是 -15.3~-15.4%，则「4/5 相位稳健」的结论必须写清「差 0.4pp」，不能四舍五入成通过。",
+  "rebalance_offset_days": -10
+ },
+ {
+  "id": "b004_C_N6_TP40_exp100_pm10",
+  "group": "C_full_exposure",
+  "selector": {
+   "type": "amihud_60",
+   "n": 6,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.4,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 1.0,
+   "cash_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N6/**TP40**/满仓 phase -10：TP40 在 pm10 曾拿到 mdd -13.7%（比 TP50 低 1.6pp）。若收紧止盈能把这一步的 mdd 压到 -15% 内且 total 仍 ≥65%，则满仓 + TP40 是免标注解。",
+  "rebalance_offset_days": -10
+ },
+ {
+  "id": "b004_C_N5_TP50_exp100_p0",
+  "group": "C_full_exposure",
+  "selector": {
+   "type": "amihud_60",
+   "n": 5,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 1.0,
+   "cash_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N5/TP50/满仓 phase 0：N5 满仓的收益上界（预跑 ≈+80%），同时看 mdd 是否破线。若 N5 满仓也 ≤ -15%，那 Phase 0 的最优解会从 0.90 敞口移到满仓，敞口标注问题自动消失。"
+ },
+ {
+  "id": "b004_D_N6_nostop_exp90_p0",
+  "group": "D_diag",
+  "selector": {
+   "type": "amihud_60",
+   "n": 6,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N6 无止损 0.90 phase 0：与 N6/TP50/0.90（+67.1/-12.1/83）成对。**参数精简检验**：若两者几乎相同，则参数本质只有 (N, exposure) 两个，TP 只是尾部保险，对用户应报「2 个参数」而不是 3 个（抗过拟合的诚实表述）。"
+ },
+ {
+  "id": "b004_D_N6_nostop_exp90_pm5",
+  "group": "D_diag",
+  "selector": {
+   "type": "amihud_60",
+   "n": 6,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N6 无止损 0.90 phase -5：N5 在 pm5 上 TP50 的 mdd（-13.7%）明显优于 no-stop（-16.3%）。本条检验 N6 是否同样如此 → 决定 TP 的定位是「坏相位回撤保险」还是「纯冗余」。",
+  "rebalance_offset_days": -5
+ },
+ {
+  "id": "b004_E_N6_TP50_exp90_adv10m_p0",
+  "group": "D_diag",
+  "selector": {
+   "type": "amihud_60",
+   "n": 6,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 10000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N6/TP50/0.90 但成交额门槛 500 万 → **1000 万**：容量压力检验。若收益只掉 5pp 以内 → 60% 不是靠不可交易的极小票；若掉 15pp+ → 必须向用户声明容量上限。"
+ },
+ {
+  "id": "b004_E_N6_TP50_exp90_size02_15_p0",
+  "group": "D_diag",
+  "selector": {
+   "type": "amihud_60",
+   "n": 6,
+   "size_range": [
+    0.02,
+    0.15
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N6/TP50/0.90 但市值分位 5-30% → **2-15%**（更深微盘）：检验「越小越好」是否成立。若更深微盘更差，说明 5-30% 这个默认口径不是调出来的，是原始设定。"
+ },
+ {
+  "id": "b004_F_N8_TP50_exp90_p0",
+  "group": "D_diag",
+  "selector": {
+   "type": "amihud_60",
+   "n": 8,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N8/TP50/0.90 phase 0：N7 的 total 只有 48-52%，N8 大概率更弱；放这一条只为确认 N 的收益衰减单调，从而把 N 锁死在 5-6，不再往 N 上加预算。"
+ },
+ {
+  "id": "b004_G_N6_TP50_exp90_idx905ma20",
+  "group": "D_diag",
+  "selector": {
+   "type": "amihud_60",
+   "n": 6,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "index_ma",
+   "index": "000905",
+   "ma": 20,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N6/TP50/0.90 + 中证500 MA20 择时（空仓停现金）：**唯一的另一种「结构」手段**。已知 2026 中证500 全年 -11%，MA20 会长期空仓 → 预期把收益砍半；但它也可能正好跳过 +5/+10 那两个坏相位。跑它是为了给出「择时能不能救相位」的正式反证。"
+ },
+ {
+  "id": "b004_G_N6_TP50_exp90_idx852ma15",
+  "group": "D_diag",
+  "selector": {
+   "type": "amihud_60",
+   "n": 6,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "index_ma",
+   "index": "000852",
+   "ma": 15,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N6/TP50/0.90 + 中证1000 MA15：1000 是小微盘更近的代理。若它也砍掉收益，则「择时」在只做多小盘上彻底关闭（与 README §六的历史结论一致）。"
+ }
+]

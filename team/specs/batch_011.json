@@ -1,0 +1,756 @@
+[
+  {
+    "id": "b011_G1_sleeve3_N5_R30_TP50_exp90",
+    "group": "G1_sleeve",
+    "selector": {
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {},
+      "type": "amihud_60",
+      "n": 5
+    },
+    "rebalance_days": 30,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.5,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next",
+      "staged_take": null
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "cash_asset": "cash",
+      "fresh_start": true,
+      "exposure": 0.9,
+      "sleeves": {
+        "count": 3,
+        "offsets": [
+          -8,
+          0,
+          8
+        ],
+        "alloc": "equal"
+      }
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "G1-sleeve重跑: N5/R30/TP50/exp0.9/3-sleeve(-8/0/+8)。旧C5(b006_G7_C5)账INVALID(各sleeve误用全额本金致整手高估), 本次沿010-G3已验证实现每sleeve按1/3资本(5万→16667)独立整手/现实费率、NAV算术平均合成。这是旧C5的正确重算, 若total远低于旧账则证伪旧C5。"
+  },
+  {
+    "id": "b011_G1_sleeve3_N4_R30_TP45_exp90",
+    "group": "G1_sleeve",
+    "selector": {
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {},
+      "type": "amihud_60",
+      "n": 4
+    },
+    "rebalance_days": 30,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.45,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next",
+      "staged_take": null
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "cash_asset": "cash",
+      "fresh_start": true,
+      "exposure": 0.9,
+      "sleeves": {
+        "count": 3,
+        "offsets": [
+          -8,
+          0,
+          8
+        ],
+        "alloc": "equal"
+      }
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "G1-sleeve重跑: N4/R30/TP45/exp0.9/3-sleeve(-8/0/+8), 同敞口对打基线单相位(+91.23%)。假设错相位平均可抬月胜率、压mdd; 若total≥91.23%且mdd<9.59%则是首个双优维度。"
+  },
+  {
+    "id": "b011_G1_sleeve5_N4_R30_TP45_exp90",
+    "group": "G1_sleeve",
+    "selector": {
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {},
+      "type": "amihud_60",
+      "n": 4
+    },
+    "rebalance_days": 30,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.45,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next",
+      "staged_take": null
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "cash_asset": "cash",
+      "fresh_start": true,
+      "exposure": 0.9,
+      "sleeves": {
+        "count": 5,
+        "offsets": [
+          -12,
+          -6,
+          0,
+          6,
+          12
+        ],
+        "alloc": "equal"
+      }
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "G1-sleeve重跑: N4/R30/TP45/exp0.9/5-sleeve真五等分(-12/-6/0/+6/+12, 每份1万资本)。沿006-G6_sleeve5 offsets惯例; 每份1万下整手摩擦更大, 若total仍守住则sleeve真稳健, 若崩则判小资本sleeve不可行。"
+  },
+  {
+    "id": "b011_G1_sleeve3_N4_R30_TP45_exp100",
+    "group": "G1_sleeve",
+    "selector": {
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {},
+      "type": "amihud_60",
+      "n": 4
+    },
+    "rebalance_days": 30,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.45,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next",
+      "staged_take": null
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "cash_asset": "cash",
+      "fresh_start": true,
+      "exposure": 1,
+      "sleeves": {
+        "count": 3,
+        "offsets": [
+          -8,
+          0,
+          8
+        ],
+        "alloc": "equal"
+      }
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "G1-sleeve满仓版: N4/R30/TP45/exp1.0/3-sleeve, 给sleeve收益上限探测, 对标基线满仓。"
+  },
+  {
+    "id": "b011_G2_N4_R30_TP45_stg30_50_exp90",
+    "group": "G2_tp_staged",
+    "selector": {
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {},
+      "type": "amihud_60",
+      "n": 4
+    },
+    "rebalance_days": 30,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.45,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next",
+      "staged_take": [
+        {
+          "trigger": 0.3,
+          "fraction": 0.3333
+        },
+        {
+          "trigger": 0.5,
+          "fraction": 0.3333
+        }
+      ]
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "cash_asset": "cash",
+      "fresh_start": true,
+      "exposure": 0.9
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "G2-TP×staged: N4/R30/TP45+stg30_50/exp0.9(TP与staged同时生效)。harness优先级staged先于TP: +30%卖剩余1/3、+45%清剩余2/3, 即两档阶梯止盈。假设比单TP45更早锁定部分利润抬wt, 又比纯stg保留后段弹性; 若total>91.23%且wt>62.5%则双优。"
+  },
+  {
+    "id": "b011_G2_N4_R30_TP45_stg30_50_exp100",
+    "group": "G2_tp_staged",
+    "selector": {
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {},
+      "type": "amihud_60",
+      "n": 4
+    },
+    "rebalance_days": 30,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.45,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next",
+      "staged_take": [
+        {
+          "trigger": 0.3,
+          "fraction": 0.3333
+        },
+        {
+          "trigger": 0.5,
+          "fraction": 0.3333
+        }
+      ]
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "cash_asset": "cash",
+      "fresh_start": true,
+      "exposure": 1
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "G2-TP×staged: N4/R30/TP45+stg30_50/exp1(TP与staged同时生效)。harness优先级staged先于TP: +30%卖剩余1/3、+45%清剩余2/3, 即两档阶梯止盈。假设比单TP45更早锁定部分利润抬wt, 又比纯stg保留后段弹性; 若total>91.23%且wt>62.5%则双优。"
+  },
+  {
+    "id": "b011_G2_N4_R30_TP45_stg20_35_exp90",
+    "group": "G2_tp_staged",
+    "selector": {
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {},
+      "type": "amihud_60",
+      "n": 4
+    },
+    "rebalance_days": 30,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.45,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next",
+      "staged_take": [
+        {
+          "trigger": 0.2,
+          "fraction": 0.3333
+        },
+        {
+          "trigger": 0.35,
+          "fraction": 0.3333
+        }
+      ]
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "cash_asset": "cash",
+      "fresh_start": true,
+      "exposure": 0.9
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "G2-TP×staged: N4/R30/TP45+stg20_35/exp0.9。+20%卖1/3、+35%卖剩余1/3、+45%清尾仓, 三档更早兑现。预期wt最高、total偏低; 若total仍>91.23%则是高胜率高收益兼得。"
+  },
+  {
+    "id": "b011_G3_N4_R30_TP45_size110_40_exp90",
+    "group": "G3_sizeband",
+    "selector": {
+      "size_range": [
+        0.1,
+        0.4
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {},
+      "type": "amihud_60",
+      "n": 4
+    },
+    "rebalance_days": 30,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.45,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next",
+      "staged_take": null
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "cash_asset": "cash",
+      "fresh_start": true,
+      "exposure": 0.9
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "G3-市值带宽: N4/R30/TP45/exp0.9/size[0.1,0.4]。上移: 剔除最微盘(5-10%)、纳入中盘至40%, 检验基线alpha是否来自最微盘尾部(若total崩则alpha在尾部)。"
+  },
+  {
+    "id": "b011_G3_N4_R30_TP45_size000_20_exp90",
+    "group": "G3_sizeband",
+    "selector": {
+      "size_range": [
+        0,
+        0.2
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {},
+      "type": "amihud_60",
+      "n": 4
+    },
+    "rebalance_days": 30,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.45,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next",
+      "staged_take": null
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "cash_asset": "cash",
+      "fresh_start": true,
+      "exposure": 0.9
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "G3-市值带宽: N4/R30/TP45/exp0.9/size[0,0.2]。下移: 只要最小的20%(含5%以下极微盘), 高风险高弹性极限探测。"
+  },
+  {
+    "id": "b011_G3_N4_R30_TP45_size005_20_exp90",
+    "group": "G3_sizeband",
+    "selector": {
+      "size_range": [
+        0.05,
+        0.2
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {},
+      "type": "amihud_60",
+      "n": 4
+    },
+    "rebalance_days": 30,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.45,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next",
+      "staged_take": null
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "cash_asset": "cash",
+      "fresh_start": true,
+      "exposure": 0.9
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "G3-市值带宽: N4/R30/TP45/exp0.9/size[0.05,0.2]。收窄: 去掉20-30%偏大票, 更纯的小微盘, 看集中度与收益变化。"
+  },
+  {
+    "id": "b011_G4_N4_R30_TPnone_exp90",
+    "group": "G4_nostop",
+    "selector": {
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {},
+      "type": "amihud_60",
+      "n": 4
+    },
+    "rebalance_days": 30,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": null,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next",
+      "staged_take": null
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "cash_asset": "cash",
+      "fresh_start": true,
+      "exposure": 0.9
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "G4-无止盈: N4/R30/TPnone/exp0.9。010只有R20 no-TP, R30 no-TP exp0.9从未单列; 补上可得TP45在R30下的净效应(TPnone vs TP45同N同R同exp直接相减)。"
+  },
+  {
+    "id": "b011_G5_BASELINE_N4R30TP45e09",
+    "group": "G5_baseline",
+    "selector": {
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {},
+      "type": "amihud_60",
+      "n": 4
+    },
+    "rebalance_days": 30,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.45,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next",
+      "staged_take": null
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "cash_asset": "cash",
+      "fresh_start": true,
+      "exposure": 0.9
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "基线复现(必过): 与b006_G1_N4_TP45_exp90同参, fresh_total须复现+91.23%±0.5pp, 否则先停查口径。"
+  },
+  {
+    "id": "b011_G5_N4R30TP45e100",
+    "group": "G5_baseline",
+    "selector": {
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {},
+      "type": "amihud_60",
+      "n": 4
+    },
+    "rebalance_days": 30,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.45,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next",
+      "staged_take": null
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "cash_asset": "cash",
+      "fresh_start": true,
+      "exposure": 1
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "基线满仓版: N4/R30/TP45/exp1.0, 给满仓项当上限参照。"
+  }
+]

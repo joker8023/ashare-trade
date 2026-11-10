@@ -1,0 +1,267 @@
+[
+ {
+  "id": "b020_W1_R30_base_2025",
+  "group": "W_2025",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.45,
+   "trailing_take": null,
+   "max_hold_days": null,
+   "stop_exec": "next"
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "mode": "realistic",
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2025-01-01",
+   "eval_end": "2025-12-31"
+  },
+  "phase": 0,
+  "notes": "2025窗口R30基线对照。"
+ },
+ {
+  "id": "b020_W2_R7_base_2025",
+  "group": "W_2025",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 7,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.45,
+   "trailing_take": null,
+   "max_hold_days": null,
+   "stop_exec": "next"
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "mode": "realistic",
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2025-01-01",
+   "eval_end": "2025-12-31"
+  },
+  "phase": 0,
+  "notes": "2025窗口R7底盘。"
+ },
+ {
+  "id": "b020_W3_R7_exempt_2025",
+  "group": "W_2025",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {},
+   "hold_exempt": {
+    "ma": 20,
+    "tol": 0.95,
+    "rank_band": 0.4
+   }
+  },
+  "rebalance_days": 7,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.45,
+   "trailing_take": null,
+   "max_hold_days": null,
+   "stop_exec": "next"
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "mode": "realistic",
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2025-01-01",
+   "eval_end": "2025-12-31"
+  },
+  "phase": 0,
+  "notes": "2025窗口R7+赢家豁免（017最优参数）。"
+ },
+ {
+  "id": "b020_W4_R7_liqrev_2025",
+  "group": "W_2025",
+  "selector": {
+   "type": "liq_rev",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 7,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.45,
+   "trailing_take": null,
+   "max_hold_days": null,
+   "stop_exec": "next"
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "mode": "realistic",
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2025-01-01",
+   "eval_end": "2025-12-31"
+  },
+  "phase": 0,
+  "notes": "2025窗口R7×liq_rev（018最优选择器）。"
+ },
+ {
+  "id": "b020_W5_R7_N2_2025",
+  "group": "W_2025",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 7,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.45,
+   "trailing_take": null,
+   "max_hold_days": null,
+   "stop_exec": "next"
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "mode": "realistic",
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2025-01-01",
+   "eval_end": "2025-12-31"
+  },
+  "phase": 0,
+  "notes": "2025窗口R7×N2集中。"
+ }
+]

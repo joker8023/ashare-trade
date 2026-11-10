@@ -1,0 +1,721 @@
+[
+  {
+    "id": "b013_G0_BASELINE_N4R30TP45e09",
+    "group": "G0_baseline",
+    "selector": {
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {},
+      "type": "amihud_60",
+      "n": 4
+    },
+    "rebalance_days": 30,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.45,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next",
+      "staged_take": null
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "cash_asset": "cash",
+      "fresh_start": true,
+      "exposure": 0.9
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "基线复现(可跑): 与b006同参, fresh_total须复现+91.23%±0.5pp。",
+    "runnable": true
+  },
+  {
+    "id": "b013_G0_N4R7TP45e90_dailyref",
+    "group": "G0_baseline",
+    "selector": {
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {},
+      "type": "amihud_60",
+      "n": 4
+    },
+    "rebalance_days": 7,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.45,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next",
+      "staged_take": null
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "cash_asset": "cash",
+      "fresh_start": true,
+      "exposure": 0.9
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "R7日线参照(可跑): N4/R7/TP45/exp0.9日线t+1收盘执行, 给10个小时级策略当可跑对照(小时级须显著超它才有价值)。",
+    "runnable": true
+  },
+  {
+    "id": "b013_H01_firsthour_buy",
+    "group": "G1_hourly_draft",
+    "selector": {
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {},
+      "type": "amihud_60",
+      "n": 4
+    },
+    "rebalance_days": 7,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.45,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next",
+      "staged_take": null
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "cash_asset": "cash",
+      "fresh_start": true,
+      "exposure": 1
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "【DRAFT-不可跑批】H01首小时买入: 假设开盘后1小时已消化隔夜情绪, 10:30价比t+1收盘更少追尾盘动量。信号t收盘→执行t+1 10:30, 无未来函数。离场沿日线TP45。",
+    "runnable": false,
+    "requires": "hourly_bars_60min_Ashare",
+    "execution": {
+      "entry": "t+1 10:30 bar收盘价买入",
+      "signal_bar": "t日线收盘(选股名单)",
+      "exec_bar": "t+1首小时bar(09:30-10:30)收盘",
+      "rule": "名单t收盘确定→t+1首小时收盘执行买入; 若首小时停牌/涨停买不进则顺延下一bar",
+      "exit_exec": "日线TP45/t+1收盘(与基线同, 只隔离entry效应)"
+    }
+  },
+  {
+    "id": "b013_H02_hourly_tp45",
+    "group": "G1_hourly_draft",
+    "selector": {
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {},
+      "type": "amihud_60",
+      "n": 4
+    },
+    "rebalance_days": 7,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": null,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next",
+      "staged_take": null
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "cash_asset": "cash",
+      "fresh_start": true,
+      "exposure": 1
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "【DRAFT-不可跑批】H02小时级TP45: 假设R7牛市里+45%常在日内达成, 日线TP延迟1天少赚回吐。信号小时bar收盘→下一bar收盘执行。",
+    "runnable": false,
+    "requires": "hourly_bars_60min_Ashare",
+    "execution": {
+      "entry": "t+1收盘建仓(同日线)",
+      "signal_bar": "持仓期任一小时bar收盘浮盈≥+45%",
+      "exec_bar": "信号bar的下一小时bar收盘卖出",
+      "rule": "逐小时bar收盘算浮盈(相对成本), 首次≥45%的下一bar收盘全平; 日内熔断式跳空高开则不追, 仍等bar收盘确认"
+    }
+  },
+  {
+    "id": "b013_H03_hourly_trail12",
+    "group": "G1_hourly_draft",
+    "selector": {
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {},
+      "type": "amihud_60",
+      "n": 4
+    },
+    "rebalance_days": 7,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": null,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next",
+      "staged_take": null
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "cash_asset": "cash",
+      "fresh_start": true,
+      "exposure": 1
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "【DRAFT-不可跑批】H03小时级跟踪止损12%: 假设小时级止损比日线ts12更早掐断亏损、牛市里少被洗下车。纯止损无止盈, 看mdd与total权衡。",
+    "runnable": false,
+    "requires": "hourly_bars_60min_Ashare",
+    "execution": {
+      "entry": "t+1收盘建仓",
+      "signal_bar": "持仓期小时bar收盘价≤持仓小时最高收盘×(1-12%)",
+      "exec_bar": "信号bar下一小时bar收盘",
+      "rule": "high水位用小时bar收盘序列维护; 触发后下一\bar收盘全平; 跌停bar不可成交顺延(沿defer)"
+    }
+  },
+  {
+    "id": "b013_H04_hourly_fixstop8",
+    "group": "G1_hourly_draft",
+    "selector": {
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {},
+      "type": "amihud_60",
+      "n": 4
+    },
+    "rebalance_days": 7,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": null,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next",
+      "staged_take": null
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "cash_asset": "cash",
+      "fresh_start": true,
+      "exposure": 1
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "【DRAFT-不可跑批】H04小时级固定止损-8%: 最紧的亏损阀, 假设R7里小亏快跑保住win_trade; 预期wt↑total↓, 看Calmar是否反升。",
+    "runnable": false,
+    "requires": "hourly_bars_60min_Ashare",
+    "execution": {
+      "entry": "t+1收盘建仓",
+      "signal_bar": "小时bar收盘≤成本×(1-8%)",
+      "exec_bar": "信号bar下一小时bar收盘全平",
+      "rule": "固定-8%只看成本不看高点; 同H03成交顺延"
+    }
+  },
+  {
+    "id": "b013_H05_1030buy_eodsell",
+    "group": "G1_hourly_draft",
+    "selector": {
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {},
+      "type": "amihud_60",
+      "n": 4
+    },
+    "rebalance_days": 7,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": null,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next",
+      "staged_take": null
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "cash_asset": "cash",
+      "fresh_start": true,
+      "exposure": 1
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "【DRAFT-不可跑批】H05组合执行: 10:30买(避开盘情绪)+尾盘bar卖(不留隔夜信号风险)。假设执行价差(t+1收盘vs10:30/尾盘)系统性>费用。",
+    "runnable": false,
+    "requires": "hourly_bars_60min_Ashare",
+    "execution": {
+      "entry": "调仓日t+1 10:30 bar收盘买入",
+      "signal_bar": "entry:t日线收盘名单; exit: TP45的小时确认(同H02)或持有至下一调仓",
+      "exec_bar": "买入t+1 10:30; 卖出信号bar下一小时bar收盘, 若信号出现在14:30后则尾盘14:55bar收盘执行",
+      "rule": "尾盘bar=14:00-14:55集合前收盘; 避免把信号拖到次日"
+    }
+  },
+  {
+    "id": "b013_H06_gap_filter",
+    "group": "G1_hourly_draft",
+    "selector": {
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {},
+      "type": "amihud_60",
+      "n": 4
+    },
+    "rebalance_days": 7,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.45,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next",
+      "staged_take": null
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "cash_asset": "cash",
+      "fresh_start": true,
+      "exposure": 1
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "【DRAFT-不可跑批】H06高开过滤: 假设追高开是R7亏损主因, 过滤后买入价更优、wt↑。信号开盘bar(已开出)→执行10:30, 无未来函数。",
+    "runnable": false,
+    "requires": "hourly_bars_60min_Ashare",
+    "execution": {
+      "entry": "t+1 10:30买入, 但9:30开盘bar高开>3%则整单放弃(等下一调仓)",
+      "signal_bar": "t+1 9:30开盘价/前收",
+      "exec_bar": "t+1 10:30bar收盘(未被过滤时)",
+      "rule": "高开=(open-prevclose)/prevclose>3%→skip; 低开/平开正常买; 跳空涨停直接买不进同skip"
+    }
+  },
+  {
+    "id": "b013_H07_vol_tp",
+    "group": "G1_hourly_draft",
+    "selector": {
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {},
+      "type": "amihud_60",
+      "n": 4
+    },
+    "rebalance_days": 7,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": null,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next",
+      "staged_take": null
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "cash_asset": "cash",
+      "fresh_start": true,
+      "exposure": 1
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "【DRAFT-不可跑批】H07放量止盈: 假设爆量+20%浮盈=情绪顶点, 下一bar兑现比死等TP45更优。信号小时bar收盘→下一bar收盘。",
+    "runnable": false,
+    "requires": "hourly_bars_60min_Ashare",
+    "execution": {
+      "entry": "t+1收盘建仓",
+      "signal_bar": "小时bar成交量≥该票20日小时均量×3 且浮盈≥+20%",
+      "exec_bar": "信号bar下一小时bar收盘全平",
+      "rule": "放量定义用信号bar之前20日同小时均值(纯历史); 两条件同bar满足才触发"
+    }
+  },
+  {
+    "id": "b013_H08_eodstoploss",
+    "group": "G1_hourly_draft",
+    "selector": {
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {},
+      "type": "amihud_60",
+      "n": 4
+    },
+    "rebalance_days": 7,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.45,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next",
+      "staged_take": null
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "cash_asset": "cash",
+      "fresh_start": true,
+      "exposure": 1
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "【DRAFT-不可跑批】H08尾盘日内止损: 假设-5%单日大跌后常有隔夜动量延续, 尾盘认赔比次日收盘少亏。信号14:55收盘→次日10:30执行。",
+    "runnable": false,
+    "requires": "hourly_bars_60min_Ashare",
+    "execution": {
+      "entry": "t+1收盘建仓",
+      "signal_bar": "每日14:55bar: 当日跌幅(14:55/昨收-1)≤-5%",
+      "exec_bar": "次日10:30bar收盘清仓(尾盘无时间执行, 只能次时段)",
+      "rule": "日内大跌不过夜; 次日10:30前若一字跌停则顺延; TP45日线保留"
+    }
+  },
+  {
+    "id": "b013_H09_hourly_tp45_exp90",
+    "group": "G1_hourly_draft",
+    "selector": {
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {},
+      "type": "amihud_60",
+      "n": 4
+    },
+    "rebalance_days": 7,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": null,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next",
+      "staged_take": null
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "cash_asset": "cash",
+      "fresh_start": true,
+      "exposure": 0.9
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "【DRAFT-不可跑批】H09降仓版H02: 小时TP45+exp0.9, 同敞口对打基线(+91.23%)。若H09>基线而H02(mantou满仓)更高, 则小时TP的超额 partly来自高仓位。",
+    "runnable": false,
+    "requires": "hourly_bars_60min_Ashare",
+    "execution": {
+      "entry": "t+1收盘建仓",
+      "signal_bar": "同H02(小时bar收盘浮盈≥45%)",
+      "exec_bar": "信号bar下一小时bar收盘",
+      "rule": "同H02, 仅exp0.9"
+    }
+  },
+  {
+    "id": "b013_H10_combo",
+    "group": "G1_hourly_draft",
+    "selector": {
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {},
+      "type": "amihud_60",
+      "n": 4
+    },
+    "rebalance_days": 7,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": null,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next",
+      "staged_take": null
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "cash_asset": "cash",
+      "fresh_start": true,
+      "exposure": 0.9
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "【DRAFT-不可跑批】H10最优组合: 首小时买+高开过滤+小时TP45+小时跟踪止损12%+exp0.9。假设各阀独立加成; 若H10<各单项则阀间互斥(频繁打脸), 需拆解归因。",
+    "runnable": false,
+    "requires": "hourly_bars_60min_Ashare",
+    "execution": {
+      "entry": "t+1 10:30买入+高开>3%过滤(同H06)",
+      "signal_bar": "止盈: 小时浮盈≥45%(同H02); 止损: 小时跟踪12%(同H03, 优先于止盈)",
+      "exec_bar": "任一信号bar的下一小时bar收盘; 14:30后信号走14:55尾盘bar",
+      "rule": "止损优先于止盈(沿PROTOCOL§2.2); 同bar双触发按止损"
+    }
+  }
+]

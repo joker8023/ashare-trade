@@ -1,0 +1,670 @@
+[
+  {
+    "id": "b015_E1_N4R30_bond_70_30",
+    "group": "E_ensemble",
+    "selector": {
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {},
+      "type": "ensemble",
+      "n": 4
+    },
+    "rebalance_days": 30,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": null,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next",
+      "staged_take": null
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "cash_asset": "cash",
+      "fresh_start": true,
+      "exposure": 0.9,
+      "ensemble": [
+        {
+          "leg": {
+            "selector": "amihud_60",
+            "n": 4,
+            "R": 30,
+            "tp": 0.45
+          },
+          "weight": 0.7
+        },
+        {
+          "leg": {
+            "selector": "bond_511880"
+          },
+          "weight": 0.3
+        }
+      ]
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "E1纯降险对照: N4R30(TP45)×70% + bond511880×30%(harness bond leg=511880复权NAV, 已核1220行支持)。预期≈降敞口+3%年化兜底, total必降、mdd必优; 验ensemble实现正确(权重合成无bug)。采用标准: total≥基线(+91.23%)且mdd优于-9.59%则采用; 或total差≤3pp且mdd优3pp+则采用; 否则如实判稀释不采用。合成口径沿010-G3(leg按权重拆capital独立整手/现实费率、NAV加权合成)。"
+  },
+  {
+    "id": "b015_E2_N4R30_bond_50_50",
+    "group": "E_ensemble",
+    "selector": {
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {},
+      "type": "ensemble",
+      "n": 4
+    },
+    "rebalance_days": 30,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": null,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next",
+      "staged_take": null
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "cash_asset": "cash",
+      "fresh_start": true,
+      "exposure": 0.9,
+      "ensemble": [
+        {
+          "leg": {
+            "selector": "amihud_60",
+            "n": 4,
+            "R": 30,
+            "tp": 0.45
+          },
+          "weight": 0.5
+        },
+        {
+          "leg": {
+            "selector": "bond_511880"
+          },
+          "weight": 0.5
+        }
+      ]
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "E2半仓债: N4R30×50% + bond×50%。降险上限探测; 若mdd仍>9.59%则N4腿自身波动主导, 债配无用。采用标准: total≥基线(+91.23%)且mdd优于-9.59%则采用; 或total差≤3pp且mdd优3pp+则采用; 否则如实判稀释不采用。合成口径沿010-G3(leg按权重拆capital独立整手/现实费率、NAV加权合成)。"
+  },
+  {
+    "id": "b015_E3_N4_N4TP30_50_50",
+    "group": "E_ensemble",
+    "selector": {
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {},
+      "type": "ensemble",
+      "n": 4
+    },
+    "rebalance_days": 30,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": null,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next",
+      "staged_take": null
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "cash_asset": "cash",
+      "fresh_start": true,
+      "exposure": 0.9,
+      "ensemble": [
+        {
+          "leg": {
+            "selector": "amihud_60",
+            "n": 4,
+            "R": 30,
+            "tp": 0.45
+          },
+          "weight": 0.5
+        },
+        {
+          "leg": {
+            "selector": "amihud_60",
+            "n": 4,
+            "R": 30,
+            "tp": 0.3
+          },
+          "weight": 0.5
+        }
+      ]
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "E3同池平滑离场: N4R30(TP45)×50% + N4R30(TP30)×50%。【如实声明】harness leg不支持staged_take(_leg_cfg写死None), 故用TP30腿近似早兑现(非真staged); 若backtester给leg加staged支持可升级为真stg30_50。假设半仓早止盈抬wt、半仓保弹性。采用标准: total≥基线(+91.23%)且mdd优于-9.59%则采用; 或total差≤3pp且mdd优3pp+则采用; 否则如实判稀释不采用。合成口径沿010-G3(leg按权重拆capital独立整手/现实费率、NAV加权合成)。"
+  },
+  {
+    "id": "b015_E4_N4R30_N4R20_50_50",
+    "group": "E_ensemble",
+    "selector": {
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {},
+      "type": "ensemble",
+      "n": 4
+    },
+    "rebalance_days": 30,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": null,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next",
+      "staged_take": null
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "cash_asset": "cash",
+      "fresh_start": true,
+      "exposure": 0.9,
+      "ensemble": [
+        {
+          "leg": {
+            "selector": "amihud_60",
+            "n": 4,
+            "R": 30,
+            "tp": 0.45
+          },
+          "weight": 0.5
+        },
+        {
+          "leg": {
+            "selector": "amihud_60",
+            "n": 4,
+            "R": 20,
+            "tp": 0.45
+          },
+          "weight": 0.5
+        }
+      ]
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "E4相位分散: N4R30×50% + N4R20(TP45)×50%。R20/R30调仓日错开天然平滑; 若合成wm>70%且total≥91.23%则相位分散真有效。采用标准: total≥基线(+91.23%)且mdd优于-9.59%则采用; 或total差≤3pp且mdd优3pp+则采用; 否则如实判稀释不采用。合成口径沿010-G3(leg按权重拆capital独立整手/现实费率、NAV加权合成)。"
+  },
+  {
+    "id": "b015_E5_N4R30_N5R40none_70_30",
+    "group": "E_ensemble",
+    "selector": {
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {},
+      "type": "ensemble",
+      "n": 4
+    },
+    "rebalance_days": 30,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": null,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next",
+      "staged_take": null
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "cash_asset": "cash",
+      "fresh_start": true,
+      "exposure": 0.9,
+      "ensemble": [
+        {
+          "leg": {
+            "selector": "amihud_60",
+            "n": 4,
+            "R": 30,
+            "tp": 0.45
+          },
+          "weight": 0.7
+        },
+        {
+          "leg": {
+            "selector": "amihud_60",
+            "n": 5,
+            "R": 40,
+            "tp": null
+          },
+          "weight": 0.3
+        }
+      ]
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "E5-R轴分散: N4R30(TP45)×70% + N5R40(TPnone)×30%(R40曾wp100%线索)。长段腿做稳定器; 若合成mdd<9.59%且total差≤3pp则采用。采用标准: total≥基线(+91.23%)且mdd优于-9.59%则采用; 或total差≤3pp且mdd优3pp+则采用; 否则如实判稀释不采用。合成口径沿010-G3(leg按权重拆capital独立整手/现实费率、NAV加权合成)。"
+  },
+  {
+    "id": "b015_E6_N4R30TP45_ddhalf",
+    "group": "E_overlay",
+    "selector": {
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {},
+      "type": "amihud_60",
+      "n": 4
+    },
+    "rebalance_days": 30,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.45,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next",
+      "staged_take": null
+    },
+    "timing": {
+      "type": "dd_breaker",
+      "index": "000905",
+      "ma": 20,
+      "out_asset": "cash",
+      "dd_trigger": -0.08,
+      "dd_recover": -0.02,
+      "dd_action": "half",
+      "dd_cut": 0.5
+    },
+    "portfolio": {
+      "cash_asset": "cash",
+      "fresh_start": true,
+      "exposure": 0.9
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "E6自身回撤熔断(保守档): N4R30/TP45/exp0.9 + dd_breaker(自身巅峰回撤≤-8%触发→降半仓dd_cut=0.5, 回到-2%恢复, 空出cash)。参数取harness默认(trigger-0.08/recover-0.02)+保守half(不清仓不断腿)。假设2026的-9.59%中段被削掉一半而后期涨幅吃到大半。采用标准: total≥基线(+91.23%)且mdd优于-9.59%则采用; 或total差≤3pp且mdd优3pp+则采用; 否则如实判稀释不采用。合成口径沿010-G3(leg按权重拆capital独立整手/现实费率、NAV加权合成)。"
+  },
+  {
+    "id": "b015_E7_N4R30_overN6_70_30",
+    "group": "E_ensemble",
+    "selector": {
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {},
+      "type": "ensemble",
+      "n": 4
+    },
+    "rebalance_days": 30,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": null,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next",
+      "staged_take": null
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "cash_asset": "cash",
+      "fresh_start": true,
+      "exposure": 0.9,
+      "ensemble": [
+        {
+          "leg": {
+            "selector": "amihud_60",
+            "n": 4,
+            "R": 30,
+            "tp": 0.45
+          },
+          "weight": 0.7
+        },
+        {
+          "leg": {
+            "selector": "oversold",
+            "n": 6,
+            "R": 30,
+            "tp": 0.45
+          },
+          "weight": 0.3
+        }
+      ]
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "E7探索性低相关腿: N4R30×70% + oversold超卖N6×30%。【集中风险声明】oversold在2026单年为负已证伪(§7), 且同主板小微盘池相关性未必低; 若合成total被拖累>5pp则判腿无效, 如实不采用。采用标准: total≥基线(+91.23%)且mdd优于-9.59%则采用; 或total差≤3pp且mdd优3pp+则采用; 否则如实判稀释不采用。合成口径沿010-G3(leg按权重拆capital独立整手/现实费率、NAV加权合成)。"
+  },
+  {
+    "id": "b015_E8_N4TP45_N4TP30_70_30",
+    "group": "E_ensemble",
+    "selector": {
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {},
+      "type": "ensemble",
+      "n": 4
+    },
+    "rebalance_days": 30,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": null,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next",
+      "staged_take": null
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "cash_asset": "cash",
+      "fresh_start": true,
+      "exposure": 0.9,
+      "ensemble": [
+        {
+          "leg": {
+            "selector": "amihud_60",
+            "n": 4,
+            "R": 30,
+            "tp": 0.45
+          },
+          "weight": 0.7
+        },
+        {
+          "leg": {
+            "selector": "amihud_60",
+            "n": 4,
+            "R": 30,
+            "tp": 0.3
+          },
+          "weight": 0.3
+        }
+      ]
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "E8偏基线平滑: N4R30(TP45)×70% + N4R30(TP30)×30%。【如实声明】同E3, leg无staged支持故用TP30腿; 与E3仅权重不同(70/30 vs 50/50), 看早兑现比例的最优点。采用标准: total≥基线(+91.23%)且mdd优于-9.59%则采用; 或total差≤3pp且mdd优3pp+则采用; 否则如实判稀释不采用。合成口径沿010-G3(leg按权重拆capital独立整手/现实费率、NAV加权合成)。"
+  },
+  {
+    "id": "b015_G0_BASELINE_N4R30TP45e09",
+    "group": "G0_baseline",
+    "selector": {
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {},
+      "type": "amihud_60",
+      "n": 4
+    },
+    "rebalance_days": 30,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.45,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next",
+      "staged_take": null
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "cash_asset": "cash",
+      "fresh_start": true,
+      "exposure": 0.9
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "基线复现(必过): 与b006同参, fresh_total须复现+91.23%±0.5pp, 否则先停查口径。"
+  },
+  {
+    "id": "b015_G0_N4R30TP45e100",
+    "group": "G0_baseline",
+    "selector": {
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {},
+      "type": "amihud_60",
+      "n": 4
+    },
+    "rebalance_days": 30,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.45,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next",
+      "staged_take": null
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "cash_asset": "cash",
+      "fresh_start": true,
+      "exposure": 1
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "基线满仓版: N4/R30/TP45/exp1.0, 上限参照。"
+  }
+]

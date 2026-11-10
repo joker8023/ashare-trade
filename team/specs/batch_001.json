@@ -1,0 +1,4710 @@
+[
+ {
+  "id": "b001_g0_amihud_N5_R30_none",
+  "group": "G0_baseline",
+  "selector": {
+   "type": "amihud",
+   "n": 5,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "基线1：经典 amihud 小微盘 N5/R30 无止损。2026 预跑约 +53%/回撤-24%（未官方口径），回撤必然超标，用于验证 harness 与历史 ledger 的一致性。"
+ },
+ {
+  "id": "b001_g0_amihud_N5_R30_ts12",
+  "group": "G0_baseline",
+  "selector": {
+   "type": "amihud",
+   "n": 5,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": 0.12,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "基线2（最关键）：复现 PROTOCOL §7 争议项「N5 R30 +12% 跟踪止损」。文档写 +44.9%，ledger CSV 的 2026 段算 +62.8%。本 spec 用统一口径一次性裁决这个矛盾。"
+ },
+ {
+  "id": "b001_g0_amihud_N25_R30_none",
+  "group": "G0_baseline",
+  "selector": {
+   "type": "amihud",
+   "n": 25,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "基线3：N25 分散基准。预期收益降（约+38%）、回撤降至-18% 左右，用来量化「分散换回撤」的斜率，判断 60%/15% 组合是否在 N25 处可行。"
+ },
+ {
+  "id": "b001_g0_amihud_N5_R30_fs12",
+  "group": "G0_baseline",
+  "selector": {
+   "type": "amihud",
+   "n": 5,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": 0.12,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "基线4：同参数换成「成本价固定止损 12%」。与基线2只差止损口径，直接回答「是跟踪止损本身有效，还是任何止损都有效」。"
+ },
+ {
+  "id": "b001_g1_amihud_N2_R30_none",
+  "group": "G1_frontier",
+  "selector": {
+   "type": "amihud",
+   "n": 2,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "极限集中：N2 是 2026 收益上限的探针。预期 +55%~90% 但单票权重 50%，回撤/单票依赖一定爆表，仅作前沿标定，不作为候选。"
+ },
+ {
+  "id": "b001_g1_amihud_N3_R30_none",
+  "group": "G1_frontier",
+  "selector": {
+   "type": "amihud",
+   "n": 3,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N3/R30 无止损：读作「旧 FINAL_10 里 N3 系」的 2026 单年基线，预期回撤 -25% 级。"
+ },
+ {
+  "id": "b001_g1_amihud_N6_R30_none",
+  "group": "G1_frontier",
+  "selector": {
+   "type": "amihud",
+   "n": 6,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N6/R30：预跑显示收益仍有 +60% 但段胜率只有 3/6——集中度的收益与胜率在此处分岔。"
+ },
+ {
+  "id": "b001_g1_amihud_N10_R30_none",
+  "group": "G1_frontier",
+  "selector": {
+   "type": "amihud",
+   "n": 10,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N10/R30 无止损：预跑约 +46~58%、回撤 -15~19%、段胜率 5/6。这是「胜率达标」最可能的位置，差的是收益或回撤最后一口气，本批重点攻它。"
+ },
+ {
+  "id": "b001_g1_amihud_N15_R30_none",
+  "group": "G1_frontier",
+  "selector": {
+   "type": "amihud",
+   "n": 15,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N15/R30：继续往分散走，检验收益衰减是否线性（若仍 >40% 说明 N 的收益代价温和）。"
+ },
+ {
+  "id": "b001_g1_amihud_N2_R15_none",
+  "group": "G1_frontier",
+  "selector": {
+   "type": "amihud",
+   "n": 2,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 15,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "R15 × N2：把调仓周期减半，看是否用更高换手换更高收益（费用 0.5%/边已扣）。"
+ },
+ {
+  "id": "b001_g1_amihud_N3_R15_none",
+  "group": "G1_frontier",
+  "selector": {
+   "type": "amihud",
+   "n": 3,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 15,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "R15 × N3：预跑 +72%/-24%，是所有无止损组合里收益最高的一档；回撤是唯一障碍。"
+ },
+ {
+  "id": "b001_g1_amihud_N6_R15_none",
+  "group": "G1_frontier",
+  "selector": {
+   "type": "amihud",
+   "n": 6,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 15,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "R15 × N6：预跑 +58%/-18%，段胜率 9/12（75%）。R15 的段数=12，80% 需 10/12，差 1 段——这是 R15 臂的现实门槛。"
+ },
+ {
+  "id": "b001_g1_amihud_N10_R15_none",
+  "group": "G1_frontier",
+  "selector": {
+   "type": "amihud",
+   "n": 10,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 15,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "R15 × N10：段胜率 9/13，收益 ~32%。用于确认「R15 上分散同样抬胜率、杀收益」。"
+ },
+ {
+  "id": "b001_g1_amihud_N5_R15_none",
+  "group": "G1_frontier",
+  "selector": {
+   "type": "amihud",
+   "n": 5,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 15,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "R15 × N5 无止损：R15 臂的中心点，后续所有 R15 止损 spec 都以它为对照。"
+ },
+ {
+  "id": "b001_g1_amihud_N10_R7_none",
+  "group": "G1_frontier",
+  "selector": {
+   "type": "amihud",
+   "n": 10,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 7,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "R7 × N10 无止损：R7 费用对照。预跑费用占比约 8-12% 本金，且段数=28 → 80% 需 23/28。"
+ },
+ {
+  "id": "b001_g1_amihud_N5_R7_none",
+  "group": "G1_frontier",
+  "selector": {
+   "type": "amihud",
+   "n": 5,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 7,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "R7 × N5 无止损：历史「绞肉机」参数，仅作费用-胜率对照，不指望达标。"
+ },
+ {
+  "id": "b001_g13_retail_amihud_N5_R30_none",
+  "group": "G13_retail_pool",
+  "selector": {
+   "type": "amihud",
+   "n": 5,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "零售池 N5/R30 无止损：与 G0 基线1（全池）成对。差值 = 科创板(688)对收益的贡献。"
+ },
+ {
+  "id": "b001_g13_retail_amihud_N5_R30_ts12",
+  "group": "G13_retail_pool",
+  "selector": {
+   "type": "amihud",
+   "n": 5,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": 0.12,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "零售池 N5/R30 ts12：与 G0 基线2 成对 —— **若这条达不到 60%，则旧「唯一三线全过」结论作废**（因为实盘买不到 688）。"
+ },
+ {
+  "id": "b001_g13_retail_amihud_N8_R30_none",
+  "group": "G13_retail_pool",
+  "selector": {
+   "type": "amihud",
+   "n": 8,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "零售池 N8/R30 无止损：G2 平台在可交易池上的收益锚点。"
+ },
+ {
+  "id": "b001_g13_retail_amihud_N8_R30_ts12",
+  "group": "G13_retail_pool",
+  "selector": {
+   "type": "amihud",
+   "n": 8,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": 0.12,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "零售池 N8/R30 ts12：本组最可能同时过三线的候选之一（N8 有 5/6 潜力 + 止损压回撤）。"
+ },
+ {
+  "id": "b001_g13_retail_amihud_N10_R30_none",
+  "group": "G13_retail_pool",
+  "selector": {
+   "type": "amihud",
+   "n": 10,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "零售池 N10/R30 无止损：与预跑 5/6 段胜率最接近的格子，看剔 688 后还剩多少收益。"
+ },
+ {
+  "id": "b001_g13_retail_amihud_N10_R30_ts10",
+  "group": "G13_retail_pool",
+  "selector": {
+   "type": "amihud",
+   "n": 10,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": 0.1,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "零售池 N10/R30 ts10：分散+止损+可交易，三者兼顾的折中。"
+ },
+ {
+  "id": "b001_g13_retail_amihud_N10_R30_ts12",
+  "group": "G13_retail_pool",
+  "selector": {
+   "type": "amihud",
+   "n": 10,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": 0.12,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "零售池 N10/R30 ts12：G2 的核心假设在零售池上的版本（次日收盘止损口径）。"
+ },
+ {
+  "id": "b001_g13_retail_amihud_N12_R30_none",
+  "group": "G13_retail_pool",
+  "selector": {
+   "type": "amihud",
+   "n": 12,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "零售池 N12/R30 无止损：N 的上界探针，若 N12 仍 >50% 说明分散的收益代价温和。"
+ },
+ {
+  "id": "b001_g13_retail_amihud_N12_R30_ts12",
+  "group": "G13_retail_pool",
+  "selector": {
+   "type": "amihud",
+   "n": 12,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": 0.12,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "零售池 N12/R30 ts12：最稳的一条，回撤预期 -10% 级。"
+ },
+ {
+  "id": "b001_g13_retail_amihud_N8_R15_ts12",
+  "group": "G13_retail_pool",
+  "selector": {
+   "type": "amihud",
+   "n": 8,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 15,
+  "exit": {
+   "trailing_stop": 0.12,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "零售池 N8/R15 ts12：R15 臂（段数 12-13，统计更稳）+ 可交易池。Lead 情报说 R15 段数多更可信，这条是本批最值得看的 R15 候选。"
+ },
+ {
+  "id": "b001_g13_retail_amihud_N10_R15_ts12",
+  "group": "G13_retail_pool",
+  "selector": {
+   "type": "amihud",
+   "n": 10,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 15,
+  "exit": {
+   "trailing_stop": 0.12,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "零售池 N10/R15 ts12：与上一条构成 N 邻域。"
+ },
+ {
+  "id": "b001_g13_retail_amihud_N5_R30_fs12",
+  "group": "G13_retail_pool",
+  "selector": {
+   "type": "amihud",
+   "n": 5,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": 0.12,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "零售池 N5/R30 固定止损12%：与全池 fs12 成对，判断「止损口径」结论是否受池子影响。"
+ },
+ {
+  "id": "b001_g2_amihud_N8_R30_none",
+  "group": "G2_R30_diversified",
+  "selector": {
+   "type": "amihud",
+   "n": 8,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N8/R30 无离场：G2 平台的收益锚点（与 G1 的 N10 重叠校验，确认可复现）。"
+ },
+ {
+  "id": "b001_g2_amihud_N10_R30_none",
+  "group": "G2_R30_diversified",
+  "selector": {
+   "type": "amihud",
+   "n": 10,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N10/R30 无离场：G2 平台的收益锚点（与 G1 的 N10 重叠校验，确认可复现）。"
+ },
+ {
+  "id": "b001_g2_amihud_N12_R30_none",
+  "group": "G2_R30_diversified",
+  "selector": {
+   "type": "amihud",
+   "n": 12,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N12/R30 无离场：G2 平台的收益锚点（与 G1 的 N10 重叠校验，确认可复现）。"
+ },
+ {
+  "id": "b001_g2_amihud_N8_R30_ts10",
+  "group": "G2_R30_diversified",
+  "selector": {
+   "type": "amihud",
+   "n": 8,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": 0.1,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N8/R30 跟踪止损10%：核心假设——止损把 3-4 个下跌段削成「小赚/小亏」，同时把回撤从 -18% 压到 -10% 级，收益代价若 <15pp 就值得。"
+ },
+ {
+  "id": "b001_g2_amihud_N10_R30_ts10",
+  "group": "G2_R30_diversified",
+  "selector": {
+   "type": "amihud",
+   "n": 10,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": 0.1,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N10/R30 跟踪止损10%：核心假设——止损把 3-4 个下跌段削成「小赚/小亏」，同时把回撤从 -18% 压到 -10% 级，收益代价若 <15pp 就值得。"
+ },
+ {
+  "id": "b001_g2_amihud_N12_R30_ts10",
+  "group": "G2_R30_diversified",
+  "selector": {
+   "type": "amihud",
+   "n": 12,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": 0.1,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N12/R30 跟踪止损10%：核心假设——止损把 3-4 个下跌段削成「小赚/小亏」，同时把回撤从 -18% 压到 -10% 级，收益代价若 <15pp 就值得。"
+ },
+ {
+  "id": "b001_g2_amihud_N15_R30_ts10",
+  "group": "G2_R30_diversified",
+  "selector": {
+   "type": "amihud",
+   "n": 15,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": 0.1,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N15/R30 跟踪止损10%：核心假设——止损把 3-4 个下跌段削成「小赚/小亏」，同时把回撤从 -18% 压到 -10% 级，收益代价若 <15pp 就值得。"
+ },
+ {
+  "id": "b001_g2_amihud_N8_R30_ts12",
+  "group": "G2_R30_diversified",
+  "selector": {
+   "type": "amihud",
+   "n": 8,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": 0.12,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N8/R30 跟踪止损12%：与 ts10 构成 2 点邻域，检验「最优止损随 N 平移」还是平台。"
+ },
+ {
+  "id": "b001_g2_amihud_N10_R30_ts12",
+  "group": "G2_R30_diversified",
+  "selector": {
+   "type": "amihud",
+   "n": 10,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": 0.12,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N10/R30 跟踪止损12%：与 ts10 构成 2 点邻域，检验「最优止损随 N 平移」还是平台。"
+ },
+ {
+  "id": "b001_g2_amihud_N12_R30_ts12",
+  "group": "G2_R30_diversified",
+  "selector": {
+   "type": "amihud",
+   "n": 12,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": 0.12,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N12/R30 跟踪止损12%：与 ts10 构成 2 点邻域，检验「最优止损随 N 平移」还是平台。"
+ },
+ {
+  "id": "b001_g2_amihud_N15_R30_ts12",
+  "group": "G2_R30_diversified",
+  "selector": {
+   "type": "amihud",
+   "n": 15,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": 0.12,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N15/R30 跟踪止损12%：与 ts10 构成 2 点邻域，检验「最优止损随 N 平移」还是平台。"
+ },
+ {
+  "id": "b001_g2_amihud_N10_R30_ts15",
+  "group": "G2_R30_diversified",
+  "selector": {
+   "type": "amihud",
+   "n": 10,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": 0.15,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N10/ts15：松止损端。假设 15% 只在极端段触发，几乎不损收益但回撤控制打折，用来定位「止损-收益」曲线的拐点。"
+ },
+ {
+  "id": "b001_g3_amihud_N3_R30_ts10",
+  "group": "G3_R30_concentrated",
+  "selector": {
+   "type": "amihud",
+   "n": 3,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": 0.1,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N3/R30 跟踪止损10%：集中端 2×4 平台。历史最强组合（N5+12%）就在此，假设最优停在 N4-5、止损 10-12% 附近且不是孤立尖峰。"
+ },
+ {
+  "id": "b001_g3_amihud_N3_R30_ts12",
+  "group": "G3_R30_concentrated",
+  "selector": {
+   "type": "amihud",
+   "n": 3,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": 0.12,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N3/R30 跟踪止损12%：集中端 2×4 平台。历史最强组合（N5+12%）就在此，假设最优停在 N4-5、止损 10-12% 附近且不是孤立尖峰。"
+ },
+ {
+  "id": "b001_g3_amihud_N4_R30_ts10",
+  "group": "G3_R30_concentrated",
+  "selector": {
+   "type": "amihud",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": 0.1,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N4/R30 跟踪止损10%：集中端 2×4 平台。历史最强组合（N5+12%）就在此，假设最优停在 N4-5、止损 10-12% 附近且不是孤立尖峰。"
+ },
+ {
+  "id": "b001_g3_amihud_N4_R30_ts12",
+  "group": "G3_R30_concentrated",
+  "selector": {
+   "type": "amihud",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": 0.12,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N4/R30 跟踪止损12%：集中端 2×4 平台。历史最强组合（N5+12%）就在此，假设最优停在 N4-5、止损 10-12% 附近且不是孤立尖峰。"
+ },
+ {
+  "id": "b001_g3_amihud_N5_R30_ts10",
+  "group": "G3_R30_concentrated",
+  "selector": {
+   "type": "amihud",
+   "n": 5,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": 0.1,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N5/R30 跟踪止损10%：集中端 2×4 平台。历史最强组合（N5+12%）就在此，假设最优停在 N4-5、止损 10-12% 附近且不是孤立尖峰。"
+ },
+ {
+  "id": "b001_g3_amihud_N5_R30_ts12",
+  "group": "G3_R30_concentrated",
+  "selector": {
+   "type": "amihud",
+   "n": 5,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": 0.12,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N5/R30 跟踪止损12%：集中端 2×4 平台。历史最强组合（N5+12%）就在此，假设最优停在 N4-5、止损 10-12% 附近且不是孤立尖峰。"
+ },
+ {
+  "id": "b001_g3_amihud_N6_R30_ts10",
+  "group": "G3_R30_concentrated",
+  "selector": {
+   "type": "amihud",
+   "n": 6,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": 0.1,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N6/R30 跟踪止损10%：集中端 2×4 平台。历史最强组合（N5+12%）就在此，假设最优停在 N4-5、止损 10-12% 附近且不是孤立尖峰。"
+ },
+ {
+  "id": "b001_g3_amihud_N6_R30_ts12",
+  "group": "G3_R30_concentrated",
+  "selector": {
+   "type": "amihud",
+   "n": 6,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": 0.12,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N6/R30 跟踪止损12%：集中端 2×4 平台。历史最强组合（N5+12%）就在此，假设最优停在 N4-5、止损 10-12% 附近且不是孤立尖峰。"
+ },
+ {
+  "id": "b001_g3_amihud_N4_R30_ts08",
+  "group": "G3_R30_concentrated",
+  "selector": {
+   "type": "amihud",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": 0.08,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N4/ts08：紧止损在集中组合上更容易被噪音打掉，假设它显著劣于 ts10/12。"
+ },
+ {
+  "id": "b001_g3_amihud_N6_R30_ts08",
+  "group": "G3_R30_concentrated",
+  "selector": {
+   "type": "amihud",
+   "n": 6,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": 0.08,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N6/ts08：同上，第二点，避免单点结论。"
+ },
+ {
+  "id": "b001_g14_amihud_N10_R30_fs10tp25",
+  "group": "G14_win_trade",
+  "selector": {
+   "type": "amihud",
+   "n": 10,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": 0.1,
+   "take_profit": 0.25,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N10 固定止损10%+止盈25%：win_trade 的正主。假设按笔胜率能从 55% 抬到 65%+，代价是总收益掉 10-20pp——若能同时保住 60%/15%，这就是用户要的形状。"
+ },
+ {
+  "id": "b001_g14_amihud_N10_R30_fs10tp20",
+  "group": "G14_win_trade",
+  "selector": {
+   "type": "amihud",
+   "n": 10,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": 0.1,
+   "take_profit": 0.2,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N10 fs10+tp20：止盈更早落袋，按笔胜率更高、收益更低。与 tp25 构成 2 点邻域。"
+ },
+ {
+  "id": "b001_g14_amihud_N8_R30_fs10tp25",
+  "group": "G14_win_trade",
+  "selector": {
+   "type": "amihud",
+   "n": 8,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": 0.1,
+   "take_profit": 0.25,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N8 fs10+tp25：更集中一档，检验「TP+止损」在 N8 上是否比 N10 更划算。"
+ },
+ {
+  "id": "b001_g14_amihud_N12_R30_fs12tp25",
+  "group": "G14_win_trade",
+  "selector": {
+   "type": "amihud",
+   "n": 12,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": 0.12,
+   "take_profit": 0.25,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N12 fs12+tp25：最分散一档，最可能保住 80% 段胜率与 15% 回撤组合。"
+ },
+ {
+  "id": "b001_g14_amihud_N10_R30_ts10tp20",
+  "group": "G14_win_trade",
+  "selector": {
+   "type": "amihud",
+   "n": 10,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": 0.1,
+   "fixed_stop": null,
+   "take_profit": 0.2,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N10 ts10+tp20：跟踪止损版（止损端更宽容）+ 早止盈，比较「固定 vs 跟踪」在抬 win_trade 上的差别。"
+ },
+ {
+  "id": "b001_g14_amihud_N10_R30_fs12tp30",
+  "group": "G14_win_trade",
+  "selector": {
+   "type": "amihud",
+   "n": 10,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": 0.12,
+   "take_profit": 0.3,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N10 fs12+tp30：两端都放宽，尽量少牺牲收益的 win_trade 版本。"
+ },
+ {
+  "id": "b001_g14_amihud_N8_R15_fs10tp20",
+  "group": "G14_win_trade",
+  "selector": {
+   "type": "amihud",
+   "n": 8,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 15,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": 0.1,
+   "take_profit": 0.2,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N8/R15 fs10+tp20：R15 段短，止盈 20% 在段内更常触发，按笔胜率应最高；同时 R15 段数 12-13，段胜率统计更稳。"
+ },
+ {
+  "id": "b001_g14_amihud_N10_R15_fs10tp25",
+  "group": "G14_win_trade",
+  "selector": {
+   "type": "amihud",
+   "n": 10,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 15,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": 0.1,
+   "take_profit": 0.25,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N10/R15 fs10+tp25：R15 臂的 win_trade 主候选。"
+ },
+ {
+  "id": "b001_g14_low_vol_N10_R30_fs10tp20",
+  "group": "G14_win_trade",
+  "selector": {
+   "type": "low_vol",
+   "n": 10,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": 0.1,
+   "take_profit": 0.2,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "低波+N10+fs10+tp20：低波本身波动小，止盈 20% 更容易被触发 → 理论上按笔胜率最高的一组。检验「高胜率 × 低收益」是否可接受（总收益可能只有 30-40%）。"
+ },
+ {
+  "id": "b001_g14_turnover_N10_R30_fs10tp20",
+  "group": "G14_win_trade",
+  "selector": {
+   "type": "turnover",
+   "n": 10,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": 0.1,
+   "take_profit": 0.2,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "低换手+N10+fs10+tp20：与低波版对照，判断「低换手是否也带来更高按笔胜率」。"
+ },
+ {
+  "id": "b001_g14_oversold_N10_R30_fs10tp20",
+  "group": "G14_win_trade",
+  "selector": {
+   "type": "oversold",
+   "n": 10,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": 0.1,
+   "take_profit": 0.2,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "C 类超跌企稳+N10+fs10+tp20：超跌股反弹 20% 的概率高 → 固定止盈最匹配这类选股。这是「C 类 2026 为负」结论下唯一还没测过的补救组合。"
+ },
+ {
+  "id": "b001_g14_oversold_N10_R15_fs10tp20",
+  "group": "G14_win_trade",
+  "selector": {
+   "type": "oversold",
+   "n": 10,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 15,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": 0.1,
+   "take_profit": 0.2,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "C 类超跌企稳+N10/R15+fs10+tp20：短周期上「超跌反弹」应更纯粹，第二点邻域避免单点结论。"
+ },
+ {
+  "id": "b001_g6_amihud_N5_R30_fs08",
+  "group": "G6_exit_axis",
+  "selector": {
+   "type": "amihud",
+   "n": 5,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": 0.08,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N5/fs08：紧固定止损。历史结论「个股止损普遍降夏普」，本 spec 量化 2026 的代价。"
+ },
+ {
+  "id": "b001_g6_amihud_N5_R30_fs10",
+  "group": "G6_exit_axis",
+  "selector": {
+   "type": "amihud",
+   "n": 5,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": 0.1,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N5/fs10：固定止损中间档，与 fs08/fs15 构成 3 点邻域。"
+ },
+ {
+  "id": "b001_g6_amihud_N5_R30_fs15",
+  "group": "G6_exit_axis",
+  "selector": {
+   "type": "amihud",
+   "n": 5,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": 0.15,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N5/fs15：宽固定止损，接近「只在暴雷时离场」。"
+ },
+ {
+  "id": "b001_g6_amihud_N10_R30_fs10",
+  "group": "G6_exit_axis",
+  "selector": {
+   "type": "amihud",
+   "n": 10,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": 0.1,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N10/fs10：分散组合上的固定止损，检验口径效应是否随 N 变化。"
+ },
+ {
+  "id": "b001_g6_amihud_N5_R30_tp20",
+  "group": "G6_exit_axis",
+  "selector": {
+   "type": "amihud",
+   "n": 5,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.2,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N5/tp20：已证伪方向（2026 牛市止盈=砍掉赢家）的基准点，用于确认结论在统一口径下依然成立。"
+ },
+ {
+  "id": "b001_g6_amihud_N5_R30_tp30",
+  "group": "G6_exit_axis",
+  "selector": {
+   "type": "amihud",
+   "n": 5,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.3,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N5/tp30：止盈 3 点邻域（20/30/50），看收益随止盈阈值是否单调回升。"
+ },
+ {
+  "id": "b001_g6_amihud_N5_R30_tp50",
+  "group": "G6_exit_axis",
+  "selector": {
+   "type": "amihud",
+   "n": 5,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N5/tp50：止盈最松档。若 tp50 仍不如 none，则「止盈」维度可整体关闭。"
+ },
+ {
+  "id": "b001_g6_amihud_N3_R30_tp30",
+  "group": "G6_exit_axis",
+  "selector": {
+   "type": "amihud",
+   "n": 3,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.3,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N3/tp30：集中组合的止盈，验证「越集中越不该止盈」。"
+ },
+ {
+  "id": "b001_g6_amihud_N5_R30_tt10",
+  "group": "G6_exit_axis",
+  "selector": {
+   "type": "amihud",
+   "n": 5,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": 0.1,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N5/trailing_take10%：从持仓最高浮盈回吐 10% 才卖（不是从成本），理论上比固定止盈更懂趋势，是「止盈」维度唯一值得救的形式。"
+ },
+ {
+  "id": "b001_g6_amihud_N5_R30_tt15",
+  "group": "G6_exit_axis",
+  "selector": {
+   "type": "amihud",
+   "n": 5,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": 0.15,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N5/trailing_take15%：从持仓最高浮盈回吐 15% 才卖（不是从成本），理论上比固定止盈更懂趋势，是「止盈」维度唯一值得救的形式。"
+ },
+ {
+  "id": "b001_g6_amihud_N5_R30_ts12tp40",
+  "group": "G6_exit_axis",
+  "selector": {
+   "type": "amihud",
+   "n": 5,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": 0.12,
+   "fixed_stop": null,
+   "take_profit": 0.4,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N5/ts12+tp40：先止损后止盈的确定性优先级。假设止盈端放宽到 40% 后副作用可忽略。"
+ },
+ {
+  "id": "b001_g6_amihud_N5_R30_ts10tt15",
+  "group": "G6_exit_axis",
+  "selector": {
+   "type": "amihud",
+   "n": 5,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": 0.1,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": 0.15,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N5/ts10+tt15：止损保底 + 跟踪止盈锁利。两条都是「跟随价格」的规则，理论上不会像固定止盈一样砍在趋势中段。"
+ },
+ {
+  "id": "b001_g4_amihud_N3_R15_none",
+  "group": "G4_R15",
+  "selector": {
+   "type": "amihud",
+   "n": 3,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 15,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N3/R15 无止损对照"
+ },
+ {
+  "id": "b001_g4_amihud_N3_R15_ts12",
+  "group": "G4_R15",
+  "selector": {
+   "type": "amihud",
+   "n": 3,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 15,
+  "exit": {
+   "trailing_stop": 0.12,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N3/R15 跟踪止损12%：预跑在 R15 上止损反而提高收益（N6: +58%→+79%），假设这是「R15 的下跌段更短、止损后低点再进」的结构性收益，不是噪音。"
+ },
+ {
+  "id": "b001_g4_amihud_N5_R15_none",
+  "group": "G4_R15",
+  "selector": {
+   "type": "amihud",
+   "n": 5,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 15,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N5/R15 无止损对照"
+ },
+ {
+  "id": "b001_g4_amihud_N5_R15_ts12",
+  "group": "G4_R15",
+  "selector": {
+   "type": "amihud",
+   "n": 5,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 15,
+  "exit": {
+   "trailing_stop": 0.12,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N5/R15 跟踪止损12%：预跑在 R15 上止损反而提高收益（N6: +58%→+79%），假设这是「R15 的下跌段更短、止损后低点再进」的结构性收益，不是噪音。"
+ },
+ {
+  "id": "b001_g4_amihud_N6_R15_none",
+  "group": "G4_R15",
+  "selector": {
+   "type": "amihud",
+   "n": 6,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 15,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N6/R15 无止损对照"
+ },
+ {
+  "id": "b001_g4_amihud_N6_R15_ts12",
+  "group": "G4_R15",
+  "selector": {
+   "type": "amihud",
+   "n": 6,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 15,
+  "exit": {
+   "trailing_stop": 0.12,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N6/R15 跟踪止损12%：预跑在 R15 上止损反而提高收益（N6: +58%→+79%），假设这是「R15 的下跌段更短、止损后低点再进」的结构性收益，不是噪音。"
+ },
+ {
+  "id": "b001_g4_amihud_N8_R15_none",
+  "group": "G4_R15",
+  "selector": {
+   "type": "amihud",
+   "n": 8,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 15,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N8/R15 无止损对照"
+ },
+ {
+  "id": "b001_g4_amihud_N8_R15_ts12",
+  "group": "G4_R15",
+  "selector": {
+   "type": "amihud",
+   "n": 8,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 15,
+  "exit": {
+   "trailing_stop": 0.12,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N8/R15 跟踪止损12%：预跑在 R15 上止损反而提高收益（N6: +58%→+79%），假设这是「R15 的下跌段更短、止损后低点再进」的结构性收益，不是噪音。"
+ },
+ {
+  "id": "b001_g4_amihud_N5_R15_ts8",
+  "group": "G4_R15",
+  "selector": {
+   "type": "amihud",
+   "n": 5,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 15,
+  "exit": {
+   "trailing_stop": 0.08,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N5/R15 跟踪止损8%：把 R15 的止损平台从 1 点扩到 3 点（8/10/12），确认最优档位是否与 R30 不同。"
+ },
+ {
+  "id": "b001_g4_amihud_N5_R15_ts10",
+  "group": "G4_R15",
+  "selector": {
+   "type": "amihud",
+   "n": 5,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 15,
+  "exit": {
+   "trailing_stop": 0.1,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N5/R15 跟踪止损10%：把 R15 的止损平台从 1 点扩到 3 点（8/10/12），确认最优档位是否与 R30 不同。"
+ },
+ {
+  "id": "b001_g7_low_vol_N5_R30_none",
+  "group": "G7_highwin_selectors",
+  "selector": {
+   "type": "low_vol",
+   "n": 5,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "低波 N5/R30 无止损：假设它的段胜率高于同 N 的 amihud（方差更小），但 2026 收益显著更低（预跑 low_vol N5 是负收益）。"
+ },
+ {
+  "id": "b001_g7_low_vol_N10_R30_none",
+  "group": "G7_highwin_selectors",
+  "selector": {
+   "type": "low_vol",
+   "n": 10,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "低波 N10/R30 无止损：假设它的段胜率高于同 N 的 amihud（方差更小），但 2026 收益显著更低（预跑 low_vol N5 是负收益）。"
+ },
+ {
+  "id": "b001_g7_low_vol_N25_R30_none",
+  "group": "G7_highwin_selectors",
+  "selector": {
+   "type": "low_vol",
+   "n": 25,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "低波 N25/R30 无止损：假设它的段胜率高于同 N 的 amihud（方差更小），但 2026 收益显著更低（预跑 low_vol N5 是负收益）。"
+ },
+ {
+  "id": "b001_g7_low_vol_N10_R30_ts10",
+  "group": "G7_highwin_selectors",
+  "selector": {
+   "type": "low_vol",
+   "n": 10,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": 0.1,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "低波 N10/ts10：高胜率腿 + 止损，检验「低方差 × 止损」是否能把段胜率推到 80%。"
+ },
+ {
+  "id": "b001_g7_turnover_N5_R30_none",
+  "group": "G7_highwin_selectors",
+  "selector": {
+   "type": "turnover",
+   "n": 5,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "低换手 N5/R30 无止损：假设它的段胜率高于同 N 的 amihud（方差更小），但 2026 收益显著更低（预跑 low_vol N5 是负收益）。"
+ },
+ {
+  "id": "b001_g7_turnover_N10_R30_none",
+  "group": "G7_highwin_selectors",
+  "selector": {
+   "type": "turnover",
+   "n": 10,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "低换手 N10/R30 无止损：假设它的段胜率高于同 N 的 amihud（方差更小），但 2026 收益显著更低（预跑 low_vol N5 是负收益）。"
+ },
+ {
+  "id": "b001_g7_turnover_N25_R30_none",
+  "group": "G7_highwin_selectors",
+  "selector": {
+   "type": "turnover",
+   "n": 25,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "低换手 N25/R30 无止损：假设它的段胜率高于同 N 的 amihud（方差更小），但 2026 收益显著更低（预跑 low_vol N5 是负收益）。"
+ },
+ {
+  "id": "b001_g7_turnover_N10_R30_ts10",
+  "group": "G7_highwin_selectors",
+  "selector": {
+   "type": "turnover",
+   "n": 10,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": 0.1,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "低换手 N10/ts10：高胜率腿 + 止损，检验「低方差 × 止损」是否能把段胜率推到 80%。"
+ },
+ {
+  "id": "b001_g7_rev20_N5_R30_none",
+  "group": "G7_highwin_selectors",
+  "selector": {
+   "type": "rev20",
+   "n": 5,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "20日反转 N5/R30 无止损：假设它的段胜率高于同 N 的 amihud（方差更小），但 2026 收益显著更低（预跑 low_vol N5 是负收益）。"
+ },
+ {
+  "id": "b001_g7_rev20_N10_R30_none",
+  "group": "G7_highwin_selectors",
+  "selector": {
+   "type": "rev20",
+   "n": 10,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "20日反转 N10/R30 无止损：假设它的段胜率高于同 N 的 amihud（方差更小），但 2026 收益显著更低（预跑 low_vol N5 是负收益）。"
+ },
+ {
+  "id": "b001_g7_rev20_N25_R30_none",
+  "group": "G7_highwin_selectors",
+  "selector": {
+   "type": "rev20",
+   "n": 25,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "20日反转 N25/R30 无止损：假设它的段胜率高于同 N 的 amihud（方差更小），但 2026 收益显著更低（预跑 low_vol N5 是负收益）。"
+ },
+ {
+  "id": "b001_g7_rev20_N10_R30_ts10",
+  "group": "G7_highwin_selectors",
+  "selector": {
+   "type": "rev20",
+   "n": 10,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": 0.1,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "20日反转 N10/ts10：高胜率腿 + 止损，检验「低方差 × 止损」是否能把段胜率推到 80%。"
+ },
+ {
+  "id": "b001_g7_rev5_N5_R30_none",
+  "group": "G7_highwin_selectors",
+  "selector": {
+   "type": "rev5",
+   "n": 5,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "5日反转 N5/R30：短周期反转的信号衰减快，配合 R30 可能选到「刚跌完就持有 30 日」，假设效果弱于 rev20。"
+ },
+ {
+  "id": "b001_g7_rev5_N10_R30_none",
+  "group": "G7_highwin_selectors",
+  "selector": {
+   "type": "rev5",
+   "n": 10,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "5日反转 N10/R30：短周期反转的信号衰减快，配合 R30 可能选到「刚跌完就持有 30 日」，假设效果弱于 rev20。"
+ },
+ {
+  "id": "b001_g7_rev5_N10_R30_ts10",
+  "group": "G7_highwin_selectors",
+  "selector": {
+   "type": "rev5",
+   "n": 10,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": 0.1,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "5日反转 N10/ts10：与 rev20 版本对照，确认短反转是否需要止损兜底。"
+ },
+ {
+  "id": "b001_g7_amount_level_N10_R30_none",
+  "group": "G7_highwin_selectors",
+  "selector": {
+   "type": "amount_level",
+   "n": 10,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "低成交额 N10/R30：与 amihud 同源（都指向冷门股）但构造不同，用作因子稳健性检验。"
+ },
+ {
+  "id": "b001_g9_amihud_neutral_N5_R30_none",
+  "group": "G9_industry_neutral",
+  "selector": {
+   "type": "amihud_industry_neutral",
+   "n": 5,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "行业中性 Amihud N5/R30：假设行业中性把「某个板块整体暴跌」的尾部风险切掉，回撤显著低于同 N 的 amihud（预跑 -13.8% vs -23.7%），代价是收益腰斩。"
+ },
+ {
+  "id": "b001_g9_amihud_neutral_N10_R30_none",
+  "group": "G9_industry_neutral",
+  "selector": {
+   "type": "amihud_industry_neutral",
+   "n": 10,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "行业中性 Amihud N10/R30：假设行业中性把「某个板块整体暴跌」的尾部风险切掉，回撤显著低于同 N 的 amihud（预跑 -13.8% vs -23.7%），代价是收益腰斩。"
+ },
+ {
+  "id": "b001_g9_amihud_neutral_N25_R30_none",
+  "group": "G9_industry_neutral",
+  "selector": {
+   "type": "amihud_industry_neutral",
+   "n": 25,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "行业中性 Amihud N25/R30：假设行业中性把「某个板块整体暴跌」的尾部风险切掉，回撤显著低于同 N 的 amihud（预跑 -13.8% vs -23.7%），代价是收益腰斩。"
+ },
+ {
+  "id": "b001_g9_amihud_neutral_N10_R30_ts10",
+  "group": "G9_industry_neutral",
+  "selector": {
+   "type": "amihud_industry_neutral",
+   "n": 10,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": 0.1,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "行业中性 N10/ts10：中性化后组合波动更低，止损触发更少，假设收益代价也小于 amihud。"
+ },
+ {
+  "id": "b001_g9_amihud_neutral_N5_R30_ts12",
+  "group": "G9_industry_neutral",
+  "selector": {
+   "type": "amihud_industry_neutral",
+   "n": 5,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": 0.12,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "行业中性 N5/ts12：与基线2 严格对照（只差中性化），直接量化中性化的净价值。"
+ },
+ {
+  "id": "b001_g5_amihud_N3_R7_none",
+  "group": "G5_R7_control",
+  "selector": {
+   "type": "amihud",
+   "n": 3,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 7,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N3/R7 无止损：历史「绞肉机」，收益被费用吃掉 10-20%。保留以量化费用占比。"
+ },
+ {
+  "id": "b001_g5_amihud_N5_R7_ts10",
+  "group": "G5_R7_control",
+  "selector": {
+   "type": "amihud",
+   "n": 5,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 7,
+  "exit": {
+   "trailing_stop": 0.1,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N5/R7 跟踪止损10%：短周期+止损可能把换手进一步提高，假设净收益更差。"
+ }
+]

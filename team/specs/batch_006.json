@@ -1,0 +1,3200 @@
+[
+ {
+  "id": "b006_G1_N4_TP40_exp30",
+  "group": "G1_N4_core",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.4,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.3,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N4 / TP40 / 敞口 30% / 主板 / R30。N4 是 fresh 口径下的最优点（更高收益 + 更低回撤 + 更高按笔胜率，全面支配 N5/N6）——本格用来确认它的 TP 敏感性：TP 越高越接近 no-stop（收益高、回撤也高），TP 越低越早锁利（按笔胜率升、收益降）。"
+ },
+ {
+  "id": "b006_G1_N4_TP50_exp30",
+  "group": "G1_N4_core",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.3,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N4 / TP50 / 敞口 30% / 主板 / R30。N4 是 fresh 口径下的最优点（更高收益 + 更低回撤 + 更高按笔胜率，全面支配 N5/N6）——本格用来确认它的 TP 敏感性：TP 越高越接近 no-stop（收益高、回撤也高），TP 越低越早锁利（按笔胜率升、收益降）。"
+ },
+ {
+  "id": "b006_G1_N4_TP60_exp30",
+  "group": "G1_N4_core",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.6,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.3,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N4 / TP60 / 敞口 30% / 主板 / R30。N4 是 fresh 口径下的最优点（更高收益 + 更低回撤 + 更高按笔胜率，全面支配 N5/N6）——本格用来确认它的 TP 敏感性：TP 越高越接近 no-stop（收益高、回撤也高），TP 越低越早锁利（按笔胜率升、收益降）。"
+ },
+ {
+  "id": "b006_G1_N4_nostopTP_exp30",
+  "group": "G1_N4_core",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.3,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N4 / 无止盈 / 敞口 30% / 主板 / R30。N4 是 fresh 口径下的最优点（更高收益 + 更低回撤 + 更高按笔胜率，全面支配 N5/N6）——本格用来确认它的 TP 敏感性：TP 越高越接近 no-stop（收益高、回撤也高），TP 越低越早锁利（按笔胜率升、收益降）。"
+ },
+ {
+  "id": "b006_G1_N4_TP40_exp40",
+  "group": "G1_N4_core",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.4,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.4,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N4 / TP40 / 敞口 40% / 主板 / R30。N4 是 fresh 口径下的最优点（更高收益 + 更低回撤 + 更高按笔胜率，全面支配 N5/N6）——本格用来确认它的 TP 敏感性：TP 越高越接近 no-stop（收益高、回撤也高），TP 越低越早锁利（按笔胜率升、收益降）。"
+ },
+ {
+  "id": "b006_G1_N4_TP50_exp40",
+  "group": "G1_N4_core",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.4,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N4 / TP50 / 敞口 40% / 主板 / R30。N4 是 fresh 口径下的最优点（更高收益 + 更低回撤 + 更高按笔胜率，全面支配 N5/N6）——本格用来确认它的 TP 敏感性：TP 越高越接近 no-stop（收益高、回撤也高），TP 越低越早锁利（按笔胜率升、收益降）。"
+ },
+ {
+  "id": "b006_G1_N4_TP60_exp40",
+  "group": "G1_N4_core",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.6,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.4,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N4 / TP60 / 敞口 40% / 主板 / R30。N4 是 fresh 口径下的最优点（更高收益 + 更低回撤 + 更高按笔胜率，全面支配 N5/N6）——本格用来确认它的 TP 敏感性：TP 越高越接近 no-stop（收益高、回撤也高），TP 越低越早锁利（按笔胜率升、收益降）。"
+ },
+ {
+  "id": "b006_G1_N4_nostopTP_exp40",
+  "group": "G1_N4_core",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.4,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N4 / 无止盈 / 敞口 40% / 主板 / R30。N4 是 fresh 口径下的最优点（更高收益 + 更低回撤 + 更高按笔胜率，全面支配 N5/N6）——本格用来确认它的 TP 敏感性：TP 越高越接近 no-stop（收益高、回撤也高），TP 越低越早锁利（按笔胜率升、收益降）。"
+ },
+ {
+  "id": "b006_G1_N4_TP40_exp50",
+  "group": "G1_N4_core",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.4,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.5,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N4 / TP40 / 敞口 50% / 主板 / R30。N4 是 fresh 口径下的最优点（更高收益 + 更低回撤 + 更高按笔胜率，全面支配 N5/N6）——本格用来确认它的 TP 敏感性：TP 越高越接近 no-stop（收益高、回撤也高），TP 越低越早锁利（按笔胜率升、收益降）。"
+ },
+ {
+  "id": "b006_G1_N4_TP50_exp50",
+  "group": "G1_N4_core",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.5,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N4 / TP50 / 敞口 50% / 主板 / R30。N4 是 fresh 口径下的最优点（更高收益 + 更低回撤 + 更高按笔胜率，全面支配 N5/N6）——本格用来确认它的 TP 敏感性：TP 越高越接近 no-stop（收益高、回撤也高），TP 越低越早锁利（按笔胜率升、收益降）。"
+ },
+ {
+  "id": "b006_G1_N4_TP60_exp50",
+  "group": "G1_N4_core",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.6,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.5,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N4 / TP60 / 敞口 50% / 主板 / R30。N4 是 fresh 口径下的最优点（更高收益 + 更低回撤 + 更高按笔胜率，全面支配 N5/N6）——本格用来确认它的 TP 敏感性：TP 越高越接近 no-stop（收益高、回撤也高），TP 越低越早锁利（按笔胜率升、收益降）。"
+ },
+ {
+  "id": "b006_G1_N4_nostopTP_exp50",
+  "group": "G1_N4_core",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.5,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N4 / 无止盈 / 敞口 50% / 主板 / R30。N4 是 fresh 口径下的最优点（更高收益 + 更低回撤 + 更高按笔胜率，全面支配 N5/N6）——本格用来确认它的 TP 敏感性：TP 越高越接近 no-stop（收益高、回撤也高），TP 越低越早锁利（按笔胜率升、收益降）。"
+ },
+ {
+  "id": "b006_G1_N4_TP40_exp60",
+  "group": "G1_N4_core",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.4,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.6,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N4 / TP40 / 敞口 60% / 主板 / R30。N4 是 fresh 口径下的最优点（更高收益 + 更低回撤 + 更高按笔胜率，全面支配 N5/N6）——本格用来确认它的 TP 敏感性：TP 越高越接近 no-stop（收益高、回撤也高），TP 越低越早锁利（按笔胜率升、收益降）。"
+ },
+ {
+  "id": "b006_G1_N4_TP50_exp60",
+  "group": "G1_N4_core",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.6,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N4 / TP50 / 敞口 60% / 主板 / R30。N4 是 fresh 口径下的最优点（更高收益 + 更低回撤 + 更高按笔胜率，全面支配 N5/N6）——本格用来确认它的 TP 敏感性：TP 越高越接近 no-stop（收益高、回撤也高），TP 越低越早锁利（按笔胜率升、收益降）。"
+ },
+ {
+  "id": "b006_G1_N4_TP60_exp60",
+  "group": "G1_N4_core",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.6,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.6,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N4 / TP60 / 敞口 60% / 主板 / R30。N4 是 fresh 口径下的最优点（更高收益 + 更低回撤 + 更高按笔胜率，全面支配 N5/N6）——本格用来确认它的 TP 敏感性：TP 越高越接近 no-stop（收益高、回撤也高），TP 越低越早锁利（按笔胜率升、收益降）。"
+ },
+ {
+  "id": "b006_G1_N4_nostopTP_exp60",
+  "group": "G1_N4_core",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.6,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N4 / 无止盈 / 敞口 60% / 主板 / R30。N4 是 fresh 口径下的最优点（更高收益 + 更低回撤 + 更高按笔胜率，全面支配 N5/N6）——本格用来确认它的 TP 敏感性：TP 越高越接近 no-stop（收益高、回撤也高），TP 越低越早锁利（按笔胜率升、收益降）。"
+ },
+ {
+  "id": "b006_G1_N4_TP40_exp70",
+  "group": "G1_N4_core",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.4,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.7,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N4 / TP40 / 敞口 70% / 主板 / R30。N4 是 fresh 口径下的最优点（更高收益 + 更低回撤 + 更高按笔胜率，全面支配 N5/N6）——本格用来确认它的 TP 敏感性：TP 越高越接近 no-stop（收益高、回撤也高），TP 越低越早锁利（按笔胜率升、收益降）。"
+ },
+ {
+  "id": "b006_G1_N4_TP50_exp70",
+  "group": "G1_N4_core",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.7,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N4 / TP50 / 敞口 70% / 主板 / R30。N4 是 fresh 口径下的最优点（更高收益 + 更低回撤 + 更高按笔胜率，全面支配 N5/N6）——本格用来确认它的 TP 敏感性：TP 越高越接近 no-stop（收益高、回撤也高），TP 越低越早锁利（按笔胜率升、收益降）。"
+ },
+ {
+  "id": "b006_G1_N4_TP60_exp70",
+  "group": "G1_N4_core",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.6,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.7,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N4 / TP60 / 敞口 70% / 主板 / R30。N4 是 fresh 口径下的最优点（更高收益 + 更低回撤 + 更高按笔胜率，全面支配 N5/N6）——本格用来确认它的 TP 敏感性：TP 越高越接近 no-stop（收益高、回撤也高），TP 越低越早锁利（按笔胜率升、收益降）。"
+ },
+ {
+  "id": "b006_G1_N4_nostopTP_exp70",
+  "group": "G1_N4_core",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.7,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N4 / 无止盈 / 敞口 70% / 主板 / R30。N4 是 fresh 口径下的最优点（更高收益 + 更低回撤 + 更高按笔胜率，全面支配 N5/N6）——本格用来确认它的 TP 敏感性：TP 越高越接近 no-stop（收益高、回撤也高），TP 越低越早锁利（按笔胜率升、收益降）。"
+ },
+ {
+  "id": "b006_G1_N4_TP40_exp80",
+  "group": "G1_N4_core",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.4,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.8,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N4 / TP40 / 敞口 80% / 主板 / R30。N4 是 fresh 口径下的最优点（更高收益 + 更低回撤 + 更高按笔胜率，全面支配 N5/N6）——本格用来确认它的 TP 敏感性：TP 越高越接近 no-stop（收益高、回撤也高），TP 越低越早锁利（按笔胜率升、收益降）。"
+ },
+ {
+  "id": "b006_G1_N4_TP50_exp80",
+  "group": "G1_N4_core",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.8,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N4 / TP50 / 敞口 80% / 主板 / R30。N4 是 fresh 口径下的最优点（更高收益 + 更低回撤 + 更高按笔胜率，全面支配 N5/N6）——本格用来确认它的 TP 敏感性：TP 越高越接近 no-stop（收益高、回撤也高），TP 越低越早锁利（按笔胜率升、收益降）。"
+ },
+ {
+  "id": "b006_G1_N4_TP60_exp80",
+  "group": "G1_N4_core",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.6,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.8,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N4 / TP60 / 敞口 80% / 主板 / R30。N4 是 fresh 口径下的最优点（更高收益 + 更低回撤 + 更高按笔胜率，全面支配 N5/N6）——本格用来确认它的 TP 敏感性：TP 越高越接近 no-stop（收益高、回撤也高），TP 越低越早锁利（按笔胜率升、收益降）。"
+ },
+ {
+  "id": "b006_G1_N4_nostopTP_exp80",
+  "group": "G1_N4_core",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.8,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N4 / 无止盈 / 敞口 80% / 主板 / R30。N4 是 fresh 口径下的最优点（更高收益 + 更低回撤 + 更高按笔胜率，全面支配 N5/N6）——本格用来确认它的 TP 敏感性：TP 越高越接近 no-stop（收益高、回撤也高），TP 越低越早锁利（按笔胜率升、收益降）。"
+ },
+ {
+  "id": "b006_G1_N4_TP40_exp90",
+  "group": "G1_N4_core",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.4,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N4 / TP40 / 敞口 90% / 主板 / R30。N4 是 fresh 口径下的最优点（更高收益 + 更低回撤 + 更高按笔胜率，全面支配 N5/N6）——本格用来确认它的 TP 敏感性：TP 越高越接近 no-stop（收益高、回撤也高），TP 越低越早锁利（按笔胜率升、收益降）。"
+ },
+ {
+  "id": "b006_G1_N4_TP50_exp90",
+  "group": "G1_N4_core",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N4 / TP50 / 敞口 90% / 主板 / R30。N4 是 fresh 口径下的最优点（更高收益 + 更低回撤 + 更高按笔胜率，全面支配 N5/N6）——本格用来确认它的 TP 敏感性：TP 越高越接近 no-stop（收益高、回撤也高），TP 越低越早锁利（按笔胜率升、收益降）。"
+ },
+ {
+  "id": "b006_G1_N4_TP60_exp90",
+  "group": "G1_N4_core",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.6,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N4 / TP60 / 敞口 90% / 主板 / R30。N4 是 fresh 口径下的最优点（更高收益 + 更低回撤 + 更高按笔胜率，全面支配 N5/N6）——本格用来确认它的 TP 敏感性：TP 越高越接近 no-stop（收益高、回撤也高），TP 越低越早锁利（按笔胜率升、收益降）。"
+ },
+ {
+  "id": "b006_G1_N4_nostopTP_exp90",
+  "group": "G1_N4_core",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N4 / 无止盈 / 敞口 90% / 主板 / R30。N4 是 fresh 口径下的最优点（更高收益 + 更低回撤 + 更高按笔胜率，全面支配 N5/N6）——本格用来确认它的 TP 敏感性：TP 越高越接近 no-stop（收益高、回撤也高），TP 越低越早锁利（按笔胜率升、收益降）。"
+ },
+ {
+  "id": "b006_G1_N4_TP40_exp100",
+  "group": "G1_N4_core",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.4,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 1.0,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N4 / TP40 / 敞口 100% / 主板 / R30。N4 是 fresh 口径下的最优点（更高收益 + 更低回撤 + 更高按笔胜率，全面支配 N5/N6）——本格用来确认它的 TP 敏感性：TP 越高越接近 no-stop（收益高、回撤也高），TP 越低越早锁利（按笔胜率升、收益降）。"
+ },
+ {
+  "id": "b006_G1_N4_TP50_exp100",
+  "group": "G1_N4_core",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 1.0,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N4 / TP50 / 敞口 100% / 主板 / R30。**N4 控制组：必须复现 Lead 的 fresh +98.72% / MDD −11.38% / wp 5-6 / wm 7-10 / wt 62.5%。**"
+ },
+ {
+  "id": "b006_G1_N4_TP60_exp100",
+  "group": "G1_N4_core",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.6,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 1.0,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N4 / TP60 / 敞口 100% / 主板 / R30。N4 是 fresh 口径下的最优点（更高收益 + 更低回撤 + 更高按笔胜率，全面支配 N5/N6）——本格用来确认它的 TP 敏感性：TP 越高越接近 no-stop（收益高、回撤也高），TP 越低越早锁利（按笔胜率升、收益降）。"
+ },
+ {
+  "id": "b006_G1_N4_nostopTP_exp100",
+  "group": "G1_N4_core",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 1.0,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N4 / 无止盈 / 敞口 100% / 主板 / R30。N4 是 fresh 口径下的最优点（更高收益 + 更低回撤 + 更高按笔胜率，全面支配 N5/N6）——本格用来确认它的 TP 敏感性：TP 越高越接近 no-stop（收益高、回撤也高），TP 越低越早锁利（按笔胜率升、收益降）。"
+ },
+ {
+  "id": "b006_G1_N4_TP45_exp90",
+  "group": "G1_N4_core",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.45,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N4 / TP45 / 敞口 90%：TP 的 45/55 两档只在高敞口下补点，用于确认 TP50 不是孤立尖峰（若 TP45/50/55 的 fresh_total 差 <3pp，则 TP 维度可视为平台）。"
+ },
+ {
+  "id": "b006_G1_N4_TP55_exp90",
+  "group": "G1_N4_core",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.55,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N4 / TP55 / 敞口 90%：TP 的 45/55 两档只在高敞口下补点，用于确认 TP50 不是孤立尖峰（若 TP45/50/55 的 fresh_total 差 <3pp，则 TP 维度可视为平台）。"
+ },
+ {
+  "id": "b006_G1_N4_TP45_exp100",
+  "group": "G1_N4_core",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.45,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 1.0,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N4 / TP45 / 敞口 100%：TP 的 45/55 两档只在高敞口下补点，用于确认 TP50 不是孤立尖峰（若 TP45/50/55 的 fresh_total 差 <3pp，则 TP 维度可视为平台）。"
+ },
+ {
+  "id": "b006_G1_N4_TP55_exp100",
+  "group": "G1_N4_core",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.55,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 1.0,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N4 / TP55 / 敞口 100%：TP 的 45/55 两档只在高敞口下补点，用于确认 TP50 不是孤立尖峰（若 TP45/50/55 的 fresh_total 差 <3pp，则 TP 维度可视为平台）。"
+ },
+ {
+  "id": "b006_G2_N2_TP50_exp100",
+  "group": "G2_N_cross",
+  "selector": {
+   "type": "amihud_60",
+   "n": 2,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 1.0,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N2 / TP50 / 敞口 100%：N4 的两个邻居（N3、N5）已实测 —— N3 full +85.8/−16.4、N5 fresh +64.48/−12.76。本条补上 N2/N7 与 0.7 档，用来判断 N4 的优势是**平台**还是**孤立尖峰**：若 N3/N4/N5 的 fresh_total 依次为 86/99/64，则 N4 明显突起，需要警惕过拟合。"
+ },
+ {
+  "id": "b006_G2_N2_TP50_exp70",
+  "group": "G2_N_cross",
+  "selector": {
+   "type": "amihud_60",
+   "n": 2,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.7,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N2 / TP50 / 敞口 70%：N4 的两个邻居（N3、N5）已实测 —— N3 full +85.8/−16.4、N5 fresh +64.48/−12.76。本条补上 N2/N7 与 0.7 档，用来判断 N4 的优势是**平台**还是**孤立尖峰**：若 N3/N4/N5 的 fresh_total 依次为 86/99/64，则 N4 明显突起，需要警惕过拟合。"
+ },
+ {
+  "id": "b006_G2_N3_TP50_exp100",
+  "group": "G2_N_cross",
+  "selector": {
+   "type": "amihud_60",
+   "n": 3,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 1.0,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N3 / TP50 / 敞口 100%：N4 的两个邻居（N3、N5）已实测 —— N3 full +85.8/−16.4、N5 fresh +64.48/−12.76。本条补上 N2/N7 与 0.7 档，用来判断 N4 的优势是**平台**还是**孤立尖峰**：若 N3/N4/N5 的 fresh_total 依次为 86/99/64，则 N4 明显突起，需要警惕过拟合。"
+ },
+ {
+  "id": "b006_G2_N3_TP50_exp70",
+  "group": "G2_N_cross",
+  "selector": {
+   "type": "amihud_60",
+   "n": 3,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.7,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N3 / TP50 / 敞口 70%：N4 的两个邻居（N3、N5）已实测 —— N3 full +85.8/−16.4、N5 fresh +64.48/−12.76。本条补上 N2/N7 与 0.7 档，用来判断 N4 的优势是**平台**还是**孤立尖峰**：若 N3/N4/N5 的 fresh_total 依次为 86/99/64，则 N4 明显突起，需要警惕过拟合。"
+ },
+ {
+  "id": "b006_G2_N5_TP50_exp100",
+  "group": "G2_N_cross",
+  "selector": {
+   "type": "amihud_60",
+   "n": 5,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 1.0,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N5 / TP50 / 敞口 100%：N4 的两个邻居（N3、N5）已实测 —— N3 full +85.8/−16.4、N5 fresh +64.48/−12.76。本条补上 N2/N7 与 0.7 档，用来判断 N4 的优势是**平台**还是**孤立尖峰**：若 N3/N4/N5 的 fresh_total 依次为 86/99/64，则 N4 明显突起，需要警惕过拟合。"
+ },
+ {
+  "id": "b006_G2_N5_TP50_exp70",
+  "group": "G2_N_cross",
+  "selector": {
+   "type": "amihud_60",
+   "n": 5,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.7,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N5 / TP50 / 敞口 70%：N4 的两个邻居（N3、N5）已实测 —— N3 full +85.8/−16.4、N5 fresh +64.48/−12.76。本条补上 N2/N7 与 0.7 档，用来判断 N4 的优势是**平台**还是**孤立尖峰**：若 N3/N4/N5 的 fresh_total 依次为 86/99/64，则 N4 明显突起，需要警惕过拟合。"
+ },
+ {
+  "id": "b006_G2_N7_TP50_exp100",
+  "group": "G2_N_cross",
+  "selector": {
+   "type": "amihud_60",
+   "n": 7,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 1.0,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N7 / TP50 / 敞口 100%：N4 的两个邻居（N3、N5）已实测 —— N3 full +85.8/−16.4、N5 fresh +64.48/−12.76。本条补上 N2/N7 与 0.7 档，用来判断 N4 的优势是**平台**还是**孤立尖峰**：若 N3/N4/N5 的 fresh_total 依次为 86/99/64，则 N4 明显突起，需要警惕过拟合。"
+ },
+ {
+  "id": "b006_G2_N7_TP50_exp70",
+  "group": "G2_N_cross",
+  "selector": {
+   "type": "amihud_60",
+   "n": 7,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.7,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N7 / TP50 / 敞口 70%：N4 的两个邻居（N3、N5）已实测 —— N3 full +85.8/−16.4、N5 fresh +64.48/−12.76。本条补上 N2/N7 与 0.7 档，用来判断 N4 的优势是**平台**还是**孤立尖峰**：若 N3/N4/N5 的 fresh_total 依次为 86/99/64，则 N4 明显突起，需要警惕过拟合。"
+ },
+ {
+  "id": "b006_G2_N3_nostopTP_exp100",
+  "group": "G2_N_cross",
+  "selector": {
+   "type": "amihud_60",
+   "n": 3,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 1.0,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N3 / 无止盈 / 满仓：N3 TP50 是 +85.8/−16.4；去掉止盈看它是「止盈救了它」还是「止盈伤了它」。"
+ },
+ {
+  "id": "b006_G3_N8_TP50_exp100",
+  "group": "G3_diversify_control",
+  "selector": {
+   "type": "amihud_60",
+   "n": 8,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 1.0,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N8 / TP50 / 满仓（对照）。5 万 + 100 股整手下，N8 每票 6250 元 → 基本可买一手，实际有效持仓会明显少于 8。本组的作用是**证明分散在 5 万本金下已经失效**，而不是寻找更优解（Round 1 实测 N8 +44.8%、N10 +39~46%、N12 +26%）。"
+ },
+ {
+  "id": "b006_G3_N10_TP50_exp100",
+  "group": "G3_diversify_control",
+  "selector": {
+   "type": "amihud_60",
+   "n": 10,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 1.0,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N10 / TP50 / 满仓（对照）。5 万 + 100 股整手下，N10 每票 5000 元 → 多数 30 元以上的票买不起一手，实际有效持仓会明显少于 10。本组的作用是**证明分散在 5 万本金下已经失效**，而不是寻找更优解（Round 1 实测 N8 +44.8%、N10 +39~46%、N12 +26%）。"
+ },
+ {
+  "id": "b006_G3_N12_TP50_exp100",
+  "group": "G3_diversify_control",
+  "selector": {
+   "type": "amihud_60",
+   "n": 12,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 1.0,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N12 / TP50 / 满仓（对照）。5 万 + 100 股整手下，N12 每票 4167 元 → 多数 30 元以上的票买不起一手，实际有效持仓会明显少于 12。本组的作用是**证明分散在 5 万本金下已经失效**，而不是寻找更优解（Round 1 实测 N8 +44.8%、N10 +39~46%、N12 +26%）。"
+ },
+ {
+  "id": "b006_G3_N16_TP50_exp100",
+  "group": "G3_diversify_control",
+  "selector": {
+   "type": "amihud_60",
+   "n": 16,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 1.0,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N16 / TP50 / 满仓（对照）。5 万 + 100 股整手下，N16 每票 3125 元 → 多数 30 元以上的票买不起一手，实际有效持仓会明显少于 16。本组的作用是**证明分散在 5 万本金下已经失效**，而不是寻找更优解（Round 1 实测 N8 +44.8%、N10 +39~46%、N12 +26%）。"
+ },
+ {
+  "id": "b006_G3_N20_TP50_exp100",
+  "group": "G3_diversify_control",
+  "selector": {
+   "type": "amihud_60",
+   "n": 20,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 1.0,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N20 / TP50 / 满仓（对照）。5 万 + 100 股整手下，N20 每票 2500 元 → 多数 30 元以上的票买不起一手，实际有效持仓会明显少于 20。本组的作用是**证明分散在 5 万本金下已经失效**，而不是寻找更优解（Round 1 实测 N8 +44.8%、N10 +39~46%、N12 +26%）。"
+ },
+ {
+  "id": "b006_G3_N25_TP50_exp100",
+  "group": "G3_diversify_control",
+  "selector": {
+   "type": "amihud_60",
+   "n": 25,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 1.0,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N25 / TP50 / 满仓（对照）。5 万 + 100 股整手下，N25 每票 2000 元 → 多数 30 元以上的票买不起一手，实际有效持仓会明显少于 25。本组的作用是**证明分散在 5 万本金下已经失效**，而不是寻找更优解（Round 1 实测 N8 +44.8%、N10 +39~46%、N12 +26%）。"
+ },
+ {
+  "id": "b006_G4_N4_stg30_50",
+  "group": "G4_N4_overlay",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null,
+   "staged_take": [
+    {
+     "trigger": 0.3,
+     "fraction": 0.3333
+    },
+    {
+     "trigger": 0.5,
+     "fraction": 0.3333
+    }
+   ]
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 1.0,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N4 + 分批止盈[+30 卖1/3, +50 卖1/3]（替换 TP50）。Round 2 在 N6 上 staged 是最强收益增强（主口径 +81.3%、按笔 66.7% 全场最高）。N4 的 TP50 已是 +98.72%，staged 有可能把它推到 >100%。"
+ },
+ {
+  "id": "b006_G4_N4_stg20_35",
+  "group": "G4_N4_overlay",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null,
+   "staged_take": [
+    {
+     "trigger": 0.2,
+     "fraction": 0.3333
+    },
+    {
+     "trigger": 0.35,
+     "fraction": 0.3333
+    }
+   ]
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 1.0,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N4 + 更早分批止盈[+20/+35]：假设它把按笔胜率从 62.5% 推到 68%+，代价是收益掉 8~12pp —— 这是「高胜率型」画像在 N4 上的候选。"
+ },
+ {
+  "id": "b006_G4_N4_fs10",
+  "group": "G4_N4_overlay",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": 0.1,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 1.0,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N4 + 固定止损 10%（叠加 TP50）。Round 1/2 两次实测止损在 amihud_60 上是纯伤害；在 N4 上再测一次是为了确认「更集中的底子 + 止损」是否仍无价值。"
+ },
+ {
+  "id": "b006_G4_N4_vt20",
+  "group": "G4_N4_overlay",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 1.0,
+   "cash_asset": "cash",
+   "fresh_start": true,
+   "vol_target": 0.2
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N4 + 目标波动 20%（只降仓）。N4 的回撤本来就只有 −11.38%，vol_target 若把它压到 −8% 内且收益守住 80%，就是「稳健型」的强候选。"
+ },
+ {
+  "id": "b006_G5_N4_TP50_exp100_pm10",
+  "group": "G5_N4_phase",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 1.0,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N4 / TP50 / 满仓 / 相位 -10：**这是本轮最关键的三条之一**。Lead 的 +98.72% 是 phase 0；若在 −5/+5 相位掉到 60% 以下，则 N4 的优势也是相位运气（Round 1 已证明 R30 的 mdd 是相位的函数）。先给 3 档，够判断方向即可。",
+  "rebalance_offset_days": -10
+ },
+ {
+  "id": "b006_G5_N4_TP50_exp100_pm5",
+  "group": "G5_N4_phase",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 1.0,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N4 / TP50 / 满仓 / 相位 -5：**这是本轮最关键的三条之一**。Lead 的 +98.72% 是 phase 0；若在 −5/+5 相位掉到 60% 以下，则 N4 的优势也是相位运气（Round 1 已证明 R30 的 mdd 是相位的函数）。先给 3 档，够判断方向即可。",
+  "rebalance_offset_days": -5
+ },
+ {
+  "id": "b006_G5_N4_TP50_exp100_pp5",
+  "group": "G5_N4_phase",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 1.0,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N4 / TP50 / 满仓 / 相位 +5：**这是本轮最关键的三条之一**。Lead 的 +98.72% 是 phase 0；若在 −5/+5 相位掉到 60% 以下，则 N4 的优势也是相位运气（Round 1 已证明 R30 的 mdd 是相位的函数）。先给 3 档，够判断方向即可。",
+  "rebalance_offset_days": 5
+ },
+ {
+  "id": "b006_G6_sleeve3_N4_TP50_exp70",
+  "group": "G6_sleeve_N4",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.7,
+   "cash_asset": "cash",
+   "fresh_start": true,
+   "sleeves": {
+    "count": 3,
+    "offsets": [
+     -8,
+     0,
+     8
+    ],
+    "alloc": "equal"
+   }
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "3-sleeve（−8/0/+8）N4/TP50 × 敞口 70%。Round 2 的 sleeve 在 N5 上 fresh 只有 +54.90%（整手摩擦），N4 每 sleeve 每票约 2917 元 —— 比 N5/3-sleeve 的 3200 元好得多，所以 sleeve 在 N4 上**第一次有可能不被整手打垮**。假设：mdd 降到 −8% 内、收益守住 75%。"
+ },
+ {
+  "id": "b006_G6_sleeve3_N4_TP50_exp90",
+  "group": "G6_sleeve_N4",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash",
+   "fresh_start": true,
+   "sleeves": {
+    "count": 3,
+    "offsets": [
+     -8,
+     0,
+     8
+    ],
+    "alloc": "equal"
+   }
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "3-sleeve（−8/0/+8）N4/TP50 × 敞口 90%。Round 2 的 sleeve 在 N5 上 fresh 只有 +54.90%（整手摩擦），N4 每 sleeve 每票约 3750 元 —— 比 N5/3-sleeve 的 3200 元好得多，所以 sleeve 在 N4 上**第一次有可能不被整手打垮**。假设：mdd 降到 −8% 内、收益守住 75%。"
+ },
+ {
+  "id": "b006_G6_sleeve5_N4_TP50_exp90",
+  "group": "G6_sleeve_N4",
+  "selector": {
+   "type": "amihud_60",
+   "n": 4,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash",
+   "fresh_start": true,
+   "sleeves": {
+    "count": 5,
+    "offsets": [
+     -12,
+     -6,
+     0,
+     6,
+     12
+    ],
+    "alloc": "equal"
+   }
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "5-sleeve（−12/−6/0/+6/+12）N4/TP50 × 敞口 90%：把相位覆盖做到 5 份，代价是每份只有 9000 元、每票 2250 元（整手摩擦重新变紧）。用于检验「相位分散」与「整手摩擦」的净效应。"
+ },
+ {
+  "id": "b006_G7_C3_N6_TP50_exp100",
+  "group": "G7_controls",
+  "selector": {
+   "type": "amihud_60",
+   "n": 6,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 1.0,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "**C3 控制组**：N6/TP50/满仓。必须复现 Round 2 的 fresh **+64.48% / −12.76% / wp 5-6（±0.5pp）**；与 N4 同批跑，才能证明「N4 优于 N6」不是跨批次的口径差异。"
+ },
+ {
+  "id": "b006_G7_C2_N5_TP50_exp90",
+  "group": "G7_controls",
+  "selector": {
+   "type": "amihud_60",
+   "n": 5,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash",
+   "fresh_start": true
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "**C2 控制组**：N5/TP50/0.90。Round 2 fresh = +59.94%。"
+ },
+ {
+  "id": "b006_G7_C5_sleeve3_N5_TP50_exp90",
+  "group": "G7_controls",
+  "selector": {
+   "type": "amihud_60",
+   "n": 5,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash",
+   "fresh_start": true,
+   "sleeves": {
+    "count": 3,
+    "offsets": [
+     -8,
+     0,
+     8
+    ],
+    "alloc": "equal"
+   }
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "**C5 控制组**：3-sleeve N5/TP50/0.90。Round 2 fresh = +54.90%。"
+ }
+]

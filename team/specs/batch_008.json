@@ -1,0 +1,2810 @@
+[
+  {
+    "id": "b008_G1_N4_TP45_exp90",
+    "group": "G1_R7_core",
+    "selector": {
+      "type": "amihud_60",
+      "n": 4,
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {}
+    },
+    "rebalance_days": 7,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.45,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next"
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "exposure": 0.9,
+      "cash_asset": "cash",
+      "fresh_start": true
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "R7挑战#1: N4/R7/TP45/exp90 vs 基线R30均衡型(+91.23%/-9.59%/Calmar9.51)。与基线同N, 纯R30→R7切换, 最干净的R效应度量。基线同款TP, 直接对打b006_G1_N4_TP45_exp90(+91.23%)。基线同款敞口, 直接可比; 006 Calmar峰值档(8.96>满仓8.67)。假设R7复利+更早兑现可覆盖换手费(历史10-20%本金)。口径fresh/现实费率/5万整手/t+1收盘/stop_next/phase0; fixed0.5%由runner variants补。"
+  },
+  {
+    "id": "b008_G1_N4_TP45_exp100",
+    "group": "G1_R7_core",
+    "selector": {
+      "type": "amihud_60",
+      "n": 4,
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {}
+    },
+    "rebalance_days": 7,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.45,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next"
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "exposure": 1,
+      "cash_asset": "cash",
+      "fresh_start": true
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "R7挑战#2: N4/R7/TP45/exp100 vs 基线R30均衡型(+91.23%/-9.59%/Calmar9.51)。与基线同N, 纯R30→R7切换, 最干净的R效应度量。基线同款TP, 直接对打b006_G1_N4_TP45_exp90(+91.23%)。满仓: R7收益上限探测; 费用绝对值最大, 看净收益能否覆盖。假设R7复利+更早兑现可覆盖换手费(历史10-20%本金)。口径fresh/现实费率/5万整手/t+1收盘/stop_next/phase0; fixed0.5%由runner variants补。"
+  },
+  {
+    "id": "b008_G1_N4_TP50_exp90",
+    "group": "G1_R7_core",
+    "selector": {
+      "type": "amihud_60",
+      "n": 4,
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {}
+    },
+    "rebalance_days": 7,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.5,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next"
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "exposure": 0.9,
+      "cash_asset": "cash",
+      "fresh_start": true
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "R7挑战#3: N4/R7/TP50/exp90 vs 基线R30均衡型(+91.23%/-9.59%/Calmar9.51)。与基线同N, 纯R30→R7切换, 最干净的R效应度量。TP邻域上档: 防TP45孤立尖峰; Lead满仓TP50=+98.72%。基线同款敞口, 直接可比; 006 Calmar峰值档(8.96>满仓8.67)。假设R7复利+更早兑现可覆盖换手费(历史10-20%本金)。口径fresh/现实费率/5万整手/t+1收盘/stop_next/phase0; fixed0.5%由runner variants补。"
+  },
+  {
+    "id": "b008_G1_N4_TP50_exp100",
+    "group": "G1_R7_core",
+    "selector": {
+      "type": "amihud_60",
+      "n": 4,
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {}
+    },
+    "rebalance_days": 7,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.5,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next"
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "exposure": 1,
+      "cash_asset": "cash",
+      "fresh_start": true
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "R7挑战#4: N4/R7/TP50/exp100 vs 基线R30均衡型(+91.23%/-9.59%/Calmar9.51)。与基线同N, 纯R30→R7切换, 最干净的R效应度量。TP邻域上档: 防TP45孤立尖峰; Lead满仓TP50=+98.72%。满仓: R7收益上限探测; 费用绝对值最大, 看净收益能否覆盖。假设R7复利+更早兑现可覆盖换手费(历史10-20%本金)。口径fresh/现实费率/5万整手/t+1收盘/stop_next/phase0; fixed0.5%由runner variants补。"
+  },
+  {
+    "id": "b008_G1_N4_TP40_exp90",
+    "group": "G1_R7_core",
+    "selector": {
+      "type": "amihud_60",
+      "n": 4,
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {}
+    },
+    "rebalance_days": 7,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.4,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next"
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "exposure": 0.9,
+      "cash_asset": "cash",
+      "fresh_start": true
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "R7挑战#5: N4/R7/TP40/exp90 vs 基线R30均衡型(+91.23%/-9.59%/Calmar9.51)。与基线同N, 纯R30→R7切换, 最干净的R效应度量。TP邻域下档: 早锁利, 预期wt↑/total↓, 看胜率-收益权衡。基线同款敞口, 直接可比; 006 Calmar峰值档(8.96>满仓8.67)。假设R7复利+更早兑现可覆盖换手费(历史10-20%本金)。口径fresh/现实费率/5万整手/t+1收盘/stop_next/phase0; fixed0.5%由runner variants补。"
+  },
+  {
+    "id": "b008_G1_N4_TP40_exp100",
+    "group": "G1_R7_core",
+    "selector": {
+      "type": "amihud_60",
+      "n": 4,
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {}
+    },
+    "rebalance_days": 7,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.4,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next"
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "exposure": 1,
+      "cash_asset": "cash",
+      "fresh_start": true
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "R7挑战#6: N4/R7/TP40/exp100 vs 基线R30均衡型(+91.23%/-9.59%/Calmar9.51)。与基线同N, 纯R30→R7切换, 最干净的R效应度量。TP邻域下档: 早锁利, 预期wt↑/total↓, 看胜率-收益权衡。满仓: R7收益上限探测; 费用绝对值最大, 看净收益能否覆盖。假设R7复利+更早兑现可覆盖换手费(历史10-20%本金)。口径fresh/现实费率/5万整手/t+1收盘/stop_next/phase0; fixed0.5%由runner variants补。"
+  },
+  {
+    "id": "b008_G1_N4_TPnone_exp90",
+    "group": "G1_R7_core",
+    "selector": {
+      "type": "amihud_60",
+      "n": 4,
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {}
+    },
+    "rebalance_days": 7,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": null,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next"
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "exposure": 0.9,
+      "cash_asset": "cash",
+      "fresh_start": true
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "R7挑战#7: N4/R7/TPnone/exp90 vs 基线R30均衡型(+91.23%/-9.59%/Calmar9.51)。与基线同N, 纯R30→R7切换, 最干净的R效应度量。无止盈: 检验R7高频轮动本身是否已足够兑现, TP是否多余。基线同款敞口, 直接可比; 006 Calmar峰值档(8.96>满仓8.67)。假设R7复利+更早兑现可覆盖换手费(历史10-20%本金)。口径fresh/现实费率/5万整手/t+1收盘/stop_next/phase0; fixed0.5%由runner variants补。"
+  },
+  {
+    "id": "b008_G1_N4_TPnone_exp100",
+    "group": "G1_R7_core",
+    "selector": {
+      "type": "amihud_60",
+      "n": 4,
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {}
+    },
+    "rebalance_days": 7,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": null,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next"
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "exposure": 1,
+      "cash_asset": "cash",
+      "fresh_start": true
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "R7挑战#8: N4/R7/TPnone/exp100 vs 基线R30均衡型(+91.23%/-9.59%/Calmar9.51)。与基线同N, 纯R30→R7切换, 最干净的R效应度量。无止盈: 检验R7高频轮动本身是否已足够兑现, TP是否多余。满仓: R7收益上限探测; 费用绝对值最大, 看净收益能否覆盖。假设R7复利+更早兑现可覆盖换手费(历史10-20%本金)。口径fresh/现实费率/5万整手/t+1收盘/stop_next/phase0; fixed0.5%由runner variants补。"
+  },
+  {
+    "id": "b008_G1_N4_TP30_exp90",
+    "group": "G1_R7_core",
+    "selector": {
+      "type": "amihud_60",
+      "n": 4,
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {}
+    },
+    "rebalance_days": 7,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.3,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next"
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "exposure": 0.9,
+      "cash_asset": "cash",
+      "fresh_start": true
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "R7挑战#9: N4/R7/TP30/exp90 vs 基线R30均衡型(+91.23%/-9.59%/Calmar9.51)。与基线同N, 纯R30→R7切换, 最干净的R效应度量。低止盈: 高频+早锁利极限, 预期按笔胜率最高、单笔最薄。基线同款敞口, 直接可比; 006 Calmar峰值档(8.96>满仓8.67)。假设R7复利+更早兑现可覆盖换手费(历史10-20%本金)。口径fresh/现实费率/5万整手/t+1收盘/stop_next/phase0; fixed0.5%由runner variants补。"
+  },
+  {
+    "id": "b008_G1_N4_TP30_exp100",
+    "group": "G1_R7_core",
+    "selector": {
+      "type": "amihud_60",
+      "n": 4,
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {}
+    },
+    "rebalance_days": 7,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.3,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next"
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "exposure": 1,
+      "cash_asset": "cash",
+      "fresh_start": true
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "R7挑战#10: N4/R7/TP30/exp100 vs 基线R30均衡型(+91.23%/-9.59%/Calmar9.51)。与基线同N, 纯R30→R7切换, 最干净的R效应度量。低止盈: 高频+早锁利极限, 预期按笔胜率最高、单笔最薄。满仓: R7收益上限探测; 费用绝对值最大, 看净收益能否覆盖。假设R7复利+更早兑现可覆盖换手费(历史10-20%本金)。口径fresh/现实费率/5万整手/t+1收盘/stop_next/phase0; fixed0.5%由runner variants补。"
+  },
+  {
+    "id": "b008_G1_N5_TP45_exp90",
+    "group": "G1_R7_core",
+    "selector": {
+      "type": "amihud_60",
+      "n": 5,
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {}
+    },
+    "rebalance_days": 7,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.45,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next"
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "exposure": 0.9,
+      "cash_asset": "cash",
+      "fresh_start": true
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "R7挑战#11: N5/R7/TP45/exp90 vs 基线R30均衡型(+91.23%/-9.59%/Calmar9.51)。N横切: R7下N5费用分摊是否优于N4? 对标P8判别(N5@1.0 vs N4@0.8)。基线同款TP, 直接对打b006_G1_N4_TP45_exp90(+91.23%)。基线同款敞口, 直接可比; 006 Calmar峰值档(8.96>满仓8.67)。假设R7复利+更早兑现可覆盖换手费(历史10-20%本金)。口径fresh/现实费率/5万整手/t+1收盘/stop_next/phase0; fixed0.5%由runner variants补。"
+  },
+  {
+    "id": "b008_G1_N5_TP45_exp100",
+    "group": "G1_R7_core",
+    "selector": {
+      "type": "amihud_60",
+      "n": 5,
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {}
+    },
+    "rebalance_days": 7,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.45,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next"
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "exposure": 1,
+      "cash_asset": "cash",
+      "fresh_start": true
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "R7挑战#12: N5/R7/TP45/exp100 vs 基线R30均衡型(+91.23%/-9.59%/Calmar9.51)。N横切: R7下N5费用分摊是否优于N4? 对标P8判别(N5@1.0 vs N4@0.8)。基线同款TP, 直接对打b006_G1_N4_TP45_exp90(+91.23%)。满仓: R7收益上限探测; 费用绝对值最大, 看净收益能否覆盖。假设R7复利+更早兑现可覆盖换手费(历史10-20%本金)。口径fresh/现实费率/5万整手/t+1收盘/stop_next/phase0; fixed0.5%由runner variants补。"
+  },
+  {
+    "id": "b008_G1_N5_TP50_exp90",
+    "group": "G1_R7_core",
+    "selector": {
+      "type": "amihud_60",
+      "n": 5,
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {}
+    },
+    "rebalance_days": 7,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.5,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next"
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "exposure": 0.9,
+      "cash_asset": "cash",
+      "fresh_start": true
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "R7挑战#13: N5/R7/TP50/exp90 vs 基线R30均衡型(+91.23%/-9.59%/Calmar9.51)。N横切: R7下N5费用分摊是否优于N4? 对标P8判别(N5@1.0 vs N4@0.8)。TP邻域上档: 防TP45孤立尖峰; Lead满仓TP50=+98.72%。基线同款敞口, 直接可比; 006 Calmar峰值档(8.96>满仓8.67)。假设R7复利+更早兑现可覆盖换手费(历史10-20%本金)。口径fresh/现实费率/5万整手/t+1收盘/stop_next/phase0; fixed0.5%由runner variants补。"
+  },
+  {
+    "id": "b008_G1_N5_TP50_exp100",
+    "group": "G1_R7_core",
+    "selector": {
+      "type": "amihud_60",
+      "n": 5,
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {}
+    },
+    "rebalance_days": 7,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.5,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next"
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "exposure": 1,
+      "cash_asset": "cash",
+      "fresh_start": true
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "R7挑战#14: N5/R7/TP50/exp100 vs 基线R30均衡型(+91.23%/-9.59%/Calmar9.51)。N横切: R7下N5费用分摊是否优于N4? 对标P8判别(N5@1.0 vs N4@0.8)。TP邻域上档: 防TP45孤立尖峰; Lead满仓TP50=+98.72%。满仓: R7收益上限探测; 费用绝对值最大, 看净收益能否覆盖。假设R7复利+更早兑现可覆盖换手费(历史10-20%本金)。口径fresh/现实费率/5万整手/t+1收盘/stop_next/phase0; fixed0.5%由runner variants补。"
+  },
+  {
+    "id": "b008_G1_N5_TP40_exp90",
+    "group": "G1_R7_core",
+    "selector": {
+      "type": "amihud_60",
+      "n": 5,
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {}
+    },
+    "rebalance_days": 7,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.4,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next"
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "exposure": 0.9,
+      "cash_asset": "cash",
+      "fresh_start": true
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "R7挑战#15: N5/R7/TP40/exp90 vs 基线R30均衡型(+91.23%/-9.59%/Calmar9.51)。N横切: R7下N5费用分摊是否优于N4? 对标P8判别(N5@1.0 vs N4@0.8)。TP邻域下档: 早锁利, 预期wt↑/total↓, 看胜率-收益权衡。基线同款敞口, 直接可比; 006 Calmar峰值档(8.96>满仓8.67)。假设R7复利+更早兑现可覆盖换手费(历史10-20%本金)。口径fresh/现实费率/5万整手/t+1收盘/stop_next/phase0; fixed0.5%由runner variants补。"
+  },
+  {
+    "id": "b008_G1_N5_TP40_exp100",
+    "group": "G1_R7_core",
+    "selector": {
+      "type": "amihud_60",
+      "n": 5,
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {}
+    },
+    "rebalance_days": 7,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.4,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next"
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "exposure": 1,
+      "cash_asset": "cash",
+      "fresh_start": true
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "R7挑战#16: N5/R7/TP40/exp100 vs 基线R30均衡型(+91.23%/-9.59%/Calmar9.51)。N横切: R7下N5费用分摊是否优于N4? 对标P8判别(N5@1.0 vs N4@0.8)。TP邻域下档: 早锁利, 预期wt↑/total↓, 看胜率-收益权衡。满仓: R7收益上限探测; 费用绝对值最大, 看净收益能否覆盖。假设R7复利+更早兑现可覆盖换手费(历史10-20%本金)。口径fresh/现实费率/5万整手/t+1收盘/stop_next/phase0; fixed0.5%由runner variants补。"
+  },
+  {
+    "id": "b008_G1_N5_TPnone_exp90",
+    "group": "G1_R7_core",
+    "selector": {
+      "type": "amihud_60",
+      "n": 5,
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {}
+    },
+    "rebalance_days": 7,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": null,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next"
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "exposure": 0.9,
+      "cash_asset": "cash",
+      "fresh_start": true
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "R7挑战#17: N5/R7/TPnone/exp90 vs 基线R30均衡型(+91.23%/-9.59%/Calmar9.51)。N横切: R7下N5费用分摊是否优于N4? 对标P8判别(N5@1.0 vs N4@0.8)。无止盈: 检验R7高频轮动本身是否已足够兑现, TP是否多余。基线同款敞口, 直接可比; 006 Calmar峰值档(8.96>满仓8.67)。假设R7复利+更早兑现可覆盖换手费(历史10-20%本金)。口径fresh/现实费率/5万整手/t+1收盘/stop_next/phase0; fixed0.5%由runner variants补。"
+  },
+  {
+    "id": "b008_G1_N5_TPnone_exp100",
+    "group": "G1_R7_core",
+    "selector": {
+      "type": "amihud_60",
+      "n": 5,
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {}
+    },
+    "rebalance_days": 7,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": null,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next"
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "exposure": 1,
+      "cash_asset": "cash",
+      "fresh_start": true
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "R7挑战#18: N5/R7/TPnone/exp100 vs 基线R30均衡型(+91.23%/-9.59%/Calmar9.51)。N横切: R7下N5费用分摊是否优于N4? 对标P8判别(N5@1.0 vs N4@0.8)。无止盈: 检验R7高频轮动本身是否已足够兑现, TP是否多余。满仓: R7收益上限探测; 费用绝对值最大, 看净收益能否覆盖。假设R7复利+更早兑现可覆盖换手费(历史10-20%本金)。口径fresh/现实费率/5万整手/t+1收盘/stop_next/phase0; fixed0.5%由runner variants补。"
+  },
+  {
+    "id": "b008_G1_N5_TP30_exp90",
+    "group": "G1_R7_core",
+    "selector": {
+      "type": "amihud_60",
+      "n": 5,
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {}
+    },
+    "rebalance_days": 7,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.3,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next"
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "exposure": 0.9,
+      "cash_asset": "cash",
+      "fresh_start": true
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "R7挑战#19: N5/R7/TP30/exp90 vs 基线R30均衡型(+91.23%/-9.59%/Calmar9.51)。N横切: R7下N5费用分摊是否优于N4? 对标P8判别(N5@1.0 vs N4@0.8)。低止盈: 高频+早锁利极限, 预期按笔胜率最高、单笔最薄。基线同款敞口, 直接可比; 006 Calmar峰值档(8.96>满仓8.67)。假设R7复利+更早兑现可覆盖换手费(历史10-20%本金)。口径fresh/现实费率/5万整手/t+1收盘/stop_next/phase0; fixed0.5%由runner variants补。"
+  },
+  {
+    "id": "b008_G1_N5_TP30_exp100",
+    "group": "G1_R7_core",
+    "selector": {
+      "type": "amihud_60",
+      "n": 5,
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {}
+    },
+    "rebalance_days": 7,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.3,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next"
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "exposure": 1,
+      "cash_asset": "cash",
+      "fresh_start": true
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "R7挑战#20: N5/R7/TP30/exp100 vs 基线R30均衡型(+91.23%/-9.59%/Calmar9.51)。N横切: R7下N5费用分摊是否优于N4? 对标P8判别(N5@1.0 vs N4@0.8)。低止盈: 高频+早锁利极限, 预期按笔胜率最高、单笔最薄。满仓: R7收益上限探测; 费用绝对值最大, 看净收益能否覆盖。假设R7复利+更早兑现可覆盖换手费(历史10-20%本金)。口径fresh/现实费率/5万整手/t+1收盘/stop_next/phase0; fixed0.5%由runner variants补。"
+  },
+  {
+    "id": "b008_G1_N6_TP45_exp90",
+    "group": "G1_R7_core",
+    "selector": {
+      "type": "amihud_60",
+      "n": 6,
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {}
+    },
+    "rebalance_days": 7,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.45,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next"
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "exposure": 0.9,
+      "cash_asset": "cash",
+      "fresh_start": true
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "R7挑战#21: N6/R7/TP45/exp90 vs 基线R30均衡型(+91.23%/-9.59%/Calmar9.51)。N横切: 对标Round2 C3(N6), 检验R7能否救活分散组合。基线同款TP, 直接对打b006_G1_N4_TP45_exp90(+91.23%)。基线同款敞口, 直接可比; 006 Calmar峰值档(8.96>满仓8.67)。假设R7复利+更早兑现可覆盖换手费(历史10-20%本金)。口径fresh/现实费率/5万整手/t+1收盘/stop_next/phase0; fixed0.5%由runner variants补。"
+  },
+  {
+    "id": "b008_G1_N6_TP45_exp100",
+    "group": "G1_R7_core",
+    "selector": {
+      "type": "amihud_60",
+      "n": 6,
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {}
+    },
+    "rebalance_days": 7,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.45,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next"
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "exposure": 1,
+      "cash_asset": "cash",
+      "fresh_start": true
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "R7挑战#22: N6/R7/TP45/exp100 vs 基线R30均衡型(+91.23%/-9.59%/Calmar9.51)。N横切: 对标Round2 C3(N6), 检验R7能否救活分散组合。基线同款TP, 直接对打b006_G1_N4_TP45_exp90(+91.23%)。满仓: R7收益上限探测; 费用绝对值最大, 看净收益能否覆盖。假设R7复利+更早兑现可覆盖换手费(历史10-20%本金)。口径fresh/现实费率/5万整手/t+1收盘/stop_next/phase0; fixed0.5%由runner variants补。"
+  },
+  {
+    "id": "b008_G1_N6_TP50_exp90",
+    "group": "G1_R7_core",
+    "selector": {
+      "type": "amihud_60",
+      "n": 6,
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {}
+    },
+    "rebalance_days": 7,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.5,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next"
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "exposure": 0.9,
+      "cash_asset": "cash",
+      "fresh_start": true
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "R7挑战#23: N6/R7/TP50/exp90 vs 基线R30均衡型(+91.23%/-9.59%/Calmar9.51)。N横切: 对标Round2 C3(N6), 检验R7能否救活分散组合。TP邻域上档: 防TP45孤立尖峰; Lead满仓TP50=+98.72%。基线同款敞口, 直接可比; 006 Calmar峰值档(8.96>满仓8.67)。假设R7复利+更早兑现可覆盖换手费(历史10-20%本金)。口径fresh/现实费率/5万整手/t+1收盘/stop_next/phase0; fixed0.5%由runner variants补。"
+  },
+  {
+    "id": "b008_G1_N6_TP50_exp100",
+    "group": "G1_R7_core",
+    "selector": {
+      "type": "amihud_60",
+      "n": 6,
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {}
+    },
+    "rebalance_days": 7,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.5,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next"
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "exposure": 1,
+      "cash_asset": "cash",
+      "fresh_start": true
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "R7挑战#24: N6/R7/TP50/exp100 vs 基线R30均衡型(+91.23%/-9.59%/Calmar9.51)。N横切: 对标Round2 C3(N6), 检验R7能否救活分散组合。TP邻域上档: 防TP45孤立尖峰; Lead满仓TP50=+98.72%。满仓: R7收益上限探测; 费用绝对值最大, 看净收益能否覆盖。假设R7复利+更早兑现可覆盖换手费(历史10-20%本金)。口径fresh/现实费率/5万整手/t+1收盘/stop_next/phase0; fixed0.5%由runner variants补。"
+  },
+  {
+    "id": "b008_G1_N6_TP40_exp90",
+    "group": "G1_R7_core",
+    "selector": {
+      "type": "amihud_60",
+      "n": 6,
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {}
+    },
+    "rebalance_days": 7,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.4,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next"
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "exposure": 0.9,
+      "cash_asset": "cash",
+      "fresh_start": true
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "R7挑战#25: N6/R7/TP40/exp90 vs 基线R30均衡型(+91.23%/-9.59%/Calmar9.51)。N横切: 对标Round2 C3(N6), 检验R7能否救活分散组合。TP邻域下档: 早锁利, 预期wt↑/total↓, 看胜率-收益权衡。基线同款敞口, 直接可比; 006 Calmar峰值档(8.96>满仓8.67)。假设R7复利+更早兑现可覆盖换手费(历史10-20%本金)。口径fresh/现实费率/5万整手/t+1收盘/stop_next/phase0; fixed0.5%由runner variants补。"
+  },
+  {
+    "id": "b008_G1_N6_TP40_exp100",
+    "group": "G1_R7_core",
+    "selector": {
+      "type": "amihud_60",
+      "n": 6,
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {}
+    },
+    "rebalance_days": 7,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.4,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next"
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "exposure": 1,
+      "cash_asset": "cash",
+      "fresh_start": true
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "R7挑战#26: N6/R7/TP40/exp100 vs 基线R30均衡型(+91.23%/-9.59%/Calmar9.51)。N横切: 对标Round2 C3(N6), 检验R7能否救活分散组合。TP邻域下档: 早锁利, 预期wt↑/total↓, 看胜率-收益权衡。满仓: R7收益上限探测; 费用绝对值最大, 看净收益能否覆盖。假设R7复利+更早兑现可覆盖换手费(历史10-20%本金)。口径fresh/现实费率/5万整手/t+1收盘/stop_next/phase0; fixed0.5%由runner variants补。"
+  },
+  {
+    "id": "b008_G1_N6_TPnone_exp90",
+    "group": "G1_R7_core",
+    "selector": {
+      "type": "amihud_60",
+      "n": 6,
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {}
+    },
+    "rebalance_days": 7,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": null,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next"
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "exposure": 0.9,
+      "cash_asset": "cash",
+      "fresh_start": true
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "R7挑战#27: N6/R7/TPnone/exp90 vs 基线R30均衡型(+91.23%/-9.59%/Calmar9.51)。N横切: 对标Round2 C3(N6), 检验R7能否救活分散组合。无止盈: 检验R7高频轮动本身是否已足够兑现, TP是否多余。基线同款敞口, 直接可比; 006 Calmar峰值档(8.96>满仓8.67)。假设R7复利+更早兑现可覆盖换手费(历史10-20%本金)。口径fresh/现实费率/5万整手/t+1收盘/stop_next/phase0; fixed0.5%由runner variants补。"
+  },
+  {
+    "id": "b008_G1_N6_TPnone_exp100",
+    "group": "G1_R7_core",
+    "selector": {
+      "type": "amihud_60",
+      "n": 6,
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {}
+    },
+    "rebalance_days": 7,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": null,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next"
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "exposure": 1,
+      "cash_asset": "cash",
+      "fresh_start": true
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "R7挑战#28: N6/R7/TPnone/exp100 vs 基线R30均衡型(+91.23%/-9.59%/Calmar9.51)。N横切: 对标Round2 C3(N6), 检验R7能否救活分散组合。无止盈: 检验R7高频轮动本身是否已足够兑现, TP是否多余。满仓: R7收益上限探测; 费用绝对值最大, 看净收益能否覆盖。假设R7复利+更早兑现可覆盖换手费(历史10-20%本金)。口径fresh/现实费率/5万整手/t+1收盘/stop_next/phase0; fixed0.5%由runner variants补。"
+  },
+  {
+    "id": "b008_G1_N6_TP30_exp90",
+    "group": "G1_R7_core",
+    "selector": {
+      "type": "amihud_60",
+      "n": 6,
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {}
+    },
+    "rebalance_days": 7,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.3,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next"
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "exposure": 0.9,
+      "cash_asset": "cash",
+      "fresh_start": true
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "R7挑战#29: N6/R7/TP30/exp90 vs 基线R30均衡型(+91.23%/-9.59%/Calmar9.51)。N横切: 对标Round2 C3(N6), 检验R7能否救活分散组合。低止盈: 高频+早锁利极限, 预期按笔胜率最高、单笔最薄。基线同款敞口, 直接可比; 006 Calmar峰值档(8.96>满仓8.67)。假设R7复利+更早兑现可覆盖换手费(历史10-20%本金)。口径fresh/现实费率/5万整手/t+1收盘/stop_next/phase0; fixed0.5%由runner variants补。"
+  },
+  {
+    "id": "b008_G1_N6_TP30_exp100",
+    "group": "G1_R7_core",
+    "selector": {
+      "type": "amihud_60",
+      "n": 6,
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {}
+    },
+    "rebalance_days": 7,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.3,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next"
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "exposure": 1,
+      "cash_asset": "cash",
+      "fresh_start": true
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "R7挑战#30: N6/R7/TP30/exp100 vs 基线R30均衡型(+91.23%/-9.59%/Calmar9.51)。N横切: 对标Round2 C3(N6), 检验R7能否救活分散组合。低止盈: 高频+早锁利极限, 预期按笔胜率最高、单笔最薄。满仓: R7收益上限探测; 费用绝对值最大, 看净收益能否覆盖。假设R7复利+更早兑现可覆盖换手费(历史10-20%本金)。口径fresh/现实费率/5万整手/t+1收盘/stop_next/phase0; fixed0.5%由runner variants补。"
+  },
+  {
+    "id": "b008_G1_N8_TP45_exp90",
+    "group": "G1_R7_core",
+    "selector": {
+      "type": "amihud_60",
+      "n": 8,
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {}
+    },
+    "rebalance_days": 7,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.45,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next"
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "exposure": 0.9,
+      "cash_asset": "cash",
+      "fresh_start": true
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "R7挑战#31: N8/R7/TP45/exp90 vs 基线R30均衡型(+91.23%/-9.59%/Calmar9.51)。高度分散: 以量补价? 006证伪R30下分散, R7高频或不同。基线同款TP, 直接对打b006_G1_N4_TP45_exp90(+91.23%)。基线同款敞口, 直接可比; 006 Calmar峰值档(8.96>满仓8.67)。假设R7复利+更早兑现可覆盖换手费(历史10-20%本金)。口径fresh/现实费率/5万整手/t+1收盘/stop_next/phase0; fixed0.5%由runner variants补。"
+  },
+  {
+    "id": "b008_G1_N8_TP45_exp100",
+    "group": "G1_R7_core",
+    "selector": {
+      "type": "amihud_60",
+      "n": 8,
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {}
+    },
+    "rebalance_days": 7,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.45,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next"
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "exposure": 1,
+      "cash_asset": "cash",
+      "fresh_start": true
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "R7挑战#32: N8/R7/TP45/exp100 vs 基线R30均衡型(+91.23%/-9.59%/Calmar9.51)。高度分散: 以量补价? 006证伪R30下分散, R7高频或不同。基线同款TP, 直接对打b006_G1_N4_TP45_exp90(+91.23%)。满仓: R7收益上限探测; 费用绝对值最大, 看净收益能否覆盖。假设R7复利+更早兑现可覆盖换手费(历史10-20%本金)。口径fresh/现实费率/5万整手/t+1收盘/stop_next/phase0; fixed0.5%由runner variants补。"
+  },
+  {
+    "id": "b008_G1_N8_TP50_exp90",
+    "group": "G1_R7_core",
+    "selector": {
+      "type": "amihud_60",
+      "n": 8,
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {}
+    },
+    "rebalance_days": 7,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.5,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next"
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "exposure": 0.9,
+      "cash_asset": "cash",
+      "fresh_start": true
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "R7挑战#33: N8/R7/TP50/exp90 vs 基线R30均衡型(+91.23%/-9.59%/Calmar9.51)。高度分散: 以量补价? 006证伪R30下分散, R7高频或不同。TP邻域上档: 防TP45孤立尖峰; Lead满仓TP50=+98.72%。基线同款敞口, 直接可比; 006 Calmar峰值档(8.96>满仓8.67)。假设R7复利+更早兑现可覆盖换手费(历史10-20%本金)。口径fresh/现实费率/5万整手/t+1收盘/stop_next/phase0; fixed0.5%由runner variants补。"
+  },
+  {
+    "id": "b008_G1_N8_TP50_exp100",
+    "group": "G1_R7_core",
+    "selector": {
+      "type": "amihud_60",
+      "n": 8,
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {}
+    },
+    "rebalance_days": 7,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.5,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next"
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "exposure": 1,
+      "cash_asset": "cash",
+      "fresh_start": true
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "R7挑战#34: N8/R7/TP50/exp100 vs 基线R30均衡型(+91.23%/-9.59%/Calmar9.51)。高度分散: 以量补价? 006证伪R30下分散, R7高频或不同。TP邻域上档: 防TP45孤立尖峰; Lead满仓TP50=+98.72%。满仓: R7收益上限探测; 费用绝对值最大, 看净收益能否覆盖。假设R7复利+更早兑现可覆盖换手费(历史10-20%本金)。口径fresh/现实费率/5万整手/t+1收盘/stop_next/phase0; fixed0.5%由runner variants补。"
+  },
+  {
+    "id": "b008_G1_N8_TP40_exp90",
+    "group": "G1_R7_core",
+    "selector": {
+      "type": "amihud_60",
+      "n": 8,
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {}
+    },
+    "rebalance_days": 7,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.4,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next"
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "exposure": 0.9,
+      "cash_asset": "cash",
+      "fresh_start": true
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "R7挑战#35: N8/R7/TP40/exp90 vs 基线R30均衡型(+91.23%/-9.59%/Calmar9.51)。高度分散: 以量补价? 006证伪R30下分散, R7高频或不同。TP邻域下档: 早锁利, 预期wt↑/total↓, 看胜率-收益权衡。基线同款敞口, 直接可比; 006 Calmar峰值档(8.96>满仓8.67)。假设R7复利+更早兑现可覆盖换手费(历史10-20%本金)。口径fresh/现实费率/5万整手/t+1收盘/stop_next/phase0; fixed0.5%由runner variants补。"
+  },
+  {
+    "id": "b008_G1_N8_TP40_exp100",
+    "group": "G1_R7_core",
+    "selector": {
+      "type": "amihud_60",
+      "n": 8,
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {}
+    },
+    "rebalance_days": 7,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.4,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next"
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "exposure": 1,
+      "cash_asset": "cash",
+      "fresh_start": true
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "R7挑战#36: N8/R7/TP40/exp100 vs 基线R30均衡型(+91.23%/-9.59%/Calmar9.51)。高度分散: 以量补价? 006证伪R30下分散, R7高频或不同。TP邻域下档: 早锁利, 预期wt↑/total↓, 看胜率-收益权衡。满仓: R7收益上限探测; 费用绝对值最大, 看净收益能否覆盖。假设R7复利+更早兑现可覆盖换手费(历史10-20%本金)。口径fresh/现实费率/5万整手/t+1收盘/stop_next/phase0; fixed0.5%由runner variants补。"
+  },
+  {
+    "id": "b008_G1_N8_TPnone_exp90",
+    "group": "G1_R7_core",
+    "selector": {
+      "type": "amihud_60",
+      "n": 8,
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {}
+    },
+    "rebalance_days": 7,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": null,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next"
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "exposure": 0.9,
+      "cash_asset": "cash",
+      "fresh_start": true
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "R7挑战#37: N8/R7/TPnone/exp90 vs 基线R30均衡型(+91.23%/-9.59%/Calmar9.51)。高度分散: 以量补价? 006证伪R30下分散, R7高频或不同。无止盈: 检验R7高频轮动本身是否已足够兑现, TP是否多余。基线同款敞口, 直接可比; 006 Calmar峰值档(8.96>满仓8.67)。假设R7复利+更早兑现可覆盖换手费(历史10-20%本金)。口径fresh/现实费率/5万整手/t+1收盘/stop_next/phase0; fixed0.5%由runner variants补。"
+  },
+  {
+    "id": "b008_G1_N8_TPnone_exp100",
+    "group": "G1_R7_core",
+    "selector": {
+      "type": "amihud_60",
+      "n": 8,
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {}
+    },
+    "rebalance_days": 7,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": null,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next"
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "exposure": 1,
+      "cash_asset": "cash",
+      "fresh_start": true
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "R7挑战#38: N8/R7/TPnone/exp100 vs 基线R30均衡型(+91.23%/-9.59%/Calmar9.51)。高度分散: 以量补价? 006证伪R30下分散, R7高频或不同。无止盈: 检验R7高频轮动本身是否已足够兑现, TP是否多余。满仓: R7收益上限探测; 费用绝对值最大, 看净收益能否覆盖。假设R7复利+更早兑现可覆盖换手费(历史10-20%本金)。口径fresh/现实费率/5万整手/t+1收盘/stop_next/phase0; fixed0.5%由runner variants补。"
+  },
+  {
+    "id": "b008_G1_N8_TP30_exp90",
+    "group": "G1_R7_core",
+    "selector": {
+      "type": "amihud_60",
+      "n": 8,
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {}
+    },
+    "rebalance_days": 7,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.3,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next"
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "exposure": 0.9,
+      "cash_asset": "cash",
+      "fresh_start": true
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "R7挑战#39: N8/R7/TP30/exp90 vs 基线R30均衡型(+91.23%/-9.59%/Calmar9.51)。高度分散: 以量补价? 006证伪R30下分散, R7高频或不同。低止盈: 高频+早锁利极限, 预期按笔胜率最高、单笔最薄。基线同款敞口, 直接可比; 006 Calmar峰值档(8.96>满仓8.67)。假设R7复利+更早兑现可覆盖换手费(历史10-20%本金)。口径fresh/现实费率/5万整手/t+1收盘/stop_next/phase0; fixed0.5%由runner variants补。"
+  },
+  {
+    "id": "b008_G1_N8_TP30_exp100",
+    "group": "G1_R7_core",
+    "selector": {
+      "type": "amihud_60",
+      "n": 8,
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {}
+    },
+    "rebalance_days": 7,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.3,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next"
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "exposure": 1,
+      "cash_asset": "cash",
+      "fresh_start": true
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "R7挑战#40: N8/R7/TP30/exp100 vs 基线R30均衡型(+91.23%/-9.59%/Calmar9.51)。高度分散: 以量补价? 006证伪R30下分散, R7高频或不同。低止盈: 高频+早锁利极限, 预期按笔胜率最高、单笔最薄。满仓: R7收益上限探测; 费用绝对值最大, 看净收益能否覆盖。假设R7复利+更早兑现可覆盖换手费(历史10-20%本金)。口径fresh/现实费率/5万整手/t+1收盘/stop_next/phase0; fixed0.5%由runner variants补。"
+  },
+  {
+    "id": "b008_G1_N12_TP45_exp90",
+    "group": "G1_R7_core",
+    "selector": {
+      "type": "amihud_60",
+      "n": 12,
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {}
+    },
+    "rebalance_days": 7,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.45,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next"
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "exposure": 0.9,
+      "cash_asset": "cash",
+      "fresh_start": true
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "R7挑战#41: N12/R7/TP45/exp90 vs 基线R30均衡型(+91.23%/-9.59%/Calmar9.51)。高度分散上限: 若N12/R7仍远落后, 则R7下集中仍是必要。基线同款TP, 直接对打b006_G1_N4_TP45_exp90(+91.23%)。基线同款敞口, 直接可比; 006 Calmar峰值档(8.96>满仓8.67)。假设R7复利+更早兑现可覆盖换手费(历史10-20%本金)。口径fresh/现实费率/5万整手/t+1收盘/stop_next/phase0; fixed0.5%由runner variants补。"
+  },
+  {
+    "id": "b008_G1_N12_TP45_exp100",
+    "group": "G1_R7_core",
+    "selector": {
+      "type": "amihud_60",
+      "n": 12,
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {}
+    },
+    "rebalance_days": 7,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.45,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next"
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "exposure": 1,
+      "cash_asset": "cash",
+      "fresh_start": true
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "R7挑战#42: N12/R7/TP45/exp100 vs 基线R30均衡型(+91.23%/-9.59%/Calmar9.51)。高度分散上限: 若N12/R7仍远落后, 则R7下集中仍是必要。基线同款TP, 直接对打b006_G1_N4_TP45_exp90(+91.23%)。满仓: R7收益上限探测; 费用绝对值最大, 看净收益能否覆盖。假设R7复利+更早兑现可覆盖换手费(历史10-20%本金)。口径fresh/现实费率/5万整手/t+1收盘/stop_next/phase0; fixed0.5%由runner variants补。"
+  },
+  {
+    "id": "b008_G1_N12_TP50_exp90",
+    "group": "G1_R7_core",
+    "selector": {
+      "type": "amihud_60",
+      "n": 12,
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {}
+    },
+    "rebalance_days": 7,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.5,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next"
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "exposure": 0.9,
+      "cash_asset": "cash",
+      "fresh_start": true
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "R7挑战#43: N12/R7/TP50/exp90 vs 基线R30均衡型(+91.23%/-9.59%/Calmar9.51)。高度分散上限: 若N12/R7仍远落后, 则R7下集中仍是必要。TP邻域上档: 防TP45孤立尖峰; Lead满仓TP50=+98.72%。基线同款敞口, 直接可比; 006 Calmar峰值档(8.96>满仓8.67)。假设R7复利+更早兑现可覆盖换手费(历史10-20%本金)。口径fresh/现实费率/5万整手/t+1收盘/stop_next/phase0; fixed0.5%由runner variants补。"
+  },
+  {
+    "id": "b008_G1_N12_TP50_exp100",
+    "group": "G1_R7_core",
+    "selector": {
+      "type": "amihud_60",
+      "n": 12,
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {}
+    },
+    "rebalance_days": 7,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.5,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next"
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "exposure": 1,
+      "cash_asset": "cash",
+      "fresh_start": true
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "R7挑战#44: N12/R7/TP50/exp100 vs 基线R30均衡型(+91.23%/-9.59%/Calmar9.51)。高度分散上限: 若N12/R7仍远落后, 则R7下集中仍是必要。TP邻域上档: 防TP45孤立尖峰; Lead满仓TP50=+98.72%。满仓: R7收益上限探测; 费用绝对值最大, 看净收益能否覆盖。假设R7复利+更早兑现可覆盖换手费(历史10-20%本金)。口径fresh/现实费率/5万整手/t+1收盘/stop_next/phase0; fixed0.5%由runner variants补。"
+  },
+  {
+    "id": "b008_G1_N12_TP40_exp90",
+    "group": "G1_R7_core",
+    "selector": {
+      "type": "amihud_60",
+      "n": 12,
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {}
+    },
+    "rebalance_days": 7,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.4,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next"
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "exposure": 0.9,
+      "cash_asset": "cash",
+      "fresh_start": true
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "R7挑战#45: N12/R7/TP40/exp90 vs 基线R30均衡型(+91.23%/-9.59%/Calmar9.51)。高度分散上限: 若N12/R7仍远落后, 则R7下集中仍是必要。TP邻域下档: 早锁利, 预期wt↑/total↓, 看胜率-收益权衡。基线同款敞口, 直接可比; 006 Calmar峰值档(8.96>满仓8.67)。假设R7复利+更早兑现可覆盖换手费(历史10-20%本金)。口径fresh/现实费率/5万整手/t+1收盘/stop_next/phase0; fixed0.5%由runner variants补。"
+  },
+  {
+    "id": "b008_G1_N12_TP40_exp100",
+    "group": "G1_R7_core",
+    "selector": {
+      "type": "amihud_60",
+      "n": 12,
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {}
+    },
+    "rebalance_days": 7,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.4,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next"
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "exposure": 1,
+      "cash_asset": "cash",
+      "fresh_start": true
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "R7挑战#46: N12/R7/TP40/exp100 vs 基线R30均衡型(+91.23%/-9.59%/Calmar9.51)。高度分散上限: 若N12/R7仍远落后, 则R7下集中仍是必要。TP邻域下档: 早锁利, 预期wt↑/total↓, 看胜率-收益权衡。满仓: R7收益上限探测; 费用绝对值最大, 看净收益能否覆盖。假设R7复利+更早兑现可覆盖换手费(历史10-20%本金)。口径fresh/现实费率/5万整手/t+1收盘/stop_next/phase0; fixed0.5%由runner variants补。"
+  },
+  {
+    "id": "b008_G1_N12_TPnone_exp90",
+    "group": "G1_R7_core",
+    "selector": {
+      "type": "amihud_60",
+      "n": 12,
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {}
+    },
+    "rebalance_days": 7,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": null,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next"
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "exposure": 0.9,
+      "cash_asset": "cash",
+      "fresh_start": true
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "R7挑战#47: N12/R7/TPnone/exp90 vs 基线R30均衡型(+91.23%/-9.59%/Calmar9.51)。高度分散上限: 若N12/R7仍远落后, 则R7下集中仍是必要。无止盈: 检验R7高频轮动本身是否已足够兑现, TP是否多余。基线同款敞口, 直接可比; 006 Calmar峰值档(8.96>满仓8.67)。假设R7复利+更早兑现可覆盖换手费(历史10-20%本金)。口径fresh/现实费率/5万整手/t+1收盘/stop_next/phase0; fixed0.5%由runner variants补。"
+  },
+  {
+    "id": "b008_G1_N12_TPnone_exp100",
+    "group": "G1_R7_core",
+    "selector": {
+      "type": "amihud_60",
+      "n": 12,
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {}
+    },
+    "rebalance_days": 7,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": null,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next"
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "exposure": 1,
+      "cash_asset": "cash",
+      "fresh_start": true
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "R7挑战#48: N12/R7/TPnone/exp100 vs 基线R30均衡型(+91.23%/-9.59%/Calmar9.51)。高度分散上限: 若N12/R7仍远落后, 则R7下集中仍是必要。无止盈: 检验R7高频轮动本身是否已足够兑现, TP是否多余。满仓: R7收益上限探测; 费用绝对值最大, 看净收益能否覆盖。假设R7复利+更早兑现可覆盖换手费(历史10-20%本金)。口径fresh/现实费率/5万整手/t+1收盘/stop_next/phase0; fixed0.5%由runner variants补。"
+  },
+  {
+    "id": "b008_G1_N12_TP30_exp90",
+    "group": "G1_R7_core",
+    "selector": {
+      "type": "amihud_60",
+      "n": 12,
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {}
+    },
+    "rebalance_days": 7,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.3,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next"
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "exposure": 0.9,
+      "cash_asset": "cash",
+      "fresh_start": true
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "R7挑战#49: N12/R7/TP30/exp90 vs 基线R30均衡型(+91.23%/-9.59%/Calmar9.51)。高度分散上限: 若N12/R7仍远落后, 则R7下集中仍是必要。低止盈: 高频+早锁利极限, 预期按笔胜率最高、单笔最薄。基线同款敞口, 直接可比; 006 Calmar峰值档(8.96>满仓8.67)。假设R7复利+更早兑现可覆盖换手费(历史10-20%本金)。口径fresh/现实费率/5万整手/t+1收盘/stop_next/phase0; fixed0.5%由runner variants补。"
+  },
+  {
+    "id": "b008_G1_N12_TP30_exp100",
+    "group": "G1_R7_core",
+    "selector": {
+      "type": "amihud_60",
+      "n": 12,
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {}
+    },
+    "rebalance_days": 7,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.3,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next"
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "exposure": 1,
+      "cash_asset": "cash",
+      "fresh_start": true
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "R7挑战#50: N12/R7/TP30/exp100 vs 基线R30均衡型(+91.23%/-9.59%/Calmar9.51)。高度分散上限: 若N12/R7仍远落后, 则R7下集中仍是必要。低止盈: 高频+早锁利极限, 预期按笔胜率最高、单笔最薄。满仓: R7收益上限探测; 费用绝对值最大, 看净收益能否覆盖。假设R7复利+更早兑现可覆盖换手费(历史10-20%本金)。口径fresh/现实费率/5万整手/t+1收盘/stop_next/phase0; fixed0.5%由runner variants补。"
+  },
+  {
+    "id": "b008_G2_N4_TP45_exp60_robust",
+    "group": "G2_robust",
+    "selector": {
+      "type": "amihud_60",
+      "n": 4,
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {}
+    },
+    "rebalance_days": 7,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.45,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next"
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "exposure": 0.6,
+      "cash_asset": "cash",
+      "fresh_start": true
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "稳健对照1: N4/R7/TP45/exp0.6。低敞口下R7费用占比是否仍可接受? 对标006稳健型(exp0.4~0.6,mdd-3.3~-6.5%)。"
+  },
+  {
+    "id": "b008_G2_N6_TP45_exp60_robust",
+    "group": "G2_robust",
+    "selector": {
+      "type": "amihud_60",
+      "n": 6,
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {}
+    },
+    "rebalance_days": 7,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.45,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next"
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "exposure": 0.6,
+      "cash_asset": "cash",
+      "fresh_start": true
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "稳健对照2: N6/R7/TP45/exp0.6。分散+低敞口双降波, 看R7下能否出现高wm/低mdd组合。"
+  },
+  {
+    "id": "b008_G3_BASELINE_N4R30TP45e09",
+    "group": "G3_baseline",
+    "selector": {
+      "type": "amihud_60",
+      "n": 4,
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {}
+    },
+    "rebalance_days": 30,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.45,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next"
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "exposure": 0.9,
+      "cash_asset": "cash",
+      "fresh_start": true
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "基线复现(必过): 与b006_G1_N4_TP45_exp90同参(R30/N4/TP45/exp0.9/phase0), 要求fresh_total与+91.23%偏差≤0.5pp, 否则先停查口径再谈R7挑战。"
+  },
+  {
+    "id": "b008_G3_N4R30TP45e100",
+    "group": "G3_baseline",
+    "selector": {
+      "type": "amihud_60",
+      "n": 4,
+      "size_range": [
+        0.05,
+        0.3
+      ],
+      "min_adv": 5000000,
+      "exclude_star": true,
+      "exclude_bj": true,
+      "exclude_chinext": true,
+      "price_min": null,
+      "price_max": null,
+      "params": {}
+    },
+    "rebalance_days": 30,
+    "exit": {
+      "trailing_stop": null,
+      "fixed_stop": null,
+      "take_profit": 0.45,
+      "trailing_take": null,
+      "max_hold_days": null,
+      "stop_exec": "next"
+    },
+    "timing": {
+      "type": "none",
+      "index": null,
+      "ma": null,
+      "out_asset": "cash"
+    },
+    "portfolio": {
+      "exposure": 1,
+      "cash_asset": "cash",
+      "fresh_start": true
+    },
+    "cost": {
+      "mode": "realistic",
+      "one_way": 0.005,
+      "capital": 50000,
+      "lot_size": 100
+    },
+    "window": {
+      "warmup_start": "2024-01-01",
+      "eval_start": "2026-01-05",
+      "eval_end": "2026-11-04"
+    },
+    "phase": 0,
+    "notes": "基线满仓版: 对应Lead N4满仓TP50+98.72%的TP45邻域, 给R7满仓challenger当上限参照。"
+  }
+]

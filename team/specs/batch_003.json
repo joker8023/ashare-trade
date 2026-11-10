@@ -1,0 +1,2781 @@
+[
+ {
+  "id": "b003_5_TP40_exp85_p0",
+  "group": "C2_neighborhood",
+  "selector": {
+   "type": "amihud_60",
+   "n": 5,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.4,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.85,
+   "cash_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N5：Lead 的原始前沿，单票 20% 权重，top3 占 76% P&L（TP50 后降到 65%）；TP40：更早止盈 → 段胜率更高、收益更低；用于确认 TP 维度的单调方向；仓位 85%（其余现金）；相位 +0。假设：该点在 (N,TP,敞口) 平台上，phase 0/-5 都应满足 total≥60% 且 mdd≤15% 且 win_period≥80%。"
+ },
+ {
+  "id": "b003_5_TP40_exp85_pm5",
+  "group": "C2_neighborhood",
+  "selector": {
+   "type": "amihud_60",
+   "n": 5,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.4,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.85,
+   "cash_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N5：Lead 的原始前沿，单票 20% 权重，top3 占 76% P&L（TP50 后降到 65%）；TP40：更早止盈 → 段胜率更高、收益更低；用于确认 TP 维度的单调方向；仓位 85%（其余现金）；相位 -5。假设：该点在 (N,TP,敞口) 平台上，phase 0/-5 都应满足 total≥60% 且 mdd≤15% 且 win_period≥80%。",
+  "rebalance_offset_days": -5
+ },
+ {
+  "id": "b003_5_TP40_exp90_p0",
+  "group": "C2_neighborhood",
+  "selector": {
+   "type": "amihud_60",
+   "n": 5,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.4,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N5：Lead 的原始前沿，单票 20% 权重，top3 占 76% P&L（TP50 后降到 65%）；TP40：更早止盈 → 段胜率更高、收益更低；用于确认 TP 维度的单调方向；仓位 90%（其余现金）；相位 +0。假设：该点在 (N,TP,敞口) 平台上，phase 0/-5 都应满足 total≥60% 且 mdd≤15% 且 win_period≥80%。"
+ },
+ {
+  "id": "b003_5_TP40_exp90_pm5",
+  "group": "C2_neighborhood",
+  "selector": {
+   "type": "amihud_60",
+   "n": 5,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.4,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N5：Lead 的原始前沿，单票 20% 权重，top3 占 76% P&L（TP50 后降到 65%）；TP40：更早止盈 → 段胜率更高、收益更低；用于确认 TP 维度的单调方向；仓位 90%（其余现金）；相位 -5。假设：该点在 (N,TP,敞口) 平台上，phase 0/-5 都应满足 total≥60% 且 mdd≤15% 且 win_period≥80%。",
+  "rebalance_offset_days": -5
+ },
+ {
+  "id": "b003_5_TP50_exp85_p0",
+  "group": "C2_neighborhood",
+  "selector": {
+   "type": "amihud_60",
+   "n": 5,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.85,
+   "cash_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N5：Lead 的原始前沿，单票 20% 权重，top3 占 76% P&L（TP50 后降到 65%）；TP50：Lead 验证的最优档（月胜率 80%，win_trade 60%）；仓位 85%（其余现金）；相位 +0。假设：该点在 (N,TP,敞口) 平台上，phase 0/-5 都应满足 total≥60% 且 mdd≤15% 且 win_period≥80%。"
+ },
+ {
+  "id": "b003_5_TP50_exp85_pm5",
+  "group": "C2_neighborhood",
+  "selector": {
+   "type": "amihud_60",
+   "n": 5,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.85,
+   "cash_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N5：Lead 的原始前沿，单票 20% 权重，top3 占 76% P&L（TP50 后降到 65%）；TP50：Lead 验证的最优档（月胜率 80%，win_trade 60%）；仓位 85%（其余现金）；相位 -5。假设：该点在 (N,TP,敞口) 平台上，phase 0/-5 都应满足 total≥60% 且 mdd≤15% 且 win_period≥80%。",
+  "rebalance_offset_days": -5
+ },
+ {
+  "id": "b003_5_TP50_exp90_p0",
+  "group": "C2_neighborhood",
+  "selector": {
+   "type": "amihud_60",
+   "n": 5,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N5：Lead 的原始前沿，单票 20% 权重，top3 占 76% P&L（TP50 后降到 65%）；TP50：Lead 验证的最优档（月胜率 80%，win_trade 60%）；仓位 90%（其余现金）；相位 +0。假设：该点在 (N,TP,敞口) 平台上，phase 0/-5 都应满足 total≥60% 且 mdd≤15% 且 win_period≥80%。"
+ },
+ {
+  "id": "b003_5_TP50_exp90_pm5",
+  "group": "C2_neighborhood",
+  "selector": {
+   "type": "amihud_60",
+   "n": 5,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N5：Lead 的原始前沿，单票 20% 权重，top3 占 76% P&L（TP50 后降到 65%）；TP50：Lead 验证的最优档（月胜率 80%，win_trade 60%）；仓位 90%（其余现金）；相位 -5。假设：该点在 (N,TP,敞口) 平台上，phase 0/-5 都应满足 total≥60% 且 mdd≤15% 且 win_period≥80%。",
+  "rebalance_offset_days": -5
+ },
+ {
+  "id": "b003_5_TP60_exp85_p0",
+  "group": "C2_neighborhood",
+  "selector": {
+   "type": "amihud_60",
+   "n": 5,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.6,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.85,
+   "cash_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N5：Lead 的原始前沿，单票 20% 权重，top3 占 76% P&L（TP50 后降到 65%）；TP60：几乎不触发（≈无止损），用于确认 TP50 的优势不是「越松越好」；仓位 85%（其余现金）；相位 +0。假设：该点在 (N,TP,敞口) 平台上，phase 0/-5 都应满足 total≥60% 且 mdd≤15% 且 win_period≥80%。"
+ },
+ {
+  "id": "b003_5_TP60_exp85_pm5",
+  "group": "C2_neighborhood",
+  "selector": {
+   "type": "amihud_60",
+   "n": 5,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.6,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.85,
+   "cash_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N5：Lead 的原始前沿，单票 20% 权重，top3 占 76% P&L（TP50 后降到 65%）；TP60：几乎不触发（≈无止损），用于确认 TP50 的优势不是「越松越好」；仓位 85%（其余现金）；相位 -5。假设：该点在 (N,TP,敞口) 平台上，phase 0/-5 都应满足 total≥60% 且 mdd≤15% 且 win_period≥80%。",
+  "rebalance_offset_days": -5
+ },
+ {
+  "id": "b003_5_TP60_exp90_p0",
+  "group": "C2_neighborhood",
+  "selector": {
+   "type": "amihud_60",
+   "n": 5,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.6,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N5：Lead 的原始前沿，单票 20% 权重，top3 占 76% P&L（TP50 后降到 65%）；TP60：几乎不触发（≈无止损），用于确认 TP50 的优势不是「越松越好」；仓位 90%（其余现金）；相位 +0。假设：该点在 (N,TP,敞口) 平台上，phase 0/-5 都应满足 total≥60% 且 mdd≤15% 且 win_period≥80%。"
+ },
+ {
+  "id": "b003_5_TP60_exp90_pm5",
+  "group": "C2_neighborhood",
+  "selector": {
+   "type": "amihud_60",
+   "n": 5,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.6,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N5：Lead 的原始前沿，单票 20% 权重，top3 占 76% P&L（TP50 后降到 65%）；TP60：几乎不触发（≈无止损），用于确认 TP50 的优势不是「越松越好」；仓位 90%（其余现金）；相位 -5。假设：该点在 (N,TP,敞口) 平台上，phase 0/-5 都应满足 total≥60% 且 mdd≤15% 且 win_period≥80%。",
+  "rebalance_offset_days": -5
+ },
+ {
+  "id": "b003_6_TP40_exp85_p0",
+  "group": "C2_neighborhood",
+  "selector": {
+   "type": "amihud_60",
+   "n": 6,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.4,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.85,
+   "cash_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N6：比 N5 分散一档，理论上 mdd 更低但 alpha 摊薄；是「平台中心」检验；TP40：更早止盈 → 段胜率更高、收益更低；用于确认 TP 维度的单调方向；仓位 85%（其余现金）；相位 +0。假设：该点在 (N,TP,敞口) 平台上，phase 0/-5 都应满足 total≥60% 且 mdd≤15% 且 win_period≥80%。"
+ },
+ {
+  "id": "b003_6_TP40_exp85_pm5",
+  "group": "C2_neighborhood",
+  "selector": {
+   "type": "amihud_60",
+   "n": 6,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.4,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.85,
+   "cash_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N6：比 N5 分散一档，理论上 mdd 更低但 alpha 摊薄；是「平台中心」检验；TP40：更早止盈 → 段胜率更高、收益更低；用于确认 TP 维度的单调方向；仓位 85%（其余现金）；相位 -5。假设：该点在 (N,TP,敞口) 平台上，phase 0/-5 都应满足 total≥60% 且 mdd≤15% 且 win_period≥80%。",
+  "rebalance_offset_days": -5
+ },
+ {
+  "id": "b003_6_TP40_exp90_p0",
+  "group": "C2_neighborhood",
+  "selector": {
+   "type": "amihud_60",
+   "n": 6,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.4,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N6：比 N5 分散一档，理论上 mdd 更低但 alpha 摊薄；是「平台中心」检验；TP40：更早止盈 → 段胜率更高、收益更低；用于确认 TP 维度的单调方向；仓位 90%（其余现金）；相位 +0。假设：该点在 (N,TP,敞口) 平台上，phase 0/-5 都应满足 total≥60% 且 mdd≤15% 且 win_period≥80%。"
+ },
+ {
+  "id": "b003_6_TP40_exp90_pm5",
+  "group": "C2_neighborhood",
+  "selector": {
+   "type": "amihud_60",
+   "n": 6,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.4,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N6：比 N5 分散一档，理论上 mdd 更低但 alpha 摊薄；是「平台中心」检验；TP40：更早止盈 → 段胜率更高、收益更低；用于确认 TP 维度的单调方向；仓位 90%（其余现金）；相位 -5。假设：该点在 (N,TP,敞口) 平台上，phase 0/-5 都应满足 total≥60% 且 mdd≤15% 且 win_period≥80%。",
+  "rebalance_offset_days": -5
+ },
+ {
+  "id": "b003_6_TP50_exp85_p0",
+  "group": "C2_neighborhood",
+  "selector": {
+   "type": "amihud_60",
+   "n": 6,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.85,
+   "cash_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N6：比 N5 分散一档，理论上 mdd 更低但 alpha 摊薄；是「平台中心」检验；TP50：Lead 验证的最优档（月胜率 80%，win_trade 60%）；仓位 85%（其余现金）；相位 +0。假设：该点在 (N,TP,敞口) 平台上，phase 0/-5 都应满足 total≥60% 且 mdd≤15% 且 win_period≥80%。"
+ },
+ {
+  "id": "b003_6_TP50_exp85_pm5",
+  "group": "C2_neighborhood",
+  "selector": {
+   "type": "amihud_60",
+   "n": 6,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.85,
+   "cash_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N6：比 N5 分散一档，理论上 mdd 更低但 alpha 摊薄；是「平台中心」检验；TP50：Lead 验证的最优档（月胜率 80%，win_trade 60%）；仓位 85%（其余现金）；相位 -5。假设：该点在 (N,TP,敞口) 平台上，phase 0/-5 都应满足 total≥60% 且 mdd≤15% 且 win_period≥80%。",
+  "rebalance_offset_days": -5
+ },
+ {
+  "id": "b003_6_TP50_exp90_p0",
+  "group": "C2_neighborhood",
+  "selector": {
+   "type": "amihud_60",
+   "n": 6,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N6：比 N5 分散一档，理论上 mdd 更低但 alpha 摊薄；是「平台中心」检验；TP50：Lead 验证的最优档（月胜率 80%，win_trade 60%）；仓位 90%（其余现金）；相位 +0。假设：该点在 (N,TP,敞口) 平台上，phase 0/-5 都应满足 total≥60% 且 mdd≤15% 且 win_period≥80%。"
+ },
+ {
+  "id": "b003_6_TP50_exp90_pm5",
+  "group": "C2_neighborhood",
+  "selector": {
+   "type": "amihud_60",
+   "n": 6,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N6：比 N5 分散一档，理论上 mdd 更低但 alpha 摊薄；是「平台中心」检验；TP50：Lead 验证的最优档（月胜率 80%，win_trade 60%）；仓位 90%（其余现金）；相位 -5。假设：该点在 (N,TP,敞口) 平台上，phase 0/-5 都应满足 total≥60% 且 mdd≤15% 且 win_period≥80%。",
+  "rebalance_offset_days": -5
+ },
+ {
+  "id": "b003_6_TP60_exp85_p0",
+  "group": "C2_neighborhood",
+  "selector": {
+   "type": "amihud_60",
+   "n": 6,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.6,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.85,
+   "cash_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N6：比 N5 分散一档，理论上 mdd 更低但 alpha 摊薄；是「平台中心」检验；TP60：几乎不触发（≈无止损），用于确认 TP50 的优势不是「越松越好」；仓位 85%（其余现金）；相位 +0。假设：该点在 (N,TP,敞口) 平台上，phase 0/-5 都应满足 total≥60% 且 mdd≤15% 且 win_period≥80%。"
+ },
+ {
+  "id": "b003_6_TP60_exp85_pm5",
+  "group": "C2_neighborhood",
+  "selector": {
+   "type": "amihud_60",
+   "n": 6,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.6,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.85,
+   "cash_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N6：比 N5 分散一档，理论上 mdd 更低但 alpha 摊薄；是「平台中心」检验；TP60：几乎不触发（≈无止损），用于确认 TP50 的优势不是「越松越好」；仓位 85%（其余现金）；相位 -5。假设：该点在 (N,TP,敞口) 平台上，phase 0/-5 都应满足 total≥60% 且 mdd≤15% 且 win_period≥80%。",
+  "rebalance_offset_days": -5
+ },
+ {
+  "id": "b003_6_TP60_exp90_p0",
+  "group": "C2_neighborhood",
+  "selector": {
+   "type": "amihud_60",
+   "n": 6,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.6,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N6：比 N5 分散一档，理论上 mdd 更低但 alpha 摊薄；是「平台中心」检验；TP60：几乎不触发（≈无止损），用于确认 TP50 的优势不是「越松越好」；仓位 90%（其余现金）；相位 +0。假设：该点在 (N,TP,敞口) 平台上，phase 0/-5 都应满足 total≥60% 且 mdd≤15% 且 win_period≥80%。"
+ },
+ {
+  "id": "b003_6_TP60_exp90_pm5",
+  "group": "C2_neighborhood",
+  "selector": {
+   "type": "amihud_60",
+   "n": 6,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.6,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N6：比 N5 分散一档，理论上 mdd 更低但 alpha 摊薄；是「平台中心」检验；TP60：几乎不触发（≈无止损），用于确认 TP50 的优势不是「越松越好」；仓位 90%（其余现金）；相位 -5。假设：该点在 (N,TP,敞口) 平台上，phase 0/-5 都应满足 total≥60% 且 mdd≤15% 且 win_period≥80%。",
+  "rebalance_offset_days": -5
+ },
+ {
+  "id": "b003_7_TP40_exp85_p0",
+  "group": "C2_neighborhood",
+  "selector": {
+   "type": "amihud_60",
+   "n": 7,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.4,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.85,
+   "cash_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N7：继续分散，检验收益衰减是否线性（若不是线性说明 N6 附近有结构）；TP40：更早止盈 → 段胜率更高、收益更低；用于确认 TP 维度的单调方向；仓位 85%（其余现金）；相位 +0。假设：该点在 (N,TP,敞口) 平台上，phase 0/-5 都应满足 total≥60% 且 mdd≤15% 且 win_period≥80%。"
+ },
+ {
+  "id": "b003_7_TP40_exp85_pm5",
+  "group": "C2_neighborhood",
+  "selector": {
+   "type": "amihud_60",
+   "n": 7,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.4,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.85,
+   "cash_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N7：继续分散，检验收益衰减是否线性（若不是线性说明 N6 附近有结构）；TP40：更早止盈 → 段胜率更高、收益更低；用于确认 TP 维度的单调方向；仓位 85%（其余现金）；相位 -5。假设：该点在 (N,TP,敞口) 平台上，phase 0/-5 都应满足 total≥60% 且 mdd≤15% 且 win_period≥80%。",
+  "rebalance_offset_days": -5
+ },
+ {
+  "id": "b003_7_TP40_exp90_p0",
+  "group": "C2_neighborhood",
+  "selector": {
+   "type": "amihud_60",
+   "n": 7,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.4,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N7：继续分散，检验收益衰减是否线性（若不是线性说明 N6 附近有结构）；TP40：更早止盈 → 段胜率更高、收益更低；用于确认 TP 维度的单调方向；仓位 90%（其余现金）；相位 +0。假设：该点在 (N,TP,敞口) 平台上，phase 0/-5 都应满足 total≥60% 且 mdd≤15% 且 win_period≥80%。"
+ },
+ {
+  "id": "b003_7_TP40_exp90_pm5",
+  "group": "C2_neighborhood",
+  "selector": {
+   "type": "amihud_60",
+   "n": 7,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.4,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N7：继续分散，检验收益衰减是否线性（若不是线性说明 N6 附近有结构）；TP40：更早止盈 → 段胜率更高、收益更低；用于确认 TP 维度的单调方向；仓位 90%（其余现金）；相位 -5。假设：该点在 (N,TP,敞口) 平台上，phase 0/-5 都应满足 total≥60% 且 mdd≤15% 且 win_period≥80%。",
+  "rebalance_offset_days": -5
+ },
+ {
+  "id": "b003_7_TP50_exp85_p0",
+  "group": "C2_neighborhood",
+  "selector": {
+   "type": "amihud_60",
+   "n": 7,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.85,
+   "cash_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N7：继续分散，检验收益衰减是否线性（若不是线性说明 N6 附近有结构）；TP50：Lead 验证的最优档（月胜率 80%，win_trade 60%）；仓位 85%（其余现金）；相位 +0。假设：该点在 (N,TP,敞口) 平台上，phase 0/-5 都应满足 total≥60% 且 mdd≤15% 且 win_period≥80%。"
+ },
+ {
+  "id": "b003_7_TP50_exp85_pm5",
+  "group": "C2_neighborhood",
+  "selector": {
+   "type": "amihud_60",
+   "n": 7,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.85,
+   "cash_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N7：继续分散，检验收益衰减是否线性（若不是线性说明 N6 附近有结构）；TP50：Lead 验证的最优档（月胜率 80%，win_trade 60%）；仓位 85%（其余现金）；相位 -5。假设：该点在 (N,TP,敞口) 平台上，phase 0/-5 都应满足 total≥60% 且 mdd≤15% 且 win_period≥80%。",
+  "rebalance_offset_days": -5
+ },
+ {
+  "id": "b003_7_TP50_exp90_p0",
+  "group": "C2_neighborhood",
+  "selector": {
+   "type": "amihud_60",
+   "n": 7,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N7：继续分散，检验收益衰减是否线性（若不是线性说明 N6 附近有结构）；TP50：Lead 验证的最优档（月胜率 80%，win_trade 60%）；仓位 90%（其余现金）；相位 +0。假设：该点在 (N,TP,敞口) 平台上，phase 0/-5 都应满足 total≥60% 且 mdd≤15% 且 win_period≥80%。"
+ },
+ {
+  "id": "b003_7_TP50_exp90_pm5",
+  "group": "C2_neighborhood",
+  "selector": {
+   "type": "amihud_60",
+   "n": 7,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N7：继续分散，检验收益衰减是否线性（若不是线性说明 N6 附近有结构）；TP50：Lead 验证的最优档（月胜率 80%，win_trade 60%）；仓位 90%（其余现金）；相位 -5。假设：该点在 (N,TP,敞口) 平台上，phase 0/-5 都应满足 total≥60% 且 mdd≤15% 且 win_period≥80%。",
+  "rebalance_offset_days": -5
+ },
+ {
+  "id": "b003_7_TP60_exp85_p0",
+  "group": "C2_neighborhood",
+  "selector": {
+   "type": "amihud_60",
+   "n": 7,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.6,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.85,
+   "cash_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N7：继续分散，检验收益衰减是否线性（若不是线性说明 N6 附近有结构）；TP60：几乎不触发（≈无止损），用于确认 TP50 的优势不是「越松越好」；仓位 85%（其余现金）；相位 +0。假设：该点在 (N,TP,敞口) 平台上，phase 0/-5 都应满足 total≥60% 且 mdd≤15% 且 win_period≥80%。"
+ },
+ {
+  "id": "b003_7_TP60_exp85_pm5",
+  "group": "C2_neighborhood",
+  "selector": {
+   "type": "amihud_60",
+   "n": 7,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.6,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.85,
+   "cash_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N7：继续分散，检验收益衰减是否线性（若不是线性说明 N6 附近有结构）；TP60：几乎不触发（≈无止损），用于确认 TP50 的优势不是「越松越好」；仓位 85%（其余现金）；相位 -5。假设：该点在 (N,TP,敞口) 平台上，phase 0/-5 都应满足 total≥60% 且 mdd≤15% 且 win_period≥80%。",
+  "rebalance_offset_days": -5
+ },
+ {
+  "id": "b003_7_TP60_exp90_p0",
+  "group": "C2_neighborhood",
+  "selector": {
+   "type": "amihud_60",
+   "n": 7,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.6,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N7：继续分散，检验收益衰减是否线性（若不是线性说明 N6 附近有结构）；TP60：几乎不触发（≈无止损），用于确认 TP50 的优势不是「越松越好」；仓位 90%（其余现金）；相位 +0。假设：该点在 (N,TP,敞口) 平台上，phase 0/-5 都应满足 total≥60% 且 mdd≤15% 且 win_period≥80%。"
+ },
+ {
+  "id": "b003_7_TP60_exp90_pm5",
+  "group": "C2_neighborhood",
+  "selector": {
+   "type": "amihud_60",
+   "n": 7,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.6,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N7：继续分散，检验收益衰减是否线性（若不是线性说明 N6 附近有结构）；TP60：几乎不触发（≈无止损），用于确认 TP50 的优势不是「越松越好」；仓位 90%（其余现金）；相位 -5。假设：该点在 (N,TP,敞口) 平台上，phase 0/-5 都应满足 total≥60% 且 mdd≤15% 且 win_period≥80%。",
+  "rebalance_offset_days": -5
+ },
+ {
+  "id": "b003_c3_N6_TP50_exp80_pm10",
+  "group": "C3_N6_TP50_phase",
+  "selector": {
+   "type": "amihud_60",
+   "n": 6,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.8,
+   "cash_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N6/TP50 主板；phase -10：Lead 实测 +63~68%/-13.9~-14.6%/胜率 100%（已过）—— 本处验证敞口更低时是否失收益；敞口 80%。四条敞口连成一条线，用来判断「失败相位」是否可用敞口单独救回来。",
+  "rebalance_offset_days": -10
+ },
+ {
+  "id": "b003_c3_N6_TP50_exp85_pm10",
+  "group": "C3_N6_TP50_phase",
+  "selector": {
+   "type": "amihud_60",
+   "n": 6,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.85,
+   "cash_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N6/TP50 主板；phase -10：Lead 实测 +63~68%/-13.9~-14.6%/胜率 100%（已过）—— 本处验证敞口更低时是否失收益；敞口 85%。四条敞口连成一条线，用来判断「失败相位」是否可用敞口单独救回来。",
+  "rebalance_offset_days": -10
+ },
+ {
+  "id": "b003_c3_N6_TP50_exp90_pm10",
+  "group": "C3_N6_TP50_phase",
+  "selector": {
+   "type": "amihud_60",
+   "n": 6,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N6/TP50 主板；phase -10：Lead 实测 +63~68%/-13.9~-14.6%/胜率 100%（已过）—— 本处验证敞口更低时是否失收益；敞口 90%。四条敞口连成一条线，用来判断「失败相位」是否可用敞口单独救回来。",
+  "rebalance_offset_days": -10
+ },
+ {
+  "id": "b003_c3_N6_TP50_exp95_pm10",
+  "group": "C3_N6_TP50_phase",
+  "selector": {
+   "type": "amihud_60",
+   "n": 6,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.95,
+   "cash_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N6/TP50 主板；phase -10：Lead 实测 +63~68%/-13.9~-14.6%/胜率 100%（已过）—— 本处验证敞口更低时是否失收益；敞口 95%。四条敞口连成一条线，用来判断「失败相位」是否可用敞口单独救回来。",
+  "rebalance_offset_days": -10
+ },
+ {
+  "id": "b003_c3_N6_TP50_exp80_pp5",
+  "group": "C3_N6_TP50_phase",
+  "selector": {
+   "type": "amihud_60",
+   "n": 6,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.8,
+   "cash_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N6/TP50 主板；phase +5：**唯一因胜率不达标（67%）而失败的相位**。假设提高敞口不能救胜率，只有换 N 或 TP 才能救；本组用来确认「胜率失败与敞口无关」；敞口 80%。四条敞口连成一条线，用来判断「失败相位」是否可用敞口单独救回来。",
+  "rebalance_offset_days": 5
+ },
+ {
+  "id": "b003_c3_N6_TP50_exp85_pp5",
+  "group": "C3_N6_TP50_phase",
+  "selector": {
+   "type": "amihud_60",
+   "n": 6,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.85,
+   "cash_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N6/TP50 主板；phase +5：**唯一因胜率不达标（67%）而失败的相位**。假设提高敞口不能救胜率，只有换 N 或 TP 才能救；本组用来确认「胜率失败与敞口无关」；敞口 85%。四条敞口连成一条线，用来判断「失败相位」是否可用敞口单独救回来。",
+  "rebalance_offset_days": 5
+ },
+ {
+  "id": "b003_c3_N6_TP50_exp90_pp5",
+  "group": "C3_N6_TP50_phase",
+  "selector": {
+   "type": "amihud_60",
+   "n": 6,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N6/TP50 主板；phase +5：**唯一因胜率不达标（67%）而失败的相位**。假设提高敞口不能救胜率，只有换 N 或 TP 才能救；本组用来确认「胜率失败与敞口无关」；敞口 90%。四条敞口连成一条线，用来判断「失败相位」是否可用敞口单独救回来。",
+  "rebalance_offset_days": 5
+ },
+ {
+  "id": "b003_c3_N6_TP50_exp95_pp5",
+  "group": "C3_N6_TP50_phase",
+  "selector": {
+   "type": "amihud_60",
+   "n": 6,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.95,
+   "cash_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N6/TP50 主板；phase +5：**唯一因胜率不达标（67%）而失败的相位**。假设提高敞口不能救胜率，只有换 N 或 TP 才能救；本组用来确认「胜率失败与敞口无关」；敞口 95%。四条敞口连成一条线，用来判断「失败相位」是否可用敞口单独救回来。",
+  "rebalance_offset_days": 5
+ },
+ {
+  "id": "b003_c3_N6_TP50_exp80_pp10",
+  "group": "C3_N6_TP50_phase",
+  "selector": {
+   "type": "amihud_60",
+   "n": 6,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.8,
+   "cash_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N6/TP50 主板；phase +10：**唯一因收益不达标（+40~42%）而失败的相位**。假设降低敞口会进一步恶化，所以 phase +10 的解法只能是「提高敞口」或「换池」，本组给出上界；敞口 80%。四条敞口连成一条线，用来判断「失败相位」是否可用敞口单独救回来。",
+  "rebalance_offset_days": 10
+ },
+ {
+  "id": "b003_c3_N6_TP50_exp85_pp10",
+  "group": "C3_N6_TP50_phase",
+  "selector": {
+   "type": "amihud_60",
+   "n": 6,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.85,
+   "cash_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N6/TP50 主板；phase +10：**唯一因收益不达标（+40~42%）而失败的相位**。假设降低敞口会进一步恶化，所以 phase +10 的解法只能是「提高敞口」或「换池」，本组给出上界；敞口 85%。四条敞口连成一条线，用来判断「失败相位」是否可用敞口单独救回来。",
+  "rebalance_offset_days": 10
+ },
+ {
+  "id": "b003_c3_N6_TP50_exp90_pp10",
+  "group": "C3_N6_TP50_phase",
+  "selector": {
+   "type": "amihud_60",
+   "n": 6,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N6/TP50 主板；phase +10：**唯一因收益不达标（+40~42%）而失败的相位**。假设降低敞口会进一步恶化，所以 phase +10 的解法只能是「提高敞口」或「换池」，本组给出上界；敞口 90%。四条敞口连成一条线，用来判断「失败相位」是否可用敞口单独救回来。",
+  "rebalance_offset_days": 10
+ },
+ {
+  "id": "b003_c3_N6_TP50_exp95_pp10",
+  "group": "C3_N6_TP50_phase",
+  "selector": {
+   "type": "amihud_60",
+   "n": 6,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.95,
+   "cash_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N6/TP50 主板；phase +10：**唯一因收益不达标（+40~42%）而失败的相位**。假设降低敞口会进一步恶化，所以 phase +10 的解法只能是「提高敞口」或「换池」，本组给出上界；敞口 95%。四条敞口连成一条线，用来判断「失败相位」是否可用敞口单独救回来。",
+  "rebalance_offset_days": 10
+ },
+ {
+  "id": "b003_5_TPnone_exp85_p0",
+  "group": "C1_no_stop_exposure",
+  "selector": {
+   "type": "amihud_60",
+   "n": 5,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.85,
+   "cash_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N5 无止盈（no-stop）+ 敞口 85%，相位 +0。**关键识别**：TP50 的作用是「兑现浮盈→降低后续平均仓位」，与直接降敞口在数学上可能等价。若本条与 TP50 版的 total/mdd 接近，则 TP 维度可以砍掉，只留敞口（更少参数=更抗过拟合）。"
+ },
+ {
+  "id": "b003_5_TPnone_exp85_pm5",
+  "group": "C1_no_stop_exposure",
+  "selector": {
+   "type": "amihud_60",
+   "n": 5,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.85,
+   "cash_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N5 无止盈（no-stop）+ 敞口 85%，相位 -5。**关键识别**：TP50 的作用是「兑现浮盈→降低后续平均仓位」，与直接降敞口在数学上可能等价。若本条与 TP50 版的 total/mdd 接近，则 TP 维度可以砍掉，只留敞口（更少参数=更抗过拟合）。",
+  "rebalance_offset_days": -5
+ },
+ {
+  "id": "b003_5_TPnone_exp85_pp5",
+  "group": "C1_no_stop_exposure",
+  "selector": {
+   "type": "amihud_60",
+   "n": 5,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.85,
+   "cash_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N5 无止盈（no-stop）+ 敞口 85%，相位 +5。**关键识别**：TP50 的作用是「兑现浮盈→降低后续平均仓位」，与直接降敞口在数学上可能等价。若本条与 TP50 版的 total/mdd 接近，则 TP 维度可以砍掉，只留敞口（更少参数=更抗过拟合）。",
+  "rebalance_offset_days": 5
+ },
+ {
+  "id": "b003_5_TPnone_exp90_p0",
+  "group": "C1_no_stop_exposure",
+  "selector": {
+   "type": "amihud_60",
+   "n": 5,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N5 无止盈（no-stop）+ 敞口 90%，相位 +0。**关键识别**：TP50 的作用是「兑现浮盈→降低后续平均仓位」，与直接降敞口在数学上可能等价。若本条与 TP50 版的 total/mdd 接近，则 TP 维度可以砍掉，只留敞口（更少参数=更抗过拟合）。"
+ },
+ {
+  "id": "b003_5_TPnone_exp90_pm5",
+  "group": "C1_no_stop_exposure",
+  "selector": {
+   "type": "amihud_60",
+   "n": 5,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N5 无止盈（no-stop）+ 敞口 90%，相位 -5。**关键识别**：TP50 的作用是「兑现浮盈→降低后续平均仓位」，与直接降敞口在数学上可能等价。若本条与 TP50 版的 total/mdd 接近，则 TP 维度可以砍掉，只留敞口（更少参数=更抗过拟合）。",
+  "rebalance_offset_days": -5
+ },
+ {
+  "id": "b003_5_TPnone_exp90_pp5",
+  "group": "C1_no_stop_exposure",
+  "selector": {
+   "type": "amihud_60",
+   "n": 5,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": null,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N5 无止盈（no-stop）+ 敞口 90%，相位 +5。**关键识别**：TP50 的作用是「兑现浮盈→降低后续平均仓位」，与直接降敞口在数学上可能等价。若本条与 TP50 版的 total/mdd 接近，则 TP 维度可以砍掉，只留敞口（更少参数=更抗过拟合）。",
+  "rebalance_offset_days": 5
+ },
+ {
+  "id": "b003_c5_sleeve3_N5_TP50_e90",
+  "group": "C5_sleeve3",
+  "selector": {
+   "type": "amihud_60",
+   "n": 5,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": true,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash",
+   "sleeves": {
+    "count": 3,
+    "offsets": [
+     -8,
+     0,
+     8
+    ],
+    "alloc": "equal"
+   }
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "3-sleeve 骨架：N5/TP50/主板，资金三等分，每份 exposure 0.90（合计仍是 0.90 投资、0.10 现金），三份相位错开 -8/0/+8 个交易日。**假设**：单一 R30 网格的 mdd 是相位函数（-13.9~-17.5%），三份错峰后各自的回撤不回叠，合成净值 mdd 应落在 -11~-14%，而收益 ≈ 三相位均值（≈80%）→ 这是唯一同时保住收益与回撤的结构性方案。**口径（必须按此报）**：① 合成净值 = 三份净值算术平均（每份 1/3 资金），② win_period 用合成净值按 R=30 算完整段，③ 另报每个 sleeve 自己的 total/mdd/win_period 与 三者的 max-min（sleeve_dispersion），④ win_trade 合并三份的全部个股交易算，⑤ **不许**把三个 sleeve 当三个独立策略分别报告或调参。"
+ },
+ {
+  "id": "b003_c6_N5_TP50_e90_p0_chinext_on",
+  "group": "C6_pool_control",
+  "selector": {
+   "type": "amihud_60",
+   "n": 5,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": true,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N5/TP50/敞口90%，但**创业板放回池子**（只剔 688/689）。与 C2 的 N5/TP50/0.90/phase0 成对，差值 = 创业板对收益/回撤的贡献。Lead 说主板更好，本条是归因证据。"
+ },
+ {
+  "id": "b003_c6_N5_TP50_e90_p0_fullpool",
+  "group": "C6_pool_control",
+  "selector": {
+   "type": "amihud_60",
+   "n": 5,
+   "size_range": [
+    0.05,
+    0.3
+   ],
+   "min_adv": 5000000,
+   "exclude_star": false,
+   "exclude_bj": true,
+   "exclude_chinext": false,
+   "price_min": null,
+   "price_max": null,
+   "params": {}
+  },
+  "rebalance_days": 30,
+  "exit": {
+   "trailing_stop": null,
+   "fixed_stop": null,
+   "take_profit": 0.5,
+   "trailing_take": null,
+   "max_hold_days": null
+  },
+  "timing": {
+   "type": "none",
+   "index": null,
+   "ma": null,
+   "out_asset": "cash"
+  },
+  "portfolio": {
+   "exposure": 0.9,
+   "cash_asset": "cash"
+  },
+  "cost": {
+   "one_way": 0.005,
+   "capital": 50000,
+   "lot_size": 100
+  },
+  "window": {
+   "warmup_start": "2024-01-01",
+   "eval_start": "2026-01-05",
+   "eval_end": "2026-11-04"
+  },
+  "notes": "N5/TP50/敞口90%，**全池**（含 688/689，仅剔北交所=空操作）。与主板成对，差值 = 科创板贡献；同时验证 addendum 里「零售池优于全池」的结论在 TP50 下是否仍成立。"
+ }
+]

@@ -1,0 +1,50 @@
+# ===== secrets =====
+.env
+.env.*
+!.env.example
+
+# ===== venv / deps =====
+.venv/
+venv/
+env/
+pip-wheel-metadata/
+*.egg-info/
+.uv/
+
+# ===== python =====
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+dist/
+build/
+
+# ===== data (大文件，不进 git) =====
+data/
+*.pkl
+*.parquet
+*.feather
+*.h5
+*.hdf5
+
+# ===== outputs (回测产物，不进 git) =====
+logs/
+results/
+state/
+team/runs/
+team/audit/out/
+*.log
+
+# ===== OS =====
+.DS_Store
+Thumbs.db
+
+# ===== IDE =====
+.vscode/
+.idea/
+*.swp
+*.swo
