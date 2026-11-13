@@ -9,11 +9,11 @@ import os
 import sys
 from pathlib import Path
 
-BASE = Path("/home/hatch/workspace/ashare-trade")
+BASE = Path(__file__).resolve().parents[1]  # 仓库根目录 (research/ 的上级), 路径可移植
 DATA = BASE / "data"
 sys.path.insert(0, str(BASE))                       # clean_data
 sys.path.insert(0, str(BASE / "team" / "audit"))    # prior_check
-sys.path.insert(0, "/home/hatch/workspace/tools")   # design_r30_grid8
+sys.path.insert(0, str(BASE / "research"))   # design_r30_grid8
 os.chdir(BASE)
 
 import numpy as np

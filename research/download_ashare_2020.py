@@ -26,7 +26,7 @@ from pathlib import Path
 
 import pandas as pd
 
-BASE = Path("/home/hatch/workspace/ashare-trade")
+BASE = Path(__file__).resolve().parents[1]  # 仓库根目录 (research/ 的上级), 路径可移植
 DATA = BASE / "data"
 CACHE = DATA / "_sina2020_cache"
 DATA.mkdir(exist_ok=True)

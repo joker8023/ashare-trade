@@ -19,3 +19,17 @@
 仓库根目录下：`.venv/bin/python research/<脚本>.py`
 脚本自带 `sys.path` 设置（引用仓库 `team/audit` 模拟器与同目录脚本）；数据在 `data/`（git 忽略，需先跑下载脚本）。
 回撤优化、环境门、防御混合等约 40 个变体多为一次性命令，未全部留存为文件，结论见各脚本头注释与提交历史。
+
+## 本地复现（X3 vs N4 对比，2020 长窗口径）
+
+环境：Python 3 + pandas / akshare（仓库根目录 `python3 -m venv .venv && .venv/bin/pip install pandas akshare`）。
+下面这条链的脚本已做路径可移植（按脚本自身位置推导仓库根），clone 到任意目录可跑：
+
+1. 拉数据（新浪前复权，约 45 分钟）：`END_DATE=20261112 .venv/bin/python research/download_ashare_2020.py`
+   → `data/ashare_daily_long_2020.pkl`（7,408,288 行，2020-01-02 ~ 2026-11-12）+ `data/universe_2020.pkl`。数据不在仓库里（git 忽略），必须本地拉。
+2. 建 pivots：`.venv/bin/python research/rebuild_pivots_2020.py` → `data/pivots_2020_clean.pkl`（1662 交易日，末日有价 5025 只）。
+3. 跑对比：`.venv/bin/python research/compare_x3_n4_2020cal.py` → `results/r30_bt/compare_x3_n4_2020cal_1112.json`。
+   对照值（截至 2026-11-12）：X3 全程 **+547.86% / MDD -38.19%**（92 笔，成本 ¥17,505）；N4 全程 **+309.70% / MDD -41.40%**（92 笔，成本 ¥10,198）；1/3/6m、1/2y 窗口见 JSON。
+
+另：`backtest_x3_2020.py` 是 X3 单独的长窗全程回测（run_start 2020-01-01，首信号 2021-03-31；数据到 2026-11-10 时为 +1565.77% / -38.51%，数据更新后数字随之变化）。
+未可移植：`paper_track.py` 及三年数据链仍写死沙箱路径（`~/workspace/tools/...`），暂只能在沙箱跑。
