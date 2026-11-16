@@ -1,0 +1,216 @@
+{
+ "m07": {
+  "total": 1863.27,
+  "mdd": -27.05,
+  "1m": -4.09,
+  "3m": 17.28,
+  "6m": 39.0,
+  "1y": 164.05,
+  "2y": 1474.08,
+  "3y": 1677.53
+ },
+ "k1_rows": 30,
+ "k2_rows": 9,
+ "k3_rows": 29,
+ "k4_rows": 18,
+ "k5_rows": 20,
+ "k6_rows": 8,
+ "k7_rows": 6,
+ "k17_new": 113,
+ "k17_uniq": 113,
+ "k17_file_beat_all": 0,
+ "k17_recompute_mismatch": 0,
+ "k8_status": "PRESENT",
+ "k8_rows": 8,
+ "k8_new": 7,
+ "k8_tags": [
+  "g_bf07_cut75",
+  "g_bf07_cut75_rs70",
+  "g_bf07_rs70",
+  "g_bf07_rs70_winA30",
+  "g_bf07_stop22",
+  "g_bf07_takeB90",
+  "g_bf07_winA30"
+ ],
+ "k8_overlap_k17": [],
+ "k8_file_beat_all": 0,
+ "k8_recompute_beat_all": 0,
+ "k8_maxnbeat_new": 4,
+ "k8_best": "g_bf07_rs70",
+ "k8_rows_detail": [
+  {
+   "tag": "g_bf07_rs70",
+   "nbeat_re": 4,
+   "beat_re": false,
+   "mdd": -24.28,
+   "mdd_better_re": true,
+   "win_re": false,
+   "total": 2022.83,
+   "trades": 178,
+   "cost": 54725.0,
+   "switch_same_m07": false,
+   "diffs": {
+    "1m": -0.02,
+    "3m": -0.04,
+    "6m": 0.23,
+    "1y": 0.32,
+    "2y": 41.14,
+    "3y": 104.35
+   }
+  },
+  {
+   "tag": "g_bf07_winA30",
+   "nbeat_re": 4,
+   "beat_re": false,
+   "mdd": -24.17,
+   "mdd_better_re": true,
+   "win_re": false,
+   "total": 2400.29,
+   "trades": 184,
+   "cost": 64607.0,
+   "switch_same_m07": true,
+   "diffs": {
+    "1m": 0.0,
+    "3m": -0.03,
+    "6m": 0.26,
+    "1y": 0.35,
+    "2y": 6.22,
+    "3y": 193.03
+   }
+  },
+  {
+   "tag": "g_bf07_rs70_winA30",
+   "nbeat_re": 4,
+   "beat_re": false,
+   "mdd": -24.17,
+   "mdd_better_re": true,
+   "win_re": false,
+   "total": 2298.59,
+   "trades": 178,
+   "cost": 61710.0,
+   "switch_same_m07": false,
+   "diffs": {
+    "1m": -0.01,
+    "3m": -0.03,
+    "6m": 0.33,
+    "1y": 0.77,
+    "2y": 42.41,
+    "3y": 112.89
+   }
+  },
+  {
+   "tag": "g_bf07_cut75",
+   "nbeat_re": 4,
+   "beat_re": false,
+   "mdd": -25.02,
+   "mdd_better_re": true,
+   "win_re": false,
+   "total": 1904.82,
+   "trades": 184,
+   "cost": 52172.0,
+   "switch_same_m07": true,
+   "diffs": {
+    "1m": 0.0,
+    "3m": -0.02,
+    "6m": 0.27,
+    "1y": 1.1,
+    "2y": 11.8,
+    "3y": 190.44
+   }
+  },
+  {
+   "tag": "g_bf07_cut75_rs70",
+   "nbeat_re": 1,
+   "beat_re": false,
+   "mdd": -25.02,
+   "mdd_better_re": true,
+   "win_re": false,
+   "total": 1730.27,
+   "trades": 187,
+   "cost": 58233.0,
+   "switch_same_m07": false,
+   "diffs": {
+    "1m": -0.46,
+    "3m": -3.93,
+    "6m": -4.58,
+    "1y": -8.92,
+    "2y": -24.16,
+    "3y": 19.09
+   }
+  },
+  {
+   "tag": "g_bf07_stop22",
+   "nbeat_re": 2,
+   "beat_re": false,
+   "mdd": -24.89,
+   "mdd_better_re": true,
+   "win_re": false,
+   "total": 2029.43,
+   "trades": 184,
+   "cost": 55348.0,
+   "switch_same_m07": true,
+   "diffs": {
+    "1m": 0.0,
+    "3m": -0.03,
+    "6m": 0.15,
+    "1y": -0.61,
+    "2y": -28.65,
+    "3y": 110.2
+   }
+  },
+  {
+   "tag": "g_bf07_takeB90",
+   "nbeat_re": 0,
+   "beat_re": false,
+   "mdd": -24.32,
+   "mdd_better_re": true,
+   "win_re": false,
+   "total": 1658.1,
+   "trades": 185,
+   "cost": 47838.0,
+   "switch_same_m07": false,
+   "diffs": {
+    "1m": -0.03,
+    "3m": -4.49,
+    "6m": -5.01,
+    "1y": -10.04,
+    "2y": -307.66,
+    "3y": -198.08
+   }
+  }
+ ],
+ "k8_base_vs_m07": {
+  "total": [
+   1863.27,
+   1863.27
+  ],
+  "mdd": [
+   -27.05,
+   -27.05
+  ],
+  "1m": [
+   -4.09,
+   -4.09
+  ],
+  "3m": [
+   17.28,
+   17.28
+  ],
+  "6m": [
+   39.0,
+   39.0
+  ],
+  "1y": [
+   164.05,
+   164.05
+  ],
+  "2y": [
+   1474.08,
+   1474.08
+  ],
+  "3y": [
+   1677.53,
+   1677.53
+  ]
+ }
+}

@@ -1,0 +1,243 @@
+{
+ "m07_ref": {
+  "1m": -4.09,
+  "3m": 17.28,
+  "6m": 39.0,
+  "1y": 164.05,
+  "2y": 1474.08,
+  "3y": 1677.53,
+  "mdd": -27.05,
+  "total": 1863.27
+ },
+ "rows": [
+  {
+   "tag": "base_M07",
+   "selector": "amihud_60",
+   "legs": "B",
+   "total": 1863.27,
+   "mdd": -27.05,
+   "wins": [
+    -4.09,
+    17.28,
+    39.0,
+    164.05,
+    1474.08,
+    1677.53
+   ],
+   "nbeat_re": 0,
+   "beat_re": false,
+   "mdd_better_re": false,
+   "win_all_re": false,
+   "trades": 184,
+   "switches": 3,
+   "switch_same_m07": true,
+   "match": true
+  },
+  {
+   "tag": "k10_a60_size_B",
+   "selector": "a60_size",
+   "legs": "B",
+   "total": 1325.65,
+   "mdd": -35.61,
+   "wins": [
+    -5.67,
+    12.01,
+    32.93,
+    152.46,
+    1283.16,
+    1199.8
+   ],
+   "nbeat_re": 0,
+   "beat_re": false,
+   "mdd_better_re": false,
+   "win_all_re": false,
+   "trades": 201,
+   "switches": 8,
+   "switch_same_m07": false,
+   "match": true
+  },
+  {
+   "tag": "k10_a60_size_both",
+   "selector": "a60_size",
+   "legs": "both",
+   "total": 402.79,
+   "mdd": -33.75,
+   "wins": [
+    -0.54,
+    0.21,
+    -9.34,
+    35.32,
+    349.19,
+    344.72
+   ],
+   "nbeat_re": 1,
+   "beat_re": false,
+   "mdd_better_re": false,
+   "win_all_re": false,
+   "trades": 182,
+   "switches": 8,
+   "switch_same_m07": false,
+   "match": true
+  },
+  {
+   "tag": "k10_a60_adv_B",
+   "selector": "a60_adv",
+   "legs": "B",
+   "total": 1244.63,
+   "mdd": -25.83,
+   "wins": [
+    -5.64,
+    12.08,
+    32.66,
+    151.2,
+    1089.22,
+    1120.3
+   ],
+   "nbeat_re": 0,
+   "beat_re": false,
+   "mdd_better_re": true,
+   "win_all_re": false,
+   "trades": 187,
+   "switches": 6,
+   "switch_same_m07": false,
+   "match": true
+  },
+  {
+   "tag": "k10_a60_adv_both",
+   "selector": "a60_adv",
+   "legs": "both",
+   "total": 307.22,
+   "mdd": -30.48,
+   "wins": [
+    -5.58,
+    5.46,
+    -11.56,
+    17.97,
+    210.63,
+    189.55
+   ],
+   "nbeat_re": 0,
+   "beat_re": false,
+   "mdd_better_re": false,
+   "win_all_re": false,
+   "trades": 182,
+   "switches": 11,
+   "switch_same_m07": false,
+   "match": true
+  },
+  {
+   "tag": "k10_a60_a5_B",
+   "selector": "a60_a5",
+   "legs": "B",
+   "total": 1437.72,
+   "mdd": -35.55,
+   "wins": [
+    -5.73,
+    15.68,
+    37.13,
+    160.59,
+    1293.48,
+    1401.91
+   ],
+   "nbeat_re": 0,
+   "beat_re": false,
+   "mdd_better_re": false,
+   "win_all_re": false,
+   "trades": 186,
+   "switches": 11,
+   "switch_same_m07": false,
+   "match": true
+  },
+  {
+   "tag": "k10_a60_a5_both",
+   "selector": "a60_a5",
+   "legs": "both",
+   "total": 1260.73,
+   "mdd": -35.36,
+   "wins": [
+    -5.7,
+    15.11,
+    15.39,
+    123.2,
+    1019.33,
+    985.45
+   ],
+   "nbeat_re": 0,
+   "beat_re": false,
+   "mdd_better_re": false,
+   "win_all_re": false,
+   "trades": 184,
+   "switches": 9,
+   "switch_same_m07": false,
+   "match": true
+  }
+ ],
+ "mismatch": [],
+ "base_check": {
+  "total": {
+   "file": 1863.27,
+   "m07": 1863.27,
+   "dev": 0.0
+  },
+  "mdd": {
+   "file": -27.05,
+   "m07": -27.05,
+   "dev": 0.0
+  },
+  "trades": {
+   "file": 184,
+   "m07": 184,
+   "dev": 0
+  },
+  "1m": {
+   "file": -4.09,
+   "m07": -4.09,
+   "dev": 0.0
+  },
+  "3m": {
+   "file": 17.28,
+   "m07": 17.28,
+   "dev": 0.0
+  },
+  "6m": {
+   "file": 39.0,
+   "m07": 39.0,
+   "dev": 0.0
+  },
+  "1y": {
+   "file": 164.05,
+   "m07": 164.05,
+   "dev": 0.0
+  },
+  "2y": {
+   "file": 1474.08,
+   "m07": 1474.08,
+   "dev": 0.0
+  },
+  "3y": {
+   "file": 1677.53,
+   "m07": 1677.53,
+   "dev": 0.0
+  },
+  "switch_log": true,
+  "brake_log": true,
+  "all_zero": true
+ },
+ "dedup": {
+  "new_n": 6,
+  "overlap": [],
+  "overlap_n": 0,
+  "k10_files_expected_rows": 7,
+  "actual_rows": 7
+ },
+ "trigger_set": [],
+ "summary": {
+  "beat_all_n": 0,
+  "max_nbeat_new": 1,
+  "mdd_better_new": [
+   "k10_a60_adv_B"
+  ],
+  "win_all_n": 0,
+  "trigger_n": 0
+ }
+}

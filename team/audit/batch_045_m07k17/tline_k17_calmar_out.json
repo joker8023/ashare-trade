@@ -1,0 +1,114 @@
+{
+ "leg1_recompute": {
+  "mine": {
+   "total": 1689.26,
+   "mdd": -29.06,
+   "trades": 190,
+   "cost": 47335.0,
+   "mode": "B",
+   "switches": 9,
+   "switch_log": [
+    [
+     "2023-06-21",
+     "B"
+    ],
+    [
+     "2024-04-19",
+     "A"
+    ],
+    [
+     "2024-05-22",
+     "B"
+    ],
+    [
+     "2024-08-15",
+     "A"
+    ],
+    [
+     "2024-09-12",
+     "B"
+    ],
+    [
+     "2024-12-16",
+     "A"
+    ],
+    [
+     "2025-01-14",
+     "B"
+    ],
+    [
+     "2025-02-19",
+     "A"
+    ],
+    [
+     "2026-09-08",
+     "B"
+    ]
+   ],
+   "1m": -4.1,
+   "3m": 17.2,
+   "6m": 39.01,
+   "1y": 164.06,
+   "2y": 1341.14,
+   "3y": 1519.99
+  },
+  "match_total": true,
+  "match_mdd": true,
+  "match_trades": true,
+  "match_cost": true,
+  "match_switch": true,
+  "nbeat_m07": 2
+ },
+ "leg3_extop3": {
+  "calmar_extop3_total": 1222.38,
+  "m07_extop3_total": 1351.75
+ },
+ "leg2_xphase": [
+  {
+   "ph": 0,
+   "calmar_total": 1689.26,
+   "raw_total": 1863.27,
+   "nbeat_phase_matched": 2
+  },
+  {
+   "ph": 5,
+   "calmar_total": 1212.52,
+   "raw_total": 755.73,
+   "nbeat_phase_matched": 4
+  },
+  {
+   "ph": 7,
+   "calmar_total": 1156.96,
+   "raw_total": 1127.52,
+   "nbeat_phase_matched": 4
+  },
+  {
+   "ph": 10,
+   "calmar_total": 466.98,
+   "raw_total": 497.92,
+   "nbeat_phase_matched": 2
+  },
+  {
+   "ph": 14,
+   "calmar_total": 397.14,
+   "raw_total": 480.64,
+   "nbeat_phase_matched": 3
+  },
+  {
+   "ph": 15,
+   "calmar_total": 603.47,
+   "raw_total": 609.8,
+   "nbeat_phase_matched": 2
+  }
+ ],
+ "leg4_slipx2": {
+  "total": 1440.92,
+  "mdd": -30.09,
+  "nbeat_vs_stdM07": 0,
+  "delta_total_vs_ph0": -248.34
+ },
+ "leg5_lookahead": {
+  "combos": 174,
+  "max_abs_diff": 0.0
+ }
+}

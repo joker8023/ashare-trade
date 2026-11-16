@@ -1,0 +1,165 @@
+{
+ "leg1_rerun": {
+  "mine": {
+   "total": 1581.87,
+   "mdd": -25.82,
+   "trades": 180,
+   "cost": 44712.0,
+   "switches": 7,
+   "nbeat_m07": 1,
+   "beat_all": false,
+   "mdd_better": true
+  },
+  "match_total": true,
+  "match_mdd": true,
+  "match_trades": true,
+  "match_cost": true,
+  "match_switch": true,
+  "json": {
+   "total": 1581.87,
+   "mdd": -25.82,
+   "trades": 180,
+   "cost": 44712.0,
+   "switches": 7,
+   "nbeat_m07": 1
+  }
+ },
+ "leg1_local": {
+  "total": 1581.87,
+  "mdd": -25.82,
+  "trades": 180,
+  "cost": 44712.0,
+  "switches": 7,
+  "match_json": [
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ "leg3_extop3": {
+  "w_extop3_total": 1171.01,
+  "m07_extop3_total": 1351.75,
+  "n_trades": 180,
+  "top3_share_of_pnl": 24.85
+ },
+ "leg2_xphase": [
+  {
+   "ph": 0,
+   "w_total": 1581.87,
+   "w_mdd": -25.82,
+   "w_switches": 7,
+   "w_nbeat": 1,
+   "eq_total": 2128.41,
+   "eq_mdd": -24.28,
+   "eq_switches": 3,
+   "eq_nbeat": 5
+  },
+  {
+   "ph": 5,
+   "w_total": 923.1,
+   "w_mdd": -21.26,
+   "w_switches": 10,
+   "w_nbeat": 0,
+   "eq_total": 688.11,
+   "eq_mdd": -35.71,
+   "eq_switches": 10,
+   "eq_nbeat": 0
+  },
+  {
+   "ph": 7,
+   "w_total": 943.06,
+   "w_mdd": -18.27,
+   "w_switches": 9,
+   "w_nbeat": 0,
+   "eq_total": 1081.96,
+   "eq_mdd": -17.2,
+   "eq_switches": 8,
+   "eq_nbeat": 1
+  },
+  {
+   "ph": 10,
+   "w_total": 280.57,
+   "w_mdd": -33.25,
+   "w_switches": 13,
+   "w_nbeat": 0,
+   "eq_total": 410.97,
+   "eq_mdd": -29.73,
+   "eq_switches": 13,
+   "eq_nbeat": 0
+  },
+  {
+   "ph": 14,
+   "w_total": 277.96,
+   "w_mdd": -32.72,
+   "w_switches": 12,
+   "w_nbeat": 0,
+   "eq_total": 354.84,
+   "eq_mdd": -32.8,
+   "eq_switches": 12,
+   "eq_nbeat": 0
+  },
+  {
+   "ph": 15,
+   "w_total": 269.49,
+   "w_mdd": -27.27,
+   "w_switches": 10,
+   "w_nbeat": 0,
+   "eq_total": 527.78,
+   "eq_mdd": -29.19,
+   "eq_switches": 12,
+   "eq_nbeat": 0
+  }
+ ],
+ "leg4_slipx2": {
+  "total": 1315.35,
+  "mdd": -26.6,
+  "nbeat_vs_stdM07": 1,
+  "delta_total_vs_ph0": -266.52,
+  "switches": 7
+ },
+ "leg5_weights": {
+  "live": {
+   "snaps": 40,
+   "max_abs_diff": 1.88359894348622e-09,
+   "mismatches": []
+  },
+  "live_by_leg": {
+   "A": {
+    "snaps": 40,
+    "max_abs_diff": 1.88359894348622e-09,
+    "mismatches": []
+   },
+   "B": {
+    "snaps": 40,
+    "max_abs_diff": 1.88359894348622e-09,
+    "mismatches": []
+   }
+  },
+  "shadowA": {
+   "snaps": 47,
+   "max_abs_diff": 1.4615324367417415e-09,
+   "mismatches": []
+  },
+  "shadowB": {
+   "snaps": 31,
+   "max_abs_diff": 1.1143555522785675e-09,
+   "mismatches": []
+  }
+ },
+ "mechanism": {
+  "n_sig_days": 29,
+  "n_desired_flips": 3,
+  "flip_sample": [
+   "2024-08-01 eq=B w=A",
+   "2024-12-16 eq=A w=B",
+   "2025-03-19 eq=A w=B"
+  ],
+  "eq_shadowA_final": 1270.62,
+  "w_shadowA_final": 1053.73,
+  "eq_shadowB_final": 592.56,
+  "w_shadowB_final": 783.2,
+  "eq_switches": 3,
+  "w_switches": 7
+ }
+}

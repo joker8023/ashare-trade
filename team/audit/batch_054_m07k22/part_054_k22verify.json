@@ -1,0 +1,170 @@
+{
+ "checks": [
+  {
+   "name": "V0_gap2y",
+   "ok": true,
+   "detail": "k22=-106.2 mine=-106.2"
+  },
+  {
+   "name": "V0_calib",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "V1_2024-12_in_window",
+   "ok": true,
+   "detail": "diff k22=-6.83"
+  },
+  {
+   "name": "V1_2024-12_diff",
+   "ok": true,
+   "detail": "k22=-6.8300 mine=-6.8221 err=0.0079"
+  },
+  {
+   "name": "V1_2024-12_base",
+   "ok": true,
+   "detail": "k22=0.8 mine=0.7951"
+  },
+  {
+   "name": "V1_2024-12_cand",
+   "ok": true,
+   "detail": "k22=-6.03 mine=-6.027"
+  },
+  {
+   "name": "V2_2024-12_switch",
+   "ok": true,
+   "detail": "base=[] cand=[['2024-12-13', 'A']]"
+  },
+  {
+   "name": "V2_2024-12_brake",
+   "ok": true,
+   "detail": "base=[] cand=[]"
+  },
+  {
+   "name": "V3_2024-12_sets",
+   "ok": true,
+   "detail": "base_only k22=1 mine=1; cand_only k22=1 mine=1; shared k22=6 mine=6"
+  },
+  {
+   "name": "V4_2024-12_drivers",
+   "ok": true,
+   "detail": "7 drivers all matched"
+  },
+  {
+   "name": "V5_2024-12_resid",
+   "ok": true,
+   "detail": "base k22=757.6 mine=757.6; cand k22=-6060.0 mine=-6060.0"
+  },
+  {
+   "name": "V1_2024-11_in_window",
+   "ok": true,
+   "detail": "diff k22=-6.24"
+  },
+  {
+   "name": "V1_2024-11_diff",
+   "ok": true,
+   "detail": "k22=-6.2400 mine=-6.2384 err=0.0016"
+  },
+  {
+   "name": "V1_2024-11_base",
+   "ok": true,
+   "detail": "k22=27.62 mine=27.6231"
+  },
+  {
+   "name": "V1_2024-11_cand",
+   "ok": true,
+   "detail": "k22=21.38 mine=21.3847"
+  },
+  {
+   "name": "V2_2024-11_switch",
+   "ok": true,
+   "detail": "base=[] cand=[['2024-11-12', 'A'], ['2024-11-13', 'B'], ['2024-11-18', 'A'], ['2024-11-27', 'B']]"
+  },
+  {
+   "name": "V2_2024-11_brake",
+   "ok": true,
+   "detail": "base=[] cand=[]"
+  },
+  {
+   "name": "V3_2024-11_sets",
+   "ok": true,
+   "detail": "base_only k22=0 mine=0; cand_only k22=1 mine=1; shared k22=7 mine=7"
+  },
+  {
+   "name": "V4_2024-11_drivers",
+   "ok": true,
+   "detail": "8 drivers all matched"
+  },
+  {
+   "name": "V5_2024-11_resid",
+   "ok": true,
+   "detail": "base k22=20622.7 mine=20622.7; cand k22=17713.8 mine=17713.8"
+  },
+  {
+   "name": "V1_2026-09_in_window",
+   "ok": true,
+   "detail": "diff k22=-0.98"
+  },
+  {
+   "name": "V1_2026-09_diff",
+   "ok": true,
+   "detail": "k22=-0.9800 mine=-0.9777 err=0.0023"
+  },
+  {
+   "name": "V1_2026-09_base",
+   "ok": true,
+   "detail": "k22=2.84 mine=2.8369"
+  },
+  {
+   "name": "V1_2026-09_cand",
+   "ok": true,
+   "detail": "k22=1.86 mine=1.8592"
+  },
+  {
+   "name": "V2_2026-09_switch",
+   "ok": true,
+   "detail": "base=[['2026-09-08', 'B']] cand=[]"
+  },
+  {
+   "name": "V2_2026-09_brake",
+   "ok": true,
+   "detail": "base=[] cand=[]"
+  },
+  {
+   "name": "V3_2026-09_sets",
+   "ok": true,
+   "detail": "base_only k22=2 mine=2; cand_only k22=1 mine=1; shared k22=4 mine=4"
+  },
+  {
+   "name": "V4_2026-09_drivers",
+   "ok": true,
+   "detail": "7 drivers all matched"
+  },
+  {
+   "name": "V5_2026-09_resid",
+   "ok": true,
+   "detail": "base k22=28601.1 mine=28601.1; cand k22=19309.1 mine=19309.1"
+  }
+ ],
+ "ok": true,
+ "k22_top3": [
+  [
+   "2024-12",
+   -6.83
+  ],
+  [
+   "2024-11",
+   -6.24
+  ],
+  [
+   "2026-09",
+   -0.98
+  ]
+ ],
+ "mine_top3neg": [
+  "2024-12",
+  "2024-11",
+  "2026-09"
+ ],
+ "top3_order_match": true
+}

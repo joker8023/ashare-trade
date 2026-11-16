@@ -1,0 +1,54 @@
+{
+ "checks": {
+  "k8_rows": 8,
+  "k8_beat_all_true": 0,
+  "k8_max_nbeat_new": 4,
+  "k8_nbeat_ge4": [
+   "g_bf07_cut75",
+   "g_bf07_rs70",
+   "g_bf07_rs70_winA30",
+   "g_bf07_winA30"
+  ],
+  "k8_decl_mismatch": [],
+  "k8_base_dev": {
+   "total": 0.0,
+   "mdd": 0.0,
+   "1m": 0.0,
+   "3m": 0.0,
+   "6m": 0.0,
+   "1y": 0.0,
+   "2y": 0.0,
+   "3y": 0.0
+  },
+  "deep_retfull_maxdev": 0.0,
+  "deep_gaps": {
+   "1m": -0.0018318954048028857,
+   "3m": -0.03550555986744186,
+   "6m": 0.25529313860534586,
+   "1y": 0.3508600497548571,
+   "2y": 6.2171124366559525,
+   "3y": 193.0370640806525
+  },
+  "deep_tails_identical": {
+   "1m": true,
+   "3m": true
+  },
+  "deep_vs_k8_g": {
+   "total": 0.0,
+   "mdd": 0.0,
+   "1m": 0.0,
+   "3m": 0.0,
+   "6m": 0.0,
+   "1y": 0.0,
+   "2y": 0.0,
+   "3y": 0.0
+  },
+  "premise": {
+   "research/inputs_k9.py": false,
+   "results/r30_bt/sweep_beat_m07_k9.json": false,
+   "research/deep_tail_k9.py": true,
+   "results/r30_bt/deep_tail_k9.json": true
+  },
+  "shift_neg": []
+ }
+}

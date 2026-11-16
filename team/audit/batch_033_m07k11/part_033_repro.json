@@ -1,0 +1,7 @@
+{
+ "trailing_check": "ALL OK",
+ "repro_mismatch": {},
+ "repro_switchlog_eq": true,
+ "repro_brakelog_eq": true,
+ "repro_all_zero": true
+}

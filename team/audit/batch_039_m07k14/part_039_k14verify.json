@@ -1,0 +1,87 @@
+{
+ "dual_calib": {
+  "base_M07_vs_M07_final": {
+   "total": 0.0,
+   "mdd": 0.0,
+   "1m": 0.0,
+   "3m": 0.0,
+   "6m": 0.0,
+   "1y": 0.0,
+   "2y": 0.0,
+   "3y": 0.0
+  },
+  "base_gbf07_vs_K3": {
+   "total": 0.0,
+   "mdd": 0.0,
+   "1m": 0.0,
+   "3m": 0.0,
+   "6m": 0.0,
+   "1y": 0.0,
+   "2y": 0.0,
+   "3y": 0.0
+  },
+  "gate": 0.01,
+  "pass": true
+ },
+ "flag_recompute": [
+  {
+   "tag": "base_M07",
+   "nbeat_re": 0,
+   "beat_all_re": false,
+   "mdd_better_re": false,
+   "match": true
+  },
+  {
+   "tag": "base_gbf07",
+   "nbeat_re": 5,
+   "beat_all_re": false,
+   "mdd_better_re": true,
+   "match": true
+  },
+  {
+   "tag": "k14_dynT10_both",
+   "nbeat_re": 3,
+   "beat_all_re": false,
+   "mdd_better_re": true,
+   "match": true
+  },
+  {
+   "tag": "k14_dynT05_both",
+   "nbeat_re": 1,
+   "beat_all_re": false,
+   "mdd_better_re": true,
+   "match": true
+  },
+  {
+   "tag": "k14_dly_exitB",
+   "nbeat_re": 3,
+   "beat_all_re": false,
+   "mdd_better_re": true,
+   "match": true
+  },
+  {
+   "tag": "k14_triple_T10xB",
+   "nbeat_re": 3,
+   "beat_all_re": false,
+   "mdd_better_re": true,
+   "match": true
+  }
+ ],
+ "indep_rerun": {
+  "tag": "k14_dynT10_both",
+  "total": 2242.86,
+  "mdd": -23.65,
+  "1m": -4.5,
+  "3m": 20.16,
+  "6m": 25.6,
+  "1y": 127.05,
+  "2y": 1515.92,
+  "3y": 1979.07,
+  "dev_vs_file": 0.0,
+  "pass": true
+ },
+ "trigger_set_beat_all_or_nbeat_ge4_new": [
+  "none"
+ ],
+ "verdict": "FAIL_ALL"
+}

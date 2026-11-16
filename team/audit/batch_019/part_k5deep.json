@@ -1,0 +1,150 @@
+{
+ "nobrake_M07_repro": {
+  "out": {
+   "total": 2182.6,
+   "mdd": -32.1,
+   "trades": 184,
+   "cost": 59488.0,
+   "mode": "B",
+   "switches": 3,
+   "brakes": 0,
+   "1m": -4.1,
+   "3m": 17.24,
+   "6m": 39.29,
+   "1y": 164.77,
+   "2y": 1480.02,
+   "3y": 1788.72
+  },
+  "maxdev": 1,
+  "dev": {
+   "total": 0.0,
+   "mdd": 0.0,
+   "trades": 0,
+   "cost": 0.0,
+   "mode": true,
+   "switches": 0,
+   "brakes": 0,
+   "1m": 0.0,
+   "3m": 0.0,
+   "6m": 0.0,
+   "1y": 0.0,
+   "2y": 0.0,
+   "3y": 0.0
+  }
+ },
+ "nobrake_M07_brake_empty": true,
+ "nobrake_M07_switch_same": true,
+ "nobrake_M07_exTop3": {
+  "top3_pnl": 282536.1,
+  "pnl_sum": 1075249.3,
+  "top3_share": 26.3
+ },
+ "nobrake_M07_nbeat": {
+  "nbeat": 4,
+  "diff": {
+   "1m": -0.01,
+   "3m": -0.04,
+   "6m": 0.29,
+   "1y": 0.72,
+   "2y": 5.94,
+   "3y": 111.19
+  },
+  "total_gap": 319.33,
+  "mdd_gap": -5.05
+ },
+ "nobrake_gbf07_repro": {
+  "out": {
+   "total": 2243.52,
+   "mdd": -28.4,
+   "trades": 184,
+   "cost": 61046.0,
+   "mode": "B",
+   "switches": 3,
+   "brakes": 0,
+   "1m": -4.11,
+   "3m": 17.24,
+   "6m": 39.19,
+   "1y": 164.45,
+   "2y": 1475.02,
+   "3y": 1839.12
+  },
+  "maxdev": 1,
+  "dev": {
+   "total": 0.0,
+   "mdd": 0.0,
+   "trades": 0,
+   "cost": 0.0,
+   "mode": true,
+   "switches": 0,
+   "brakes": 0,
+   "1m": 0.0,
+   "3m": 0.0,
+   "6m": 0.0,
+   "1y": 0.0,
+   "2y": 0.0,
+   "3y": 0.0
+  }
+ },
+ "nobrake_gbf07_brake_empty": true,
+ "nobrake_gbf07_switch_same": true,
+ "nobrake_gbf07_exTop3": {
+  "top3_pnl": 290215.4,
+  "pnl_sum": 1105268.2,
+  "top3_share": 26.3
+ },
+ "nobrake_gbf07_nbeat": {
+  "nbeat": 4,
+  "diff": {
+   "1m": -0.02,
+   "3m": -0.04,
+   "6m": 0.19,
+   "1y": 0.4,
+   "2y": 0.94,
+   "3y": 161.59
+  },
+  "total_gap": 380.25,
+  "mdd_gap": -1.35
+ },
+ "nobrake_gbf07_ph5": {
+  "total": 871.22,
+  "mdd": -34.67,
+  "trades": 184,
+  "cost": 32190.0,
+  "mode": "A",
+  "switches": 10,
+  "1m": -7.07,
+  "3m": 7.22,
+  "6m": 35.01,
+  "1y": 76.12,
+  "2y": 725.18,
+  "3y": 772.49
+ },
+ "nobrake_gbf07_ph15": {
+  "total": 546.03,
+  "mdd": -32.55,
+  "trades": 209,
+  "cost": 28835.0,
+  "mode": "A",
+  "switches": 12,
+  "1m": -7.5,
+  "3m": 6.63,
+  "6m": 24.74,
+  "1y": 71.79,
+  "2y": 482.12,
+  "3y": 549.38
+ },
+ "nobrake_gbf07_slip04": {
+  "total": 1930.99,
+  "mdd": -29.11,
+  "trades": 184,
+  "cost": 98212.0,
+  "mode": "B",
+  "switches": 3,
+  "1m": -4.45,
+  "3m": 15.92,
+  "6m": 35.98,
+  "1y": 153.37,
+  "2y": 1344.64,
+  "3y": 1624.17
+ }
+}

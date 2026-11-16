@@ -1,0 +1,64 @@
+{
+ "family_py_exists": true,
+ "sweep_k11_exists": true,
+ "anchor_counts": {
+  "AA": 1,
+  "BB": 1,
+  "CC": 1,
+  "DD": 1,
+  "EE": 1,
+  "FF": 1,
+  "GG": 1,
+  "SIG": 1,
+  "PICKLINE": 1,
+  "DESIRED": 1
+ },
+ "anchors_all_unique": true,
+ "anchors_match_v4": true,
+ "build_k11_ok": true,
+ "has_run_strategy_switch": true,
+ "code_scan": {
+  "shift(-": false,
+  "sig_i +": false,
+  "sig_i+": false,
+  "searchsorted": false,
+  "iloc[": false,
+  ".loc[": false,
+  "exec_map =": false,
+  ".shift(": false,
+  "dates[": true,
+  "px_ffill_or_nan": false
+ },
+ "new_desired_banned_tokens": [],
+ "new_desired_has_freeze": true,
+ "new_desired_has_hyst": true,
+ "brake_eval_identical": false,
+ "skip_block_identical": true,
+ "m07_switches": 3,
+ "m07_base": {
+  "total": 1863.27,
+  "mdd": -27.05,
+  "1m": -4.09,
+  "3m": 17.28,
+  "6m": 39.0,
+  "1y": 164.05,
+  "2y": 1474.08,
+  "3y": 1677.53
+ },
+ "k9_amihud_5_both": null,
+ "k10_a60_a5_B": {
+  "switches": 11,
+  "nbeat_m07": 0,
+  "total": 1437.72,
+  "mdd": -35.55
+ },
+ "k10_a60_adv_both": {
+  "switches": 11,
+  "nbeat_m07": 0,
+  "total": 307.22,
+  "mdd": -30.48
+ },
+ "k10inputs_a60_a5_ok": true,
+ "k1k10_new": 144,
+ "k1k10_beat_all": 0
+}

@@ -1,0 +1,273 @@
+{
+ "checks": {
+  "rerun_maxdev": 0,
+  "rerun_per_row": {
+   "base_M07": {
+    "maxdev": 0.0,
+    "meta_ok": true,
+    "log_ok": true,
+    "nbeat": 0,
+    "beat_all": false,
+    "mdd_better": false,
+    "switch_same_m07": true,
+    "switch_log": [
+     [
+      "2023-06-21",
+      "B"
+     ],
+     [
+      "2024-08-15",
+      "A"
+     ],
+     [
+      "2026-09-08",
+      "B"
+     ]
+    ]
+   },
+   "k13_dynT05_B": {
+    "maxdev": 0.0,
+    "meta_ok": true,
+    "log_ok": true,
+    "nbeat": 0,
+    "beat_all": false,
+    "mdd_better": true,
+    "switch_same_m07": true,
+    "switch_log": [
+     [
+      "2023-06-21",
+      "B"
+     ],
+     [
+      "2024-08-15",
+      "A"
+     ],
+     [
+      "2026-09-08",
+      "B"
+     ]
+    ]
+   },
+   "k13_dynT05_both": {
+    "maxdev": 0.0,
+    "meta_ok": true,
+    "log_ok": true,
+    "nbeat": 1,
+    "beat_all": false,
+    "mdd_better": true,
+    "switch_same_m07": true,
+    "switch_log": [
+     [
+      "2023-06-21",
+      "B"
+     ],
+     [
+      "2024-08-15",
+      "A"
+     ],
+     [
+      "2026-09-08",
+      "B"
+     ]
+    ]
+   },
+   "k13_dynT10_B": {
+    "maxdev": 0.0,
+    "meta_ok": true,
+    "log_ok": true,
+    "nbeat": 1,
+    "beat_all": false,
+    "mdd_better": true,
+    "switch_same_m07": true,
+    "switch_log": [
+     [
+      "2023-06-21",
+      "B"
+     ],
+     [
+      "2024-08-15",
+      "A"
+     ],
+     [
+      "2026-09-08",
+      "B"
+     ]
+    ]
+   },
+   "k13_dynT10_both": {
+    "maxdev": 0.0,
+    "meta_ok": true,
+    "log_ok": true,
+    "nbeat": 3,
+    "beat_all": false,
+    "mdd_better": true,
+    "switch_same_m07": true,
+    "switch_log": [
+     [
+      "2023-06-21",
+      "B"
+     ],
+     [
+      "2024-08-15",
+      "A"
+     ],
+     [
+      "2026-09-08",
+      "B"
+     ]
+    ]
+   },
+   "k13_dly_enterB": {
+    "maxdev": 0.0,
+    "meta_ok": true,
+    "log_ok": true,
+    "nbeat": 0,
+    "beat_all": false,
+    "mdd_better": true,
+    "switch_same_m07": false,
+    "switch_log": [
+     [
+      "2023-07-21",
+      "B"
+     ],
+     [
+      "2024-08-15",
+      "A"
+     ],
+     [
+      "2026-10-14",
+      "B"
+     ]
+    ]
+   },
+   "k13_dly_exitB": {
+    "maxdev": 0.0,
+    "meta_ok": true,
+    "log_ok": true,
+    "nbeat": 2,
+    "beat_all": false,
+    "mdd_better": false,
+    "switch_same_m07": false,
+    "switch_log": [
+     [
+      "2023-06-21",
+      "B"
+     ],
+     [
+      "2024-09-12",
+      "A"
+     ],
+     [
+      "2026-09-08",
+      "B"
+     ]
+    ]
+   }
+  },
+  "base_dev": {
+   "total": 0.0,
+   "mdd": 0.0,
+   "1m": 0.0,
+   "3m": 0.0,
+   "6m": 0.0,
+   "1y": 0.0,
+   "2y": 0.0,
+   "3y": 0.0
+  },
+  "dyn": {
+   "k13_dynT05_B": {
+    "n_log": 12,
+    "n_conc": 6,
+    "margin_maxdev": 4.879905113128885e-05,
+    "rule_violations": []
+   },
+   "k13_dynT05_both": {
+    "n_log": 12,
+    "n_conc": 6,
+    "margin_maxdev": 4.879905113128885e-05,
+    "rule_violations": []
+   },
+   "k13_dynT10_B": {
+    "n_log": 10,
+    "n_conc": 5,
+    "margin_maxdev": 4.887471172363572e-05,
+    "rule_violations": []
+   },
+   "k13_dynT10_both": {
+    "n_log": 10,
+    "n_conc": 5,
+    "margin_maxdev": 4.887471172363572e-05,
+    "rule_violations": []
+   }
+  },
+  "dly": {
+   "k13_dly_enterB": {
+    "n_log": 5,
+    "bad": [],
+    "counts": {
+     "pending": 2,
+     "confirmed": 2,
+     "cancelled": 0
+    },
+    "log": [
+     [
+      "2023-06-21",
+      "B",
+      "pending"
+     ],
+     [
+      "2023-07-21",
+      "B",
+      "confirmed"
+     ],
+     [
+      "2024-08-15",
+      "A",
+      "immediate"
+     ],
+     [
+      "2026-09-08",
+      "B",
+      "pending"
+     ],
+     [
+      "2026-10-14",
+      "B",
+      "confirmed"
+     ]
+    ]
+   },
+   "k13_dly_exitB": {
+    "n_log": 4,
+    "bad": [],
+    "counts": {
+     "pending": 1,
+     "confirmed": 1,
+     "cancelled": 0
+    },
+    "log": [
+     [
+      "2023-06-21",
+      "B",
+      "immediate"
+     ],
+     [
+      "2024-08-15",
+      "A",
+      "pending"
+     ],
+     [
+      "2024-09-12",
+      "A",
+      "confirmed"
+     ],
+     [
+      "2026-09-08",
+      "B",
+      "immediate"
+     ]
+    ]
+   }
+  }
+ }
+}

@@ -1,0 +1,13 @@
+{
+ "n": 20,
+ "ncand": 0,
+ "cand_tags": [],
+ "top5": [
+  "nobrake_gbf07",
+  "nobrake_M07",
+  "g_pair_lo",
+  "legB_only",
+  "pair_lo"
+ ],
+ "mismatches": []
+}

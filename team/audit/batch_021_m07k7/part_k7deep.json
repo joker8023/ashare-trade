@@ -1,0 +1,67 @@
+{
+ "repro": {
+  "g_bf080": {
+   "devs": {
+    "total": 0.0,
+    "mdd": 0.0,
+    "trades": 0,
+    "cost": 0.0,
+    "switches": 0,
+    "brakes": 0,
+    "1m": 0.0,
+    "3m": 0.0,
+    "6m": 0.0,
+    "1y": 0.0,
+    "2y": 0.0,
+    "3y": 0.0
+   },
+   "maxdev": 0.0,
+   "mode_same": true,
+   "switch_same": true,
+   "brake_same": true,
+   "nbeat_same": true
+  },
+  "g_bf085": {
+   "devs": {
+    "total": 0.0,
+    "mdd": 0.0,
+    "trades": 0,
+    "cost": 0.0,
+    "switches": 0,
+    "brakes": 0,
+    "1m": 0.0,
+    "3m": 0.0,
+    "6m": 0.0,
+    "1y": 0.0,
+    "2y": 0.0,
+    "3y": 0.0
+   },
+   "maxdev": 0.0,
+   "mode_same": true,
+   "switch_same": true,
+   "brake_same": true,
+   "nbeat_same": true
+  },
+  "m07_bf07": {
+   "devs": {
+    "total": 0.0,
+    "mdd": 0.0,
+    "trades": 0,
+    "cost": 0.0,
+    "switches": 0,
+    "brakes": 0,
+    "1m": 0.0,
+    "3m": 0.0,
+    "6m": 0.0,
+    "1y": 0.0,
+    "2y": 0.0,
+    "3y": 0.0
+   },
+   "maxdev": 0.0,
+   "mode_same": true,
+   "switch_same": true,
+   "brake_same": true,
+   "nbeat_same": true
+  }
+ }
+}

@@ -1,0 +1,30 @@
+{
+ "dual_calib": {
+  "base_M07_vs_M07_final": {
+   "total": 0.0,
+   "mdd": 0.0,
+   "1m": 0.0,
+   "3m": 0.0,
+   "6m": 0.0,
+   "1y": 0.0,
+   "2y": 0.0,
+   "3y": 0.0
+  },
+  "base_gbf07_vs_K3": {
+   "total": 0.0,
+   "mdd": 0.0,
+   "1m": 0.0,
+   "3m": 0.0,
+   "6m": 0.0,
+   "1y": 0.0,
+   "2y": 0.0,
+   "3y": 0.0
+  },
+  "gate": 0.01,
+  "pass": true
+ },
+ "flag_recompute_match": true,
+ "trigger_set": [],
+ "beat_all_count": 0,
+ "nrows": 5
+}

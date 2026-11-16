@@ -1,0 +1,188 @@
+{
+ "m07": {
+  "total": 1863.27,
+  "mdd": -27.05,
+  "1m": -4.09,
+  "3m": 17.28,
+  "6m": 39.0,
+  "1y": 164.05,
+  "2y": 1474.08,
+  "3y": 1677.53
+ },
+ "per_file": {
+  "sweep_beat_m07_k1.json": 30,
+  "sweep_beat_m07_k2.json": 9,
+  "sweep_beat_m07_k3.json": 29,
+  "sweep_beat_m07_k4.json": 18,
+  "sweep_beat_m07_k5.json": 20,
+  "sweep_beat_m07_k6.json": 8,
+  "sweep_beat_m07_k7.json": 6
+ },
+ "total_rows": 120,
+ "base_rows": 7,
+ "new_cfgs": 113,
+ "recomputed_mismatch": 0,
+ "beat_all_recomputed": 0,
+ "beat_tags": [],
+ "candidates_ge5": [
+  [
+   "sweep_beat_m07_k3.json",
+   "g_bf07",
+   5
+  ]
+ ],
+ "bf_axis": [
+  {
+   "bf": 0.05,
+   "file": "sweep_beat_m07_k1.json",
+   "tag": "k02_bf05",
+   "nbeat": 0,
+   "total": 1764.22,
+   "mdd": -26.11
+  },
+  {
+   "bf": 0.05,
+   "file": "sweep_beat_m07_k1.json",
+   "tag": "k29_bx15_bf05",
+   "nbeat": 0,
+   "total": 1764.22,
+   "mdd": -26.11
+  },
+  {
+   "bf": 0.05,
+   "file": "sweep_beat_m07_k3.json",
+   "tag": "g_bf05",
+   "nbeat": 1,
+   "total": 1819.65,
+   "mdd": -21.99
+  },
+  {
+   "bf": 0.07,
+   "file": "sweep_beat_m07_k1.json",
+   "tag": "k01_bf07",
+   "nbeat": 1,
+   "total": 1917.97,
+   "mdd": -28.24
+  },
+  {
+   "bf": 0.07,
+   "file": "sweep_beat_m07_k1.json",
+   "tag": "k28_btake90_bf07",
+   "nbeat": 1,
+   "total": 1569.28,
+   "mdd": -28.14
+  },
+  {
+   "bf": 0.07,
+   "file": "sweep_beat_m07_k2.json",
+   "tag": "h_by05_cut78_bf07",
+   "nbeat": 3,
+   "total": 2090.82,
+   "mdd": -25.3
+  },
+  {
+   "bf": 0.07,
+   "file": "sweep_beat_m07_k3.json",
+   "tag": "g_bf07",
+   "nbeat": 5,
+   "total": 2128.41,
+   "mdd": -24.28
+  },
+  {
+   "bf": 0.07,
+   "file": "sweep_beat_m07_k4.json",
+   "tag": "sleeve_gbf07_p0_p15",
+   "nbeat": 0,
+   "total": 1339.96,
+   "mdd": -26.35
+  },
+  {
+   "bf": 0.07,
+   "file": "sweep_beat_m07_k4.json",
+   "tag": "sleeve_gbf07_pm8_pp8",
+   "nbeat": 0,
+   "total": 625.37,
+   "mdd": -20.32
+  },
+  {
+   "bf": 0.07,
+   "file": "sweep_beat_m07_k4.json",
+   "tag": "sleeve_gbf07_pm5_pp5",
+   "nbeat": 0,
+   "total": 660.75,
+   "mdd": -29.89
+  },
+  {
+   "bf": 0.07,
+   "file": "sweep_beat_m07_k4.json",
+   "tag": "sleeve3_gbf07_m8_0_p8",
+   "nbeat": 0,
+   "total": 1155.58,
+   "mdd": -20.36
+  },
+  {
+   "bf": 0.07,
+   "file": "sweep_beat_m07_k5.json",
+   "tag": "lockA_gbf07",
+   "nbeat": 0,
+   "total": 1142.17,
+   "mdd": -40.73
+  },
+  {
+   "bf": 0.07,
+   "file": "sweep_beat_m07_k5.json",
+   "tag": "lockB_gbf07",
+   "nbeat": 1,
+   "total": 506.32,
+   "mdd": -24.32
+  },
+  {
+   "bf": 0.07,
+   "file": "sweep_beat_m07_k5.json",
+   "tag": "nobrake_gbf07",
+   "nbeat": 4,
+   "total": 2243.52,
+   "mdd": -28.4
+  },
+  {
+   "bf": 0.07,
+   "file": "sweep_beat_m07_k7.json",
+   "tag": "m07_bf07",
+   "nbeat": 1,
+   "total": 1917.97,
+   "mdd": -28.24
+  },
+  {
+   "bf": 0.65,
+   "file": "sweep_beat_m07_k7.json",
+   "tag": "g_bf065",
+   "nbeat": 3,
+   "total": 2088.74,
+   "mdd": -23.65
+  },
+  {
+   "bf": 0.75,
+   "file": "sweep_beat_m07_k7.json",
+   "tag": "g_bf075",
+   "nbeat": 4,
+   "total": 2141.87,
+   "mdd": -24.77
+  },
+  {
+   "bf": 0.8,
+   "file": "sweep_beat_m07_k7.json",
+   "tag": "g_bf080",
+   "nbeat": 4,
+   "total": 2177.9,
+   "mdd": -26.08
+  },
+  {
+   "bf": 0.85,
+   "file": "sweep_beat_m07_k7.json",
+   "tag": "g_bf085",
+   "nbeat": 4,
+   "total": 2182.7,
+   "mdd": -26.72
+  }
+ ]
+}

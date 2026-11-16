@@ -1,0 +1,56 @@
+{
+ "dual_calib": {
+  "base_M07_vs_M07_final": {
+   "total": 0,
+   "mdd": 0,
+   "1m": 0,
+   "3m": 0,
+   "6m": 0,
+   "1y": 0,
+   "2y": 0,
+   "3y": 0
+  },
+  "base_gbf07_vs_K3": {
+   "total": 0,
+   "mdd": 0,
+   "1m": 0,
+   "3m": 0,
+   "6m": 0,
+   "1y": 0,
+   "2y": 0,
+   "3y": 0
+  }
+ },
+ "gate": 0.01,
+ "pass": true,
+ "flag_recompute_match": true,
+ "mismatches": 0,
+ "nrows": 6,
+ "trigger_set": [],
+ "beat_all_count": 0,
+ "dedup_spot": {
+  "tag": "k16_T10both_enterB",
+  "spec": "dynN(T10,both)+enterB",
+  "k14_k15_match": false
+ },
+ "gate_5_6": {
+  "best_nbeat": 2,
+  "best_tag": "k16_T10both_enterB",
+  "threshold": 4,
+  "skipped": true
+ },
+ "indep_recompute": {
+  "tag": "k16_T10both_enterB",
+  "total": 2203.93,
+  "mdd": -23.58,
+  "dev": 0,
+  "nbeat_confirm": 2
+ },
+ "lookahead": {
+  "shift_neg": 0,
+  "searchsorted": 0,
+  "iloc": 3,
+  "iloc_note": "trailing-window return math only",
+  "verdict": "PASS"
+ }
+}
