@@ -1,0 +1,144 @@
+{
+ "checks": {
+  "build_script": "/Users/joker/coding/ashare-trade/research/build_pivots_2020_realshares_v2.py",
+  "A_source_scan": {
+   "forbidden_patterns_found": [],
+   "causal_marks_found": [],
+   "pass": true
+  },
+  "B_schema": {
+   "v1_days": 1664,
+   "v1_codes": 5030,
+   "v2_days": 1664,
+   "v2_codes": 5030,
+   "keys_equal": true,
+   "shares_dtype_v2": "float32",
+   "non_shares_identical": true
+  },
+  "C_000661": {
+   "ex_date": "2020-06-09",
+   "share_ratio_raw": 2.0,
+   "price_gap": 1.006225,
+   "naive_mcap_jump": 2.0124,
+   "fixed_mcap_jump": 1.0062,
+   "naive_expect_2.0124_tol": true,
+   "fixed_in_[0.99,1.01]": true,
+   "pass": true
+  },
+  "D_detection": {
+   "n_events_independent": 1785,
+   "per_canon": {
+    "1.2": 222,
+    "1.3": 448,
+    "1.1": 55,
+    "1.4": 774,
+    "1.5": 182,
+    "2.0": 18,
+    "1.6": 74,
+    "3.0": 1,
+    "1.25": 11
+   },
+   "note": "detection uses only v[t],v[t-1]; backward cumulative factor cannot leak future info into t-day mcap ranking beyond ex-date alignment (see source scan).",
+   "fix_report": {
+    "src": "data/pivots_2020_clean_realshares.pkl",
+    "dst": "data/pivots_2020_clean_realshares_v2.pkl",
+    "method": "exact-ratio split detection, causal t/t-1 only; backward cumulative forward-factor scaling of pre-split shares; non-exact jumps untouched; prices bit-identical to B1",
+    "canon": [
+     1.1,
+     1.2,
+     1.25,
+     1.3,
+     1.4,
+     1.5,
+     1.6,
+     2.0,
+     3.0
+    ],
+    "tol": 1e-06,
+    "n_split_events": 1785,
+    "events_by_factor": {
+     "1.2": 222,
+     "1.3": 448,
+     "1.1": 55,
+     "1.4": 774,
+     "1.5": 182,
+     "2.0": 18,
+     "1.6": 74,
+     "3.0": 1,
+     "1.25": 11
+    },
+    "codes_with_events": 1184,
+    "codes_with_events_from_2023": 706,
+    "gate_000661": {
+     "code": "000661",
+     "exdiv": "2020-06-09",
+     "price_gap": 1.006225,
+     "share_ratio_raw": 2.0,
+     "mcap_ratio_naive": 2.012449,
+     "mcap_ratio_corrected": 1.006225
+    },
+    "gate_pass": true,
+    "mcap_ratio_at_events": {
+     "naive_median": 1.362154,
+     "naive_max": 3.011121,
+     "corrected_median": 0.993609,
+     "corrected_min": 0.851219,
+     "corrected_max": 1.199945,
+     "corrected_frac_in_099_101": 0.301401
+    },
+    "lookahead_note": "Detection uses only t/t-1 (causal). Backward factor propagation is the split-adjustment definition itself, synchronous with the qianfuquan price adjustment; no trading-signal lookahead beyond what adjusted prices already contain."
+   },
+   "n_match_report": true
+  },
+  "E_spots": {
+   "603103": {
+    "date": "2020-10-12",
+    "raw_ratio": 8.54717,
+    "v2_ratio": 8.54717,
+    "is_exact_canon": false,
+    "untouched_ratio_preserved": true
+   },
+   "002901": {
+    "date": "2020-09-22",
+    "raw_ratio": 8.376563,
+    "v2_ratio": 8.376563,
+    "is_exact_canon": false,
+    "untouched_ratio_preserved": true
+   },
+   "600390": {
+    "date": "2020-01-20",
+    "raw_ratio": 7.299147,
+    "v2_ratio": 7.299147,
+    "is_exact_canon": false,
+    "untouched_ratio_preserved": true
+   },
+   "exact_examples": [
+    {
+     "code": "000014",
+     "date": "2022-05-27",
+     "canon": 1.2,
+     "naive_jump": 1.2251,
+     "fixed_jump": 1.0209,
+     "fixed_continuous": true
+    },
+    {
+     "code": "000027",
+     "date": "2020-06-11",
+     "canon": 1.2,
+     "naive_jump": 1.1878,
+     "fixed_jump": 0.9898,
+     "fixed_continuous": true
+    },
+    {
+     "code": "000028",
+     "date": "2023-06-01",
+     "canon": 1.3,
+     "naive_jump": 1.2516,
+     "fixed_jump": 0.9628,
+     "fixed_continuous": true
+    }
+   ]
+  }
+ },
+ "method_verdict": "PASS"
+}

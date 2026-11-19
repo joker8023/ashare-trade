@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Beat-H1 sweep v2: stop grid + mixed pools (2020 caliber, ph0)."""
 import sys, json
+from switch_ns import atomic_write_json
 from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
@@ -32,6 +33,7 @@ PICKLINE = "        picks = inp_cur.picks(sig_day, n_eff, exclude=exclude, facto
 def _mdd(s):
     return float((s / s.cummax() - 1).min())
 
+# 祖先版本: 无 hyst/confirm/evalfreq/min_hold, 仅 brake+skip+exclude_AB. 结果不可与 F4/F5/F6/F7/C2 家族直接对比.
 def build_ns(bx=0.18, by_=0.08, bf=0.5):
     src = (ROOT / "research" / "switch_engine.py").read_text()
     def _once(old, new):
@@ -110,8 +112,7 @@ def main():
         except Exception as e:
             print("FAIL %s: %s" % (cfg["tag"], e), flush=True)
             import traceback; traceback.print_exc()
-    with open(ROOT / "results" / "r30_bt" / "sweep_beat_h1_v4.json", "w") as f:
-        json.dump(rows, f, ensure_ascii=False, indent=1)
+    atomic_write_json(ROOT / "results" / "r30_bt" / "sweep_beat_h1_v4.json", rows)
     print("saved %d rows" % len(rows), flush=True)
 
 if __name__ == "__main__":

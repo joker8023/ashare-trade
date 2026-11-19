@@ -15,6 +15,7 @@ def run_strategy_switch(
     n: int = 5,
     rebal: int = 30,
     stop: Optional[float] = 0.12,
+    stop_b: Optional[float] = None,  # B 腿止损; None => 与 stop 相同 (A 腿冻结口径不受 B 腿 stop 实验污染)
     take: Optional[float] = None,
     capital: float = 50_000.0,
     lot: int = 100,
@@ -74,23 +75,27 @@ def run_strategy_switch(
     pos: Dict[str, Pos] = {}
     eq_rows: List[Tuple[pd.Timestamp, float]] = []
     trades: List[dict] = []
-    pending_stop: List[Tuple[str, int, str]] = []   # stop_exec == next: (code, trigger_i, reason)
+    pending_stop: List[Tuple[str, int, str]] = []   # stop_exec == next: (code, trigger_i, reason); stop 与 take 共用此列表, 次日收盘执行
     total_cost = 0.0
     cost_by_year: Dict[int, float] = {}
     executed_rebalances: List[Tuple[int, float]] = []  # (idx, post-trade equity)
     stats = {"stale_buys": 0, "stale_sells": 0, "limitdown_sells": 0,
-             "limitup_buys": 0, "stop_sells": 0, "rebal_sells": 0,
+             "limitup_buys": 0, "stop_sells": 0, "take_sells": 0, "rebal_sells": 0,
              "skipped_lot": 0}
     rebal_snap = []
 
     # --- 双引擎切换状态 (切换必全清, 故持仓恒属当前引擎) ---
-    mode = lock_mode or "A"
+    mode = lock_mode or "A"  # switch_log 记的是信号日 sig_day, 实际成交在 sig_day+1, 按日期统计切换频率时注意偏移 1 日
     state_take = take if mode == "A" else cfg_b["take"]
+    _stop_b = stop if stop_b is None else stop_b
+    state_stop = stop if mode == "A" else _stop_b  # A 腿恒用 stop, B 腿用 stop_b(默认=stop)
     state_n = n if mode == "A" else cfg_b["n"]
     state_exposure = exposure if mode == "A" else cfg_b["exposure"]
     switch_log: List[Tuple[str, str]] = []
 
     def _rs(eq_s, s_idx: int):
+        # eq_s 为日频影子曲线 (dates[loop_start:loop_end+1] 逐日对照): j 即距 sig_i 的交易日数,
+        # j - rs_lookback 即往前 rs_lookback 个交易日; 要求影子曲线日频无缺失.
         if eq_s is None:
             return None
         j = int(eq_s.index.searchsorted(dates[s_idx], side="right") - 1)
@@ -157,13 +162,15 @@ def run_strategy_switch(
             stats["stop_sells"] += 1
             if is_limit_down(day, code):
                 stats["limitdown_sells"] += 1
+        elif reason == "take":
+            stats["take_sells"] += 1
         elif reason == "rebalance":
             stats["rebal_sells"] += 1
         if p.shares <= 1e-12:
             del pos[code]
 
     def do_rebalance(i: int, sig_i: int):
-        nonlocal cash, total_cost, mode, state_take, state_n, state_exposure
+        nonlocal cash, total_cost, mode, state_take, state_n, state_exposure, state_stop
         day = dates[i]
         sig_day = dates[sig_i]
         # 切换评估: 仅 A 网格信号日, 影子曲线 trailing RS 定 desired
@@ -180,6 +187,7 @@ def run_strategy_switch(
         if switching:
             mode = desired
             state_take = take if mode == "A" else cfg_b["take"]
+            state_stop = stop if mode == "A" else _stop_b
             state_n = n if mode == "A" else cfg_b["n"]
             state_exposure = exposure if mode == "A" else cfg_b["exposure"]
             switch_log.append((str(sig_day.date()), mode))
@@ -290,7 +298,7 @@ def run_strategy_switch(
                     continue
                 if px > p.high:
                     p.high = px
-                hit_stop = stop is not None and px < p.high * (1.0 - stop)
+                hit_stop = state_stop is not None and px < p.high * (1.0 - state_stop)
                 hit_take = state_take is not None and px >= p.entry_px * (1.0 + state_take)
                 if hit_stop:
                     if stop_exec == "same":
@@ -347,6 +355,7 @@ def run_strategy_switch(
         total_cost=float(total_cost),
         cost_by_year={str(k): float(v) for k, v in cost_by_year.items()},
         liq_eq_eval_end=float(liq_eq) if liq_eq is not None else None,
+        stop_b=_stop_b,
         **stats,
         rebalance_snapshots=rebal_snap, switch_log=switch_log, final_mode=mode,
     )
