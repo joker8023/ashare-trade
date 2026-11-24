@@ -446,6 +446,9 @@ def run_strategy(
         total_cost=float(total_cost),
         cost_by_year={str(k): float(v) for k, v in cost_by_year.items()},
         liq_eq_eval_end=float(liq_eq) if liq_eq is not None else None,
+        final_pos={code: dict(shares=float(p.shares), entry_px=float(p.entry_px),
+                              entry_date=str(dates[p.entry_i].date()),
+                              high=float(p.high)) for code, p in pos.items()},
         **stats,
         rebalance_snapshots=rebal_snap,
     )
