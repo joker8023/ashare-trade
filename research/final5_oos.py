@@ -72,10 +72,50 @@ def run_one(fid: str, factor: str, direction: str, n: int, rb: int, sz: tuple) -
     return out
 
 
+def periods_rows() -> list:
+    out = []
+    for (fid, f, d, n, rb, sz) in SPECS:
+        r = E.returns_series(f, direction=d, n_hold=n, rebal=rb, size_range=sz, cost=COST)
+        r2, _ = R.apply_index_filter(r, ma=TIMING["ma"], cut=TIMING["cut"], index_code=TIMING["index_code"])
+        for y in [2022, 2023, 2024, 2025, 2026]:
+            s = slice_stats(r2, f"{y}-01-01", f"{y}-12-31")
+            out.append({"id": fid, "window": f"Y{y}", "ret": s["total"], "ann": s["ann"], "mdd": s["mdd"], "sharpe": s["sharpe"], "n": s["n"]})
+        for label, nd in [("T1m", 21), ("T3m", 63), ("T6m", 126), ("T1y", 252), ("T2y", 504), ("T3y", 756)]:
+            rr = r2.iloc[-nd:] if len(r2) >= nd else r2
+            eq = (1 + rr).cumprod()
+            yrs = len(rr) / 252
+            ann = float(eq.iloc[-1] ** (1 / yrs) - 1) if yrs > 0 else 0.0
+            mdd = float((eq / eq.cummax() - 1).min())
+            vol = float(rr.std() * np.sqrt(252))
+            sh = float(rr.mean() * 252 / vol) if vol > 0 else 0.0
+            out.append({"id": fid, "window": label, "ret": float(eq.iloc[-1] - 1), "ann": ann, "mdd": mdd, "sharpe": sh, "n": len(rr)})
+        last = r2.index[-1]
+        s = slice_stats(r2, "2022-01-01", str(last.date()))
+        out.append({"id": fid, "window": "2022_last", "ret": s["total"], "ann": s["ann"], "mdd": s["mdd"], "sharpe": s["sharpe"], "n": s["n"]})
+    return out
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--json", action="store_true", help="输出 JSON 而不是文本表")
+    ap.add_argument("--periods", action="store_true", help="输出 1/3/6m + 1/2/3y + 2022~2026 历年")
+    ap.add_argument("--csv", default=None, help="将 periods 结果写到 CSV")
     a = ap.parse_args()
+    if a.periods:
+        rows = periods_rows()
+        if a.csv:
+            import csv
+            with open(a.csv, "w", newline="", encoding="utf-8") as fh:
+                w = csv.DictWriter(fh, fieldnames=["id", "window", "ret", "ann", "mdd", "sharpe", "n"])
+                w.writeheader()
+                w.writerows(rows)
+            print(f"wrote {a.csv} n={len(rows)}")
+        if a.json:
+            print(json.dumps(rows, ensure_ascii=False, indent=2))
+            return
+        for row in rows:
+            print(f"{row['id']:12s} {row['window']:9s} ret={row['ret']:+.2%} ann={row['ann']:+.2%} mdd={row['mdd']:.2%} sharpe={row['sharpe']:.2f} n={row['n']}")
+        return
     rows = [run_one(fid, f, d, n, rb, sz) for (fid, f, d, n, rb, sz) in SPECS]
     if a.json:
         print(json.dumps(rows, ensure_ascii=False, indent=2))
