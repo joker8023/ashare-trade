@@ -153,11 +153,12 @@ def main():
     r, scale = R.apply_index_filter(base, ma=MA, cut=CUT, index_code=INDEX_CODE)
     bare = base
 
-    # 含当前在建期
-    pend = pending_period()
+    # 含当前在建期（择时层同样作用于在建期，否则会漏掉降仓保护）
+    pend_raw = pending_period()
+    pend, _ = R.apply_index_filter(pend_raw, ma=MA, cut=CUT, index_code=INDEX_CODE) if len(pend_raw) else (pend_raw, None)
     r_ext = pd.concat([r, pend]).sort_index()
     r_ext = r_ext[~r_ext.index.duplicated(keep="first")]
-    bare_ext = pd.concat([bare, pend]).sort_index()
+    bare_ext = pd.concat([bare, pend_raw]).sort_index()
     bare_ext = bare_ext[~bare_ext.index.duplicated(keep="first")]
 
     res = {

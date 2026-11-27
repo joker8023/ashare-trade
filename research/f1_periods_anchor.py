@@ -54,7 +54,8 @@ def main():
     base = E.returns_series(FACTOR, direction=DIRECTION, n_hold=N_HOLD, rebal=REBAL,
                             size_range=SIZE, cost=COST, min_adv=MIN_ADV)
     r, scale = R.apply_index_filter(base, ma=MA, cut=CUT, index_code=INDEX_CODE)
-    pend = pending_period()
+    pend_raw = pending_period()
+    pend, _ = R.apply_index_filter(pend_raw, ma=MA, cut=CUT, index_code=INDEX_CODE) if len(pend_raw) else (pend_raw, None)
     r_ext = pd.concat([r, pend]).sort_index()
     r_ext = r_ext[~r_ext.index.duplicated(keep="first")]
 
