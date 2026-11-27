@@ -42,7 +42,7 @@ def piv():
     """默认用 2020 起的 pivots_full; 设 ASHARE_PIVOTS=pivots_long.pkl 可切到 2010 起的长历史"""
     global _PIV
     if _PIV is None:
-        name = os.getenv("ASHARE_PIVOTS", "pivots_full.pkl")
+        name = os.getenv("ASHARE_PIVOTS", "pivots_2020_clean.pkl")
         p = DATA / name
         if not p.exists():
             raise SystemExit(f"缺少 data/{name}, 先跑对应的 rebuild 脚本")

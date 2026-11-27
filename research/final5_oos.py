@@ -5,7 +5,7 @@ F1~F5 五策略 TRAIN/TEST/OOS 复现脚本（正式版）
 - 数据：data/pivots_long_clean.pkl（2010-2026，前复权），ASHARE_PIVOTS 环境变量可覆盖
 - 引擎：engine.returns_series（t+1 收盘建仓，等权，单边成本 0.5%）
 - 择时：risk_control.apply_index_filter，中证1000（000852）收盘 < MA15 -> 20% 仓位，否则 100%
-- 区间：TRAIN 2020-01-01~2023-06-30 / TEST 2023-07-01~2024-12-31 / OOS 2025-01-01~2026-11-12
+- 区间：TRAIN 2020-01-01~2023-06-30 / TEST 2023-07-01~2024-12-31 / OOS 2025-01-01~2026-11-24
 - 幸存者偏差未修（仅当前上市公司），未建模涨跌停不可成交，现金 0 收益
 
 用法：
@@ -21,7 +21,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
-os.environ.setdefault("ASHARE_PIVOTS", "pivots_long_clean.pkl")
+os.environ.setdefault("ASHARE_PIVOTS", "pivots_2020_clean.pkl")
 
 import numpy as np
 import pandas as pd
@@ -41,7 +41,7 @@ SPECS = [
 WINDOWS = [
     ("TRAIN", "2020-01-01", "2023-06-30"),
     ("TEST", "2023-07-01", "2024-12-31"),
-    ("OOS", "2025-01-01", "2026-11-12"),
+    ("OOS", "2025-01-01", "2026-11-24"),
 ]
 
 TIMING = {"ma": 15, "cut": 0.2, "index_code": "000852"}

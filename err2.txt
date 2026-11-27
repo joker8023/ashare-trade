@@ -1,0 +1,4 @@
+  File "<string>", line 5
+    r=E.returns_series(fac,direction=d,n_hold=n,rebal=rb,size_range=sz,cost=0.005); r2,_=R.apply_index_filter(r,ma=15,cut=0.2,index_code=000852)
+                                                                                                                                              ^
+SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers

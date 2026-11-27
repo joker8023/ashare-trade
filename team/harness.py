@@ -58,7 +58,7 @@ import pandas as pd
 
 BASE = Path(__file__).resolve().parent.parent          # repo root
 HERE = Path(__file__).resolve().parent                 # team/
-DATA_PKL = BASE / "data" / "pivots_long_clean.pkl"
+DATA_PKL = BASE / "data" / "pivots_2020_clean.pkl"
 BOND_PKL = BASE / "data" / "bond_511880.pkl"
 IND_PKL = BASE / "data" / "industry_map.pkl"
 IDX_CACHE = BASE / "results" / "_cache"

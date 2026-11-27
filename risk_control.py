@@ -29,7 +29,7 @@ def cached_base(factor, n, rebal, size, cost):
     """缓存基础策略收益序列, 避免每次重复计算"""
     cache_dir = BASE / "results" / "_cache"
     cache_dir.mkdir(exist_ok=True)
-    piv_name = os.getenv("ASHARE_PIVOTS", "pivots_full.pkl").replace(".pkl", "")
+    piv_name = os.getenv("ASHARE_PIVOTS", "pivots_2020_clean.pkl").replace(".pkl", "")
     key = f"{factor}_{n}_{rebal}_{size[0]}_{size[1]}_{cost}_{piv_name}"
     f = cache_dir / f"{key}.pkl"
     if f.exists():
